@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<Records Alias="AssetOperationTypes">
+  <Records>
+    <Record IsDisabled="false">
+      <Keys>
+        <Key Alias="Code_calc" Type="String">
+          <Key xmlns:q1="http://www.w3.org/2001/XMLSchema" d6p1:type="q1:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">Warehouse</Key>
+        </Key>
+      </Keys>
+      <Properties>
+        <Value Alias="OperationName" Type="String">
+          <SimpleValue xmlns:q2="http://www.w3.org/2001/XMLSchema" d6p1:type="q2:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">To warehouse</SimpleValue>
+        </Value>
+      </Properties>
+    </Record>
+    <Record IsDisabled="false">
+      <Keys>
+        <Key Alias="Code_calc" Type="String">
+          <Key xmlns:q3="http://www.w3.org/2001/XMLSchema" d6p1:type="q3:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">Register</Key>
+        </Key>
+      </Keys>
+      <Properties>
+        <Value Alias="OperationName" Type="String">
+          <SimpleValue xmlns:q4="http://www.w3.org/2001/XMLSchema" d6p1:type="q4:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">Register</SimpleValue>
+        </Value>
+      </Properties>
+    </Record>
+    <Record IsDisabled="false">
+      <Keys>
+        <Key Alias="Code_calc" Type="String">
+          <Key xmlns:q5="http://www.w3.org/2001/XMLSchema" d6p1:type="q5:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">Destroy</Key>
+        </Key>
+      </Keys>
+      <Properties>
+        <Value Alias="OperationName" Type="String">
+          <SimpleValue xmlns:q6="http://www.w3.org/2001/XMLSchema" d6p1:type="q6:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">Disposal</SimpleValue>
+        </Value>
+      </Properties>
+    </Record>
+    <Record IsDisabled="false">
+      <Keys>
+        <Key Alias="Code_calc" Type="String">
+          <Key xmlns:q7="http://www.w3.org/2001/XMLSchema" d6p1:type="q7:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">Remont</Key>
+        </Key>
+      </Keys>
+      <Properties>
+        <Value Alias="OperationName" Type="String">
+          <SimpleValue xmlns:q8="http://www.w3.org/2001/XMLSchema" d6p1:type="q8:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">Repair</SimpleValue>
+        </Value>
+      </Properties>
+    </Record>
+    <Record IsDisabled="false">
+      <Keys>
+        <Key Alias="Code_calc" Type="String">
+          <Key xmlns:q9="http://www.w3.org/2001/XMLSchema" d6p1:type="q9:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">MoveTo</Key>
+        </Key>
+      </Keys>
+      <Properties>
+        <Value Alias="OperationName" Type="String">
+          <SimpleValue xmlns:q10="http://www.w3.org/2001/XMLSchema" d6p1:type="q10:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">Move</SimpleValue>
+        </Value>
+      </Properties>
+    </Record>
+  </Records>
+</Records>

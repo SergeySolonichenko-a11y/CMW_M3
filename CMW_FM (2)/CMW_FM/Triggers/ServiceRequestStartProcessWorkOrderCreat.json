@@ -1,0 +1,177 @@
+{
+  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.TriggerModel, Comindware.Platform.Contracts",
+  "ActionsHead": {
+    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.OnRecordCreate, Comindware.Platform.Contracts",
+    "IsAsync": false,
+    "IsCleaningCache": false,
+    "IsSafe": false,
+    "Kind": "OnRecordCreate",
+    "Name": "Created Record “Work Orders”",
+    "NextAction": {
+      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalOperator, Comindware.Platform.Contracts",
+      "Actions": {
+        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction[], Comindware.Platform.Contracts",
+        "$values": [
+          {
+            "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction, Comindware.Platform.Contracts",
+            "ConditionExpression": "$Property->ProcessType_calc->Code_calc==\"Basic\"",
+            "ConditionName": "Basic",
+            "NextAction": {
+              "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+              "IsAsync": false,
+              "IsCleaningCache": false,
+              "IsSafe": false,
+              "Kind": "PropertySetValue",
+              "Name": "In “Service Requests” record",
+              "NextAction": {
+                "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.StartProcess, Comindware.Platform.Contracts",
+                "IsAsync": false,
+                "IsCleaningCache": false,
+                "IsSafe": false,
+                "Kind": "StartProcess",
+                "Name": "Start process “Service request processing”",
+                "ProcessTemplate": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "ServiceRequestProcessingBasic",
+                  "Solution": "CMW_FM",
+                  "Type": "ProcessTemplate"
+                },
+                "Scope": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "ServiceRequests",
+                  "Solution": "CMW_FM",
+                  "Type": "RecordTemplate"
+                }
+              },
+              "Scope": {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Alias": "ServiceRequests",
+                "Solution": "CMW_FM",
+                "Type": "RecordTemplate"
+              },
+              "SetValueProperties": {
+                "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+                "$values": [
+                  {
+                    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                    "PropertyPath": {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                          "Alias": "ProcessType_calc",
+                          "Owner": "ServiceRequests",
+                          "Solution": "CMW_FM",
+                          "Type": "Attribute"
+                        }
+                      ]
+                    },
+                    "SetValueKind": "Replace",
+                    "ValueExpression": "$Property->ProcessType_calc"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction, Comindware.Platform.Contracts",
+            "ConditionExpression": "$Property->ProcessType_calc->Code_calc==\"Multi\"",
+            "ConditionName": "Multi",
+            "NextAction": {
+              "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+              "IsAsync": false,
+              "IsCleaningCache": false,
+              "IsSafe": false,
+              "Kind": "PropertySetValue",
+              "Name": "In “Service Requests” record",
+              "NextAction": {
+                "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.StartProcess, Comindware.Platform.Contracts",
+                "IsAsync": false,
+                "IsCleaningCache": false,
+                "IsSafe": false,
+                "Kind": "StartProcess",
+                "Name": "Start process “Service request processing (Multi)”",
+                "ProcessTemplate": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "ServiceRequestProcessingMulti",
+                  "Solution": "CMW_FM",
+                  "Type": "ProcessTemplate"
+                },
+                "Scope": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "ServiceRequests",
+                  "Solution": "CMW_FM",
+                  "Type": "RecordTemplate"
+                }
+              },
+              "Scope": {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Alias": "ServiceRequests",
+                "Solution": "CMW_FM",
+                "Type": "RecordTemplate"
+              },
+              "SetValueProperties": {
+                "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+                "$values": [
+                  {
+                    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                    "PropertyPath": {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                          "Alias": "ProcessType_calc",
+                          "Owner": "ServiceRequests",
+                          "Solution": "CMW_FM",
+                          "Type": "Attribute"
+                        }
+                      ]
+                    },
+                    "SetValueKind": "Replace",
+                    "ValueExpression": "$Property->ProcessType_calc"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction, Comindware.Platform.Contracts",
+            "ConditionExpression": "1==2",
+            "ConditionName": "Cleaning"
+          },
+          {
+            "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction, Comindware.Platform.Contracts",
+            "ConditionExpression": "1==2",
+            "ConditionName": "Contractors"
+          }
+        ]
+      },
+      "IsAsync": false,
+      "IsCleaningCache": false,
+      "IsSafe": false,
+      "Kind": "ConditionalOperator",
+      "Name": "Perform the actions when the expression returns TRUE",
+      "Scope": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "ServiceRequests",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      }
+    },
+    "Scope": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "ServiceRequests",
+      "Solution": "CMW_FM",
+      "Type": "RecordTemplate"
+    }
+  },
+  "BehaviourState": "Active",
+  "ExecutionContext": "ByInitiator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "ServiceRequestStartProcessWorkOrderCreat",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Name": "Start process on work order create"
+}

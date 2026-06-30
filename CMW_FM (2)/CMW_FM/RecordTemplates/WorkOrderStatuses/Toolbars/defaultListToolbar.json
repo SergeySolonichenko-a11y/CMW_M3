@@ -1,0 +1,43 @@
+{
+  "$type": "Comindware.Platform.Contracts.ToolbarModel, Comindware.Platform.Contracts",
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WorkOrderStatuses",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "defaultListToolbar",
+    "Owner": "WorkOrderStatuses",
+    "Solution": "CMW_FM",
+    "Type": "Toolbar"
+  },
+  "IsDefaultForForms": false,
+  "IsDefaultForLists": true,
+  "IsDefaultForModelDesigner": false,
+  "IsDefaultForProcess": false,
+  "IsDefaultForProcessDesigner": false,
+  "IsDefaultForTaskLists": false,
+  "Items": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts",
+        "Action": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "create",
+          "Owner": "WorkOrderStatuses",
+          "Solution": "CMW_FM",
+          "Type": "UserCommand"
+        },
+        "IconType": "Undefined",
+        "Name": "Create",
+        "Order": 0,
+        "Severity": "None",
+        "Type": "Action"
+      }
+    ]
+  },
+  "Name": "Table toolbar"
+}

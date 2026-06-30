@@ -1,0 +1,87 @@
+{
+  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.TriggerModel, Comindware.Platform.Contracts",
+  "ActionsHead": {
+    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.OnUserCommand, Comindware.Platform.Contracts",
+    "IsAsync": false,
+    "IsCleaningCache": false,
+    "IsSafe": false,
+    "Kind": "OnUserCommand",
+    "Name": "Button “Book” clicked for records “Workstations”",
+    "NextAction": {
+      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+      "IsAsync": false,
+      "IsCleaningCache": false,
+      "IsSafe": false,
+      "Kind": "PropertySetValue",
+      "Name": "In record “Workstations”",
+      "Scope": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "Workstation",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      },
+      "SetValueProperties": {
+        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+        "$values": [
+          {
+            "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "StatusBooking_calc",
+                  "Owner": "Workstation",
+                  "Solution": "CMW_FM",
+                  "Type": "Attribute"
+                }
+              ]
+            },
+            "SetValueKind": "Replace",
+            "ValueExpression": "OBJECT(\"Volga\", \"BookingStatuses_calc\", \"Code_calc\", \"LeasedArea_calc\")"
+          },
+          {
+            "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "BookingStatusColor",
+                  "Owner": "Workstation",
+                  "Solution": "CMW_FM",
+                  "Type": "Attribute"
+                }
+              ]
+            },
+            "SetValueKind": "Replace",
+            "ValueExpression": "ENUMVALUE(\"Booking status Installed\", \"LeasedArea_calc\")"
+          }
+        ]
+      }
+    },
+    "Scope": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "Workstation",
+      "Solution": "CMW_FM",
+      "Type": "RecordTemplate"
+    },
+    "UserCommand": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "BookCommand",
+      "Owner": "Workstation",
+      "Solution": "CMW_FM",
+      "Type": "UserCommand"
+    }
+  },
+  "BehaviourState": "Active",
+  "Description": "Set status to Occupied when coworking is booked",
+  "ExecutionContext": "ByInitiator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "CoworkingBooking",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Name": "Coworking booking"
+}

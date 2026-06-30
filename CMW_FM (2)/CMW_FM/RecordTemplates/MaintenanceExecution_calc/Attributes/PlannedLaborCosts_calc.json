@@ -1,0 +1,29 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "DecimalPlaces": 1,
+  "Expression": "$Equipment_calc->PMPlans_calc->PMType_calc->PlannedDuration_calc",
+  "Format": "Undefined",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "PlannedLaborCosts_calc",
+    "Owner": "MaintenanceExecution_calc",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "IsCalculated": true,
+  "IsDigitGrouping": false,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Planned labor costs",
+  "Type": "Decimal"
+}

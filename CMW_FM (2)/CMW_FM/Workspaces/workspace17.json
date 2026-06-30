@@ -1,0 +1,28 @@
+{
+  "$type": "Comindware.Platform.Contracts.RoleWorkspaceConfigurationModel, Comindware.Platform.Contracts",
+  "Description": "",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "workspace17",
+    "Solution": "CMW_FM",
+    "Type": "RoleWorkspace"
+  },
+  "Name": "Reports",
+  "NavigationItems": {
+    "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Container": "Reports",
+        "Description": "",
+        "IconClass": "list-alt",
+        "ItemType": "RecordTemplateList",
+        "Name": "Reports log",
+        "Priority": 1,
+        "Severity": "None",
+        "Target": "defaultList",
+        "TargetSolution": "CMW_FM"
+      }
+    ]
+  }
+}

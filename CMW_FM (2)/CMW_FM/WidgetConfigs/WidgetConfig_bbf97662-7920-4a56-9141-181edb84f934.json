@@ -1,0 +1,132 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.TileWidgetConfigModel, Comindware.Platform.Contracts",
+  "Children": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.WidgetConfigModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.IconWidgetConfigModel, Comindware.Platform.Contracts",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_21bf59e6-25b1-48b0-80d3-e4b243b76cd0",
+          "Owner": "WidgetConfig_bbf97662-7920-4a56-9141-181edb84f934",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "IconClass": "badge-percent",
+        "IconType": "Undefined",
+        "Name": "Icon",
+        "Order": 1,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "SLA",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "Icon"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.StaticContentWidgetConfigModel, Comindware.Platform.Contracts",
+        "Content": "<p>87 %</p>\n",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_5215fbc2-8338-4110-ab42-6c6629d392b4",
+          "Owner": "WidgetConfig_bbf97662-7920-4a56-9141-181edb84f934",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "Name": "Title",
+        "Order": 2,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "SLA",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "StaticContent"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.StaticContentWidgetConfigModel, Comindware.Platform.Contracts",
+        "Content": "<p>Current occupancy of leasable spaces</p>\n",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_893ed640-0d16-4bb6-8cd6-a72061f0a9f1",
+          "Owner": "WidgetConfig_bbf97662-7920-4a56-9141-181edb84f934",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "Name": "Description",
+        "Order": 3,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "SLA",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "StaticContent"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.ActionButtonWidgetConfigModel, Comindware.Platform.Contracts",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_25bf62da-2ba1-49cc-b481-184646474e90",
+          "Owner": "WidgetConfig_bbf97662-7920-4a56-9141-181edb84f934",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "IsLink": true,
+        "Label": {
+          "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+          "Alignment": "Undefined",
+          "Hidden": false,
+          "Text": "More"
+        },
+        "Name": "More",
+        "Order": 4,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "SLA",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "ActionButton"
+      }
+    ]
+  },
+  "FieldType": "Tile",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WidgetConfig_bbf97662-7920-4a56-9141-181edb84f934",
+    "Owner": "CMW_FM",
+    "Solution": "",
+    "Type": "DesktopWidgetConfig"
+  },
+  "Name": "Leased area ratio",
+  "Order": 0,
+  "PropertyPath": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "Template": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "SLA",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Type": "FieldComponent"
+}

@@ -1,0 +1,132 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.TileWidgetConfigModel, Comindware.Platform.Contracts",
+  "Children": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.WidgetConfigModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.IconWidgetConfigModel, Comindware.Platform.Contracts",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_5e25bcea-9a5a-4036-a697-c771c72efc02",
+          "Owner": "WidgetConfig_50e0008b-22c2-4c53-87b0-a71488b45644",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "IconClass": "face-smile-relaxed",
+        "IconType": "Undefined",
+        "Name": "Icon",
+        "Order": 1,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "SLA",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "Icon"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.StaticContentWidgetConfigModel, Comindware.Platform.Contracts",
+        "Content": "<p>4,6</p>\n",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_863f1349-9dfb-4f9d-a355-b8d94681be6f",
+          "Owner": "WidgetConfig_50e0008b-22c2-4c53-87b0-a71488b45644",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "Name": "Title",
+        "Order": 2,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "SLA",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "StaticContent"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.StaticContentWidgetConfigModel, Comindware.Platform.Contracts",
+        "Content": "<p>Management company average quality rating for 2024</p>\n",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_cc5b3f42-692d-4a0d-83a9-ec022b68c4e5",
+          "Owner": "WidgetConfig_50e0008b-22c2-4c53-87b0-a71488b45644",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "Name": "Description",
+        "Order": 3,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "SLA",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "StaticContent"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.ActionButtonWidgetConfigModel, Comindware.Platform.Contracts",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_a8a0e125-f907-4bf8-bf4b-e52996c94fe1",
+          "Owner": "WidgetConfig_50e0008b-22c2-4c53-87b0-a71488b45644",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "IsLink": true,
+        "Label": {
+          "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+          "Alignment": "Undefined",
+          "Hidden": false,
+          "Text": "Other metrics"
+        },
+        "Name": "Other metrics",
+        "Order": 4,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "SLA",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "ActionButton"
+      }
+    ]
+  },
+  "FieldType": "Tile",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WidgetConfig_50e0008b-22c2-4c53-87b0-a71488b45644",
+    "Owner": "CMW_FM",
+    "Solution": "",
+    "Type": "DesktopWidgetConfig"
+  },
+  "Name": "Satisfaction",
+  "Order": 0,
+  "PropertyPath": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "Template": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "SLA",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Type": "FieldComponent"
+}

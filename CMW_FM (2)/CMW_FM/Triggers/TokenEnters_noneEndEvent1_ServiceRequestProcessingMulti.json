@@ -1,0 +1,101 @@
+{
+  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.TriggerModel, Comindware.Platform.Contracts",
+  "ActionsHead": {
+    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.OnProcessActivityEntry, Comindware.Platform.Contracts",
+    "Description": "Token entered “End event” <noneEndEvent1>, process “Service request processing (Multi)” <ProcessingMulti>",
+    "IsAsync": false,
+    "IsCleaningCache": false,
+    "IsSafe": false,
+    "Kind": "OnProcessActivityEntry",
+    "Name": "Token entered “End event”",
+    "NextAction": {
+      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectChange, Comindware.Platform.Contracts",
+      "IsAsync": false,
+      "IsCleaningCache": false,
+      "IsSafe": false,
+      "Kind": "ReferenceObjectChange",
+      "ReferenceExpression": "$$BusinessObject",
+      "Scope": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "ServiceRequestProcessingMulti",
+        "Solution": "CMW_FM",
+        "Type": "ProcessTemplate"
+      },
+      "SubAction": {
+        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+        "IsAsync": false,
+        "IsCleaningCache": false,
+        "IsSafe": false,
+        "Kind": "PropertySetValue",
+        "Name": "In “Service Requests” record",
+        "Scope": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "ServiceRequests",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "SetValueProperties": {
+          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+              "PropertyPath": {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                "$values": [
+                  {
+                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                    "Alias": "Status",
+                    "Owner": "ServiceRequests",
+                    "Solution": "CMW_FM",
+                    "Type": "Attribute"
+                  }
+                ]
+              },
+              "SetValueKind": "Replace",
+              "ValueExpression": "OBJECT(\"CMW_FM\",\"ServiceRequestStatuses\",\"Code\",\"completed\")"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+              "PropertyPath": {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                "$values": [
+                  {
+                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                    "Alias": "ServiceRequestClosed",
+                    "Owner": "ServiceRequests",
+                    "Solution": "CMW_FM",
+                    "Type": "Attribute"
+                  }
+                ]
+              },
+              "SetValueKind": "Replace",
+              "ValueExpression": "NOW()"
+            }
+          ]
+        }
+      },
+      "TargetContainer": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "ServiceRequests",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      }
+    },
+    "Scope": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "ServiceRequestProcessingMulti",
+      "Solution": "CMW_FM",
+      "Type": "ProcessTemplate"
+    }
+  },
+  "BehaviourState": "Active",
+  "Description": "Scenario on token entry to “End event” <noneEndEvent1>, process “Service request processing (Multi)” <ProcessingMulti>",
+  "ExecutionContext": "ByInitiator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TokenEnters_noneEndEvent1_ServiceRequestProcessingMulti",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Name": "Token entry into 'end event' element of 'multi work order processing' process"
+}

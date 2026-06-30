@@ -1,0 +1,65 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.BannerWidgetConfigModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WidgetConfig_7c1c9977-b980-41bf-81ff-cbe8c0e228d1",
+    "Owner": "CMW_FM",
+    "Solution": "",
+    "Type": "DesktopWidgetConfig"
+  },
+  "Image": {
+    "$type": "Comindware.Platform.Contracts.ReferenceModel, Comindware.Platform.Contracts",
+    "Extension": "jpg",
+    "GlobalAlias": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "img.4",
+      "Solution": "",
+      "Type": "Image"
+    },
+    "Id": "img.4",
+    "Name": "Db249577-e0ec-4735-9845-5b2a0fe3a689.jpg",
+    "Url": "/ImageContent/GetContent?imageId=img.4"
+  },
+  "Label": {
+    "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+    "Alignment": "Undefined",
+    "Hidden": false,
+    "Text": "Skyline BC, Houston"
+  },
+  "Links": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.LinkModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.LinkModel, Comindware.Platform.Contracts",
+        "IconClass": "igloo",
+        "Name": "About property",
+        "Url": "#form/oa.222/form.889/473786"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.LinkModel, Comindware.Platform.Contracts",
+        "IconClass": "circle-info",
+        "Name": "Spaces",
+        "Url": "#form/oa.234/form.515/43728"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.LinkModel, Comindware.Platform.Contracts",
+        "IconClass": "map-location-dot",
+        "Name": "Business center floor plan",
+        "Url": "#form/oa.212/form.2320/4131"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.LinkModel, Comindware.Platform.Contracts",
+        "IconClass": "paperclip",
+        "Name": "Management company reports",
+        "Url": "#form/oa.227/form.2228/cmw.temp.1234"
+      }
+    ]
+  },
+  "Name": "Skyline",
+  "Order": 0,
+  "PropertyPath": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "Type": "Banner"
+}

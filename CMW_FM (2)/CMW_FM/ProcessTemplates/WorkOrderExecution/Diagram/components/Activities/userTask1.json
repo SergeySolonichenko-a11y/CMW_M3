@@ -1,0 +1,197 @@
+{
+  "$type": "Comindware.Platform.Contracts.TaskActivityModel, Comindware.Platform.Contracts",
+  "BehaviourState": "Active",
+  "FormAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "form_userTask1",
+    "Owner": "WorkOrderExecution",
+    "Solution": "",
+    "Type": "ProcessForm"
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "userTask1",
+    "Owner": "WorkOrderExecution",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "IsTitleSet": false,
+  "Kind": "User",
+  "OnEnterTrigger": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TokenEnters_userTask1_Process_Vypolnenierabotypozayavke",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "OnExitTrigger": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TokenLeaves_userTask1_Process_Vypolnenierabotypozayavke",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Owner": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "pool1",
+    "Owner": "WorkOrderExecution",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "Position": {
+    "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+    "X": 860.0,
+    "Y": 105.0
+  },
+  "Size": {
+    "$type": "Comindware.Platform.Contracts.DimensionsModel, Comindware.Platform.Contracts",
+    "Height": 70.0,
+    "Width": 120.0
+  },
+  "SystemName": "userTask1",
+  "Title": "Jobs completed by technician",
+  "Type": "Task",
+  "UserDefinition": {
+    "$type": "Comindware.Platform.Contracts.UserTaskDefinitionModel, Comindware.Platform.Contracts",
+    "Modifiers": {
+      "$type": "Comindware.Platform.Contracts.ModificationRuleModel[], Comindware.Platform.Contracts",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.ModificationRuleModel, Comindware.Platform.Contracts",
+          "Action": {
+            "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+            "PropertyAction": "Replace",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "isReassignProhibited",
+                  "Owner": "_UserTask",
+                  "Type": "Attribute"
+                }
+              ]
+            }
+          },
+          "Definition": {
+            "$type": "Comindware.Platform.Contracts.ValuesRuleDefinitionModel, Comindware.Platform.Contracts",
+            "Type": "Values",
+            "Values": {
+              "$type": "System.Object[], mscorlib",
+              "$values": [
+                false
+              ]
+            }
+          },
+          "Type": "Modification"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ModificationRuleModel, Comindware.Platform.Contracts",
+          "Action": {
+            "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+            "PropertyAction": "Replace",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "possibleAssignee",
+                  "Owner": "_UserTask",
+                  "Type": "Attribute"
+                }
+              ]
+            }
+          },
+          "Definition": {
+            "$type": "Comindware.Platform.Contracts.PropertyRuleDefinitionModel, Comindware.Platform.Contracts",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "Assignee_calc",
+                  "Owner": "WorkOrders",
+                  "Solution": "CMW_FM",
+                  "Type": "Attribute"
+                }
+              ]
+            },
+            "Type": "Property"
+          },
+          "Type": "Modification"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ModificationRuleModel, Comindware.Platform.Contracts",
+          "Action": {
+            "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+            "PropertyAction": "Replace",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "description",
+                  "Owner": "System#",
+                  "Solution": "",
+                  "Type": "Attribute"
+                }
+              ]
+            }
+          },
+          "Definition": {
+            "$type": "Comindware.Platform.Contracts.ValuesRuleDefinitionModel, Comindware.Platform.Contracts",
+            "Type": "Values"
+          },
+          "Type": "Modification"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ModificationRuleModel, Comindware.Platform.Contracts",
+          "Action": {
+            "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+            "PropertyAction": "Replace",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "dueDate",
+                  "Owner": "System#",
+                  "Solution": "",
+                  "Type": "Attribute"
+                }
+              ]
+            }
+          },
+          "Definition": {
+            "$type": "Comindware.Platform.Contracts.PropertyRuleDefinitionModel, Comindware.Platform.Contracts",
+            "Type": "Property"
+          },
+          "Type": "Modification"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ModificationRuleModel, Comindware.Platform.Contracts",
+          "Action": {
+            "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+            "PropertyAction": "Replace",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "title",
+                  "Owner": "System#",
+                  "Solution": "",
+                  "Type": "Attribute"
+                }
+              ]
+            }
+          },
+          "Definition": {
+            "$type": "Comindware.Platform.Contracts.ExpressionRuleDefinitionModel, Comindware.Platform.Contracts",
+            "Expression": "\"Work order jobs \" + $WorkOrderContent_calc",
+            "Type": "Expression"
+          },
+          "Type": "Modification"
+        }
+      ]
+    }
+  }
+}

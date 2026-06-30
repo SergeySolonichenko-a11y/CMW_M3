@@ -1,0 +1,150 @@
+{
+  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.TriggerModel, Comindware.Platform.Contracts",
+  "ActionsHead": {
+    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.OnUserCommand, Comindware.Platform.Contracts",
+    "IsAsync": false,
+    "IsCleaningCache": false,
+    "IsSafe": false,
+    "Kind": "OnUserCommand",
+    "Name": "Button “Save Complete” clicked for records “Inspection waypoints”",
+    "NextAction": {
+      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+      "IsAsync": false,
+      "IsCleaningCache": true,
+      "IsSafe": false,
+      "Kind": "PropertySetValue",
+      "Name": "In record “Inspection waypoints”",
+      "NextAction": {
+        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectChange, Comindware.Platform.Contracts",
+        "IsAsync": true,
+        "IsCleaningCache": true,
+        "IsSafe": true,
+        "Kind": "ReferenceObjectChange",
+        "Name": "On “Inspections” records returned by expression",
+        "ReferenceExpression": "$Inspection_calc",
+        "Scope": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "InspectionPoints_calc",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "SubAction": {
+          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalOperator, Comindware.Platform.Contracts",
+          "Actions": {
+            "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction[], Comindware.Platform.Contracts",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction, Comindware.Platform.Contracts",
+                "ConditionExpression": "OR(EMPTY(from a in $InspectionPoints_calc where OR(a->Status_calc->Code_calc==\"started\", a->Status_calc->Code_calc==\"planned\") select a->id), 1==2)",
+                "ConditionName": "If all inspection waypoints are complete",
+                "NextAction": {
+                  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+                  "IsAsync": false,
+                  "IsCleaningCache": true,
+                  "IsSafe": false,
+                  "Kind": "PropertySetValue",
+                  "Name": "In record \\u201cInspections\\u201d",
+                  "Scope": {
+                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                    "Alias": "Inspections_calc",
+                    "Solution": "CMW_FM",
+                    "Type": "RecordTemplate"
+                  },
+                  "SetValueProperties": {
+                    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+                    "$values": [
+                      {
+                        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                        "PropertyPath": {
+                          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                          "$values": [
+                            {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "ActualEndDateTime_calc",
+                              "Owner": "Inspections_calc",
+                              "Solution": "CMW_FM",
+                              "Type": "Attribute"
+                            }
+                          ]
+                        },
+                        "SetValueKind": "Replace",
+                        "ValueExpression": "NOW()"
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "IsAsync": false,
+          "IsCleaningCache": false,
+          "IsSafe": false,
+          "Kind": "ConditionalOperator",
+          "Name": "Execute actions if expression returns",
+          "Scope": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Inspections_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          }
+        },
+        "TargetContainer": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "Inspections_calc",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        }
+      },
+      "Scope": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "InspectionPoints_calc",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      },
+      "SetValueProperties": {
+        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+        "$values": [
+          {
+            "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "InspectionEndDate",
+                  "Owner": "InspectionPoints_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Attribute"
+                }
+              ]
+            },
+            "SetValueKind": "Replace",
+            "ValueExpression": "NOW()"
+          }
+        ]
+      }
+    },
+    "Scope": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "InspectionPoints_calc",
+      "Solution": "CMW_FM",
+      "Type": "RecordTemplate"
+    },
+    "UserCommand": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "SaveComplete",
+      "Owner": "InspectionPoints_calc",
+      "Solution": "CMW_FM",
+      "Type": "UserCommand"
+    }
+  },
+  "BehaviourState": "Active",
+  "ExecutionContext": "BySystem",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "InspectionCompletion",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Name": "Inspection completion"
+}

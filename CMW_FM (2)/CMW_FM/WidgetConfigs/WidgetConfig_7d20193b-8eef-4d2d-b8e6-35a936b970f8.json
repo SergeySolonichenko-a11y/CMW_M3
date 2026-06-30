@@ -1,0 +1,73 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.IndicatorWidgetConfigModel, Comindware.Platform.Contracts",
+  "AggregationMethod": "Sum",
+  "AggregationProperty": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "LotPaymentAmount_calc",
+        "Owner": "InvoicesPayments_calc",
+        "Solution": "CMW_FM",
+        "Type": "Attribute"
+      }
+    ]
+  },
+  "AllowDrillDown": false,
+  "Children": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.WidgetConfigModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.IconWidgetConfigModel, Comindware.Platform.Contracts",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_b9ed262f-a58f-4495-8330-121d6f07850a",
+          "Owner": "WidgetConfig_7d20193b-8eef-4d2d-b8e6-35a936b970f8",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "IconType": "Undefined",
+        "Name": "Image",
+        "Order": 1,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "InvoicesPayments_calc",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "Icon"
+      }
+    ]
+  },
+  "FieldType": "Indicator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WidgetConfig_7d20193b-8eef-4d2d-b8e6-35a936b970f8",
+    "Owner": "CMW_FM",
+    "Solution": "",
+    "Type": "DesktopWidgetConfig"
+  },
+  "Label": {
+    "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+    "Alignment": "Undefined",
+    "Hidden": false,
+    "Text": "Payments received"
+  },
+  "Name": "Payments received",
+  "Order": 0,
+  "PropertyPath": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "Template": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "InvoicesPayments_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Type": "FieldComponent"
+}

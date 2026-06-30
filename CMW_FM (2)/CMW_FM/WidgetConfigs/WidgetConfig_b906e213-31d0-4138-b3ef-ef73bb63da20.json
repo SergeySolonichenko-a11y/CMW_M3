@@ -1,0 +1,62 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.IndicatorWidgetConfigModel, Comindware.Platform.Contracts",
+  "AggregationMethod": "Count",
+  "AllowDrillDown": false,
+  "Children": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.WidgetConfigModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.IconWidgetConfigModel, Comindware.Platform.Contracts",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_ff292595-a69a-4ac7-9c26-8ba20831a775",
+          "Owner": "WidgetConfig_b906e213-31d0-4138-b3ef-ef73bb63da20",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "IconClass": "chair-office",
+        "IconType": "Undefined",
+        "Name": "Image",
+        "Order": 1,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "Workstation",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "Icon"
+      }
+    ]
+  },
+  "FieldType": "Indicator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WidgetConfig_b906e213-31d0-4138-b3ef-ef73bb63da20",
+    "Owner": "CMW_FM",
+    "Solution": "",
+    "Type": "DesktopWidgetConfig"
+  },
+  "Label": {
+    "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+    "Alignment": "Undefined",
+    "Hidden": false,
+    "Text": "Workstations"
+  },
+  "Name": "Workstations",
+  "Order": 0,
+  "PropertyPath": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "Template": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Workstation",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Type": "FieldComponent"
+}

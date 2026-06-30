@@ -1,0 +1,75 @@
+{
+  "$type": "Comindware.Platform.Contracts.ToolbarModel, Comindware.Platform.Contracts",
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "InspectionPoints_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "toolbar507e8699a4214664ba9fcb8a5d7401ec",
+    "Owner": "InspectionPoints_calc",
+    "Solution": "CMW_FM",
+    "Type": "Toolbar"
+  },
+  "IsDefaultForForms": false,
+  "IsDefaultForLists": false,
+  "IsDefaultForModelDesigner": false,
+  "IsDefaultForProcess": false,
+  "IsDefaultForProcessDesigner": false,
+  "IsDefaultForTaskLists": false,
+  "Items": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts",
+        "Action": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "edit",
+          "Owner": "InspectionPoints_calc",
+          "Solution": "CMW_FM",
+          "Type": "UserCommand"
+        },
+        "IconClass": "save",
+        "IconType": "Undefined",
+        "Name": "Save",
+        "Order": 0,
+        "Severity": "Critical",
+        "Type": "Action"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts",
+        "Action": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "SaveComplete",
+          "Owner": "InspectionPoints_calc",
+          "Solution": "CMW_FM",
+          "Type": "UserCommand"
+        },
+        "IconClass": "floppy-disk",
+        "IconType": "Undefined",
+        "Name": "Complete",
+        "Order": 1,
+        "Severity": "Normal",
+        "Type": "Action"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts",
+        "Action": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "ServiceRequestWorkOrder_calc",
+          "Owner": "InspectionPoints_calc",
+          "Solution": "CMW_FM",
+          "Type": "UserCommand"
+        },
+        "IconType": "Undefined",
+        "Name": "Work order",
+        "Order": 2,
+        "Severity": "None",
+        "Type": "Action"
+      }
+    ]
+  },
+  "Name": "Toolbar for “Inspection waypoints - default form”"
+}

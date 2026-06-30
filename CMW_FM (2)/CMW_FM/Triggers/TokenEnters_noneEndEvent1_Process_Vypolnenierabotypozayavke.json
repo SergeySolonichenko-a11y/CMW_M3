@@ -1,0 +1,48 @@
+{
+  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.TriggerModel, Comindware.Platform.Contracts",
+  "ActionsHead": {
+    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.OnProcessActivityEntry, Comindware.Platform.Contracts",
+    "Description": "Token entered “End event” <noneEndEvent1>, process “Service request work completion” <Vypolnenierabotypozayavke>",
+    "IsAsync": false,
+    "IsCleaningCache": false,
+    "IsSafe": false,
+    "Kind": "OnProcessActivityEntry",
+    "Name": "Token entered “End event”",
+    "NextAction": {
+      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectChange, Comindware.Platform.Contracts",
+      "IsAsync": false,
+      "IsCleaningCache": false,
+      "IsSafe": false,
+      "Kind": "ReferenceObjectChange",
+      "ReferenceExpression": "$$BusinessObject",
+      "Scope": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "WorkOrderExecution",
+        "Solution": "CMW_FM",
+        "Type": "ProcessTemplate"
+      },
+      "TargetContainer": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "WorkOrders",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      }
+    },
+    "Scope": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "WorkOrderExecution",
+      "Solution": "CMW_FM",
+      "Type": "ProcessTemplate"
+    }
+  },
+  "BehaviourState": "Active",
+  "Description": "Scenario on token entry to “End event” <noneEndEvent1>, process “Service request work completion” <Vypolnenierabotypozayavke>",
+  "ExecutionContext": "ByInitiator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TokenEnters_noneEndEvent1_Process_Vypolnenierabotypozayavke",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Name": "Token entry into 'end event' element of 'work order task execution' process"
+}

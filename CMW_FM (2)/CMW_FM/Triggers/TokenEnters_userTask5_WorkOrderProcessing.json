@@ -1,0 +1,84 @@
+{
+  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.TriggerModel, Comindware.Platform.Contracts",
+  "ActionsHead": {
+    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.OnProcessActivityEntry, Comindware.Platform.Contracts",
+    "Description": "Token entered “User task 1” <userTask5>, process “Service request processing” <Obrabotkasobytiya>",
+    "IsAsync": false,
+    "IsCleaningCache": false,
+    "IsSafe": false,
+    "Kind": "OnProcessActivityEntry",
+    "Name": "Token entered “User task 1”",
+    "NextAction": {
+      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectChange, Comindware.Platform.Contracts",
+      "IsAsync": false,
+      "IsCleaningCache": false,
+      "IsSafe": false,
+      "Kind": "ReferenceObjectChange",
+      "ReferenceExpression": "$$BusinessObject",
+      "Scope": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "ServiceRequestProcessingBasic",
+        "Solution": "CMW_FM",
+        "Type": "ProcessTemplate"
+      },
+      "SubAction": {
+        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+        "IsAsync": false,
+        "IsCleaningCache": false,
+        "IsSafe": false,
+        "Kind": "PropertySetValue",
+        "Name": "In “Service Requests” record",
+        "Scope": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "ServiceRequests",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "SetValueProperties": {
+          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+              "PropertyPath": {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                "$values": [
+                  {
+                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                    "Alias": "Status",
+                    "Owner": "ServiceRequests",
+                    "Solution": "CMW_FM",
+                    "Type": "Attribute"
+                  }
+                ]
+              },
+              "SetValueKind": "Replace",
+              "ValueExpression": "OBJECT(\"CMW_FM\",\"ServiceRequestStatuses\",\"Code\",\"inprogress\")"
+            }
+          ]
+        }
+      },
+      "TargetContainer": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "ServiceRequests",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      }
+    },
+    "Scope": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "ServiceRequestProcessingBasic",
+      "Solution": "CMW_FM",
+      "Type": "ProcessTemplate"
+    }
+  },
+  "BehaviourState": "Active",
+  "Description": "Scenario on token entry to “User task 1” <userTask5>, process “Service request processing” <Obrabotkasobytiya>",
+  "ExecutionContext": "ByInitiator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TokenEnters_userTask5_WorkOrderProcessing",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Name": "Token entry into 'user task 1' element of 'work order processing' process"
+}

@@ -1,0 +1,61 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Format": "Badge",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "OperatingConditions",
+    "Owner": "EquipmentPerformanceIndicators",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "IsCalculated": false,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": false,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": true,
+  "IsUnique": false,
+  "Name": "Operating conditions",
+  "Type": "Enum",
+  "Variants": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ObjectPropertyVariantValueModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ObjectPropertyVariantValueModel, Comindware.Platform.Contracts",
+        "Alias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "Normal",
+          "Owner": "OperatingConditions",
+          "Solution": "",
+          "Type": "Variant"
+        },
+        "Name": {
+          "$type": "Comindware.Platform.Contracts.LocalizedTextModel, Comindware.Platform.Contracts",
+          "En": "Normal",
+          "Ru": "Normal"
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ObjectPropertyVariantValueModel, Comindware.Platform.Contracts",
+        "Alias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "NotNormal",
+          "Owner": "OperatingConditions",
+          "Solution": "",
+          "Type": "Variant"
+        },
+        "Name": {
+          "$type": "Comindware.Platform.Contracts.LocalizedTextModel, Comindware.Platform.Contracts",
+          "En": "Not normal",
+          "Ru": "Not normal"
+        }
+      }
+    ]
+  }
+}

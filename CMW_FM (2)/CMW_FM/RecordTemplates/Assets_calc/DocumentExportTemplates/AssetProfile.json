@@ -1,0 +1,24 @@
+{
+  "$type": "Comindware.Platform.Contracts.DocumentExportTemplateModel, Comindware.Platform.Contracts",
+  "ExportAsPdf": false,
+  "ExportSourceTemplate": {
+    "$type": "Comindware.Platform.Contracts.ExportSourceTemplateFromDocument, Comindware.Platform.Contracts",
+    "FileName": "asset_profile.docx",
+    "FileType": "Word",
+    "Type": "Document"
+  },
+  "ExportTemplateType": "RecordTemplate",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "AssetProfile",
+    "Owner": "Assets_calc",
+    "Solution": "CMW_FM",
+    "Type": "ExportTemplate"
+  },
+  "Name": "Asset profile",
+  "OutputFileNameTemplate": {
+    "$type": "Comindware.Platform.Contracts.OutputFileNameTemplateFromValue, Comindware.Platform.Contracts",
+    "Type": "Value",
+    "Value": "Asset profile"
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "$type": "Comindware.Platform.Contracts.DatasetModel, Comindware.Platform.Contracts",
+  "Columns": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": false,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Space",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "SearchName_calc",
+              "Owner": "Spaces_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": false,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Area, sq ft",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "LeasableArea_calc",
+              "Owner": "Spaces_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": false,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Lease Type",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "LeaseType_calc",
+              "Owner": "Spaces_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": false,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Vacant term, days",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "VacantTerm",
+              "Owner": "Spaces_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": false,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Lease request",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "ServiceRequestLeaseRequest",
+              "Owner": "Spaces_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": true,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Available for Lease",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Lease_calc",
+              "Owner": "Spaces_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": true,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Status",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Status",
+              "Owner": "Spaces_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Spaces_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Filter": {
+    "$type": "Comindware.Platform.Contracts.FilterBaseModel, Comindware.Platform.Contracts",
+    "DataFormat": "Undefined",
+    "GroupOperator": "and",
+    "Operator": "eq",
+    "PropertyPath": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "Lease_calc",
+          "Owner": "Spaces_calc",
+          "Solution": "CMW_FM",
+          "Type": "Attribute"
+        }
+      ]
+    },
+    "Type": "FilterLeaf",
+    "Value": true
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "VacantLots",
+    "Owner": "Spaces_calc",
+    "Solution": "CMW_FM",
+    "Type": "Dataset"
+  },
+  "IsDefault": false,
+  "IsLazyLoading": false,
+  "Name": "Vacant lots",
+  "Paging": {
+    "$type": "Comindware.Platform.Contracts.PagingConfigurationModel, Comindware.Platform.Contracts",
+    "Page": 0,
+    "Size": 50
+  },
+  "ShowDisabled": false,
+  "Sorting": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.SortingConfigurationModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": []
+  },
+  "StickedColumnCount": 0,
+  "Toolbar": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "toolbar5692c5705a72498aa0d50e53f9eeba72",
+    "Owner": "Spaces_calc",
+    "Solution": "CMW_FM",
+    "Type": "Toolbar"
+  },
+  "ViewType": "General"
+}

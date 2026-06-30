@@ -1,0 +1,33 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Expression": "$Meters_calc->ReadingHistory_calc",
+  "Format": "Link",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "AllMeterReadings",
+    "Owner": "Tenants_calc",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "InstanceGlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "MeterReadingsAuditTrail_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "IsCalculated": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": true,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "All readings",
+  "Type": "Instance"
+}

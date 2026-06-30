@@ -1,0 +1,132 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.TileWidgetConfigModel, Comindware.Platform.Contracts",
+  "Children": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.WidgetConfigModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.IconWidgetConfigModel, Comindware.Platform.Contracts",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_e15f11ea-9e29-4430-82a7-e6ef0bc2b363",
+          "Owner": "WidgetConfig_da499f07-3708-4742-b2a6-6ad298ca6999",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "IconClass": "sack-dollar",
+        "IconType": "Undefined",
+        "Name": "Icon",
+        "Order": 1,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "SLA",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "Icon"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.StaticContentWidgetConfigModel, Comindware.Platform.Contracts",
+        "Content": "<p>$5,540/day</p>\n",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_f3a73e2f-875a-4666-b953-6393c82cdccf",
+          "Owner": "WidgetConfig_da499f07-3708-4742-b2a6-6ad298ca6999",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "Name": "Title",
+        "Order": 2,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "SLA",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "StaticContent"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.StaticContentWidgetConfigModel, Comindware.Platform.Contracts",
+        "Content": "<p>Average apartment price for 2026</p>\n",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_7173f586-33b0-418d-b555-98eed07a65ce",
+          "Owner": "WidgetConfig_da499f07-3708-4742-b2a6-6ad298ca6999",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "Name": "Description",
+        "Order": 3,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "SLA",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "StaticContent"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.ActionButtonWidgetConfigModel, Comindware.Platform.Contracts",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_3c8f5607-7e2e-453d-bb37-5aeba2755c0d",
+          "Owner": "WidgetConfig_da499f07-3708-4742-b2a6-6ad298ca6999",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "IsLink": true,
+        "Label": {
+          "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+          "Alignment": "Undefined",
+          "Hidden": false,
+          "Text": "More"
+        },
+        "Name": "More",
+        "Order": 4,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "SLA",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "ActionButton"
+      }
+    ]
+  },
+  "FieldType": "Tile",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WidgetConfig_da499f07-3708-4742-b2a6-6ad298ca6999",
+    "Owner": "CMW_FM",
+    "Solution": "",
+    "Type": "DesktopWidgetConfig"
+  },
+  "Name": "Room price",
+  "Order": 0,
+  "PropertyPath": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "Template": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "SLA",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Type": "FieldComponent"
+}

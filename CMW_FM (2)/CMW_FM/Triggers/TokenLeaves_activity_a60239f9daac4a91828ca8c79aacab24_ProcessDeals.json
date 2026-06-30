@@ -1,0 +1,48 @@
+{
+  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.TriggerModel, Comindware.Platform.Contracts",
+  "ActionsHead": {
+    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.OnProcessActivityExit, Comindware.Platform.Contracts",
+    "Description": "Token exit from “Renew contract, create addendum” <activity_a60239f9daac4a91828ca8c79aacab24>, process “Contract renewal process” <ProcessForDeals>",
+    "IsAsync": false,
+    "IsCleaningCache": false,
+    "IsSafe": false,
+    "Kind": "OnProcessActivityExit",
+    "Name": "Token exit from “Renew contract, create addendum”",
+    "NextAction": {
+      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectChange, Comindware.Platform.Contracts",
+      "IsAsync": false,
+      "IsCleaningCache": false,
+      "IsSafe": false,
+      "Kind": "ReferenceObjectChange",
+      "ReferenceExpression": "$$BusinessObject",
+      "Scope": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "ProcessDeals",
+        "Solution": "CMW_FM",
+        "Type": "ProcessTemplate"
+      },
+      "TargetContainer": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "Contracts_calc",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      }
+    },
+    "Scope": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "ProcessDeals",
+      "Solution": "CMW_FM",
+      "Type": "ProcessTemplate"
+    }
+  },
+  "BehaviourState": "Active",
+  "Description": "Scenario on token exit from “Renew contract, create addendum” <activity_a60239f9daac4a91828ca8c79aacab24>, process “Contract renewal process” <ProcessForDeals>",
+  "ExecutionContext": "ByInitiator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TokenLeaves_activity_a60239f9daac4a91828ca8c79aacab24_ProcessDeals",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Name": "Token exit from 'extend contract, create addendum' element of 'contract renewal process' process"
+}

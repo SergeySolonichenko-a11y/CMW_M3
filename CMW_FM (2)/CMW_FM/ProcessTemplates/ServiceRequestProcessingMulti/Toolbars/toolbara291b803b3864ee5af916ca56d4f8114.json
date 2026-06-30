@@ -1,0 +1,44 @@
+{
+  "$type": "Comindware.Platform.Contracts.ToolbarModel, Comindware.Platform.Contracts",
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "ServiceRequestProcessingMulti",
+    "Solution": "CMW_FM",
+    "Type": "ProcessTemplate"
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "toolbara291b803b3864ee5af916ca56d4f8114",
+    "Owner": "ServiceRequestProcessingMulti",
+    "Solution": "CMW_FM",
+    "Type": "Toolbar"
+  },
+  "IsDefaultForForms": false,
+  "IsDefaultForLists": false,
+  "IsDefaultForModelDesigner": false,
+  "IsDefaultForProcess": false,
+  "IsDefaultForProcessDesigner": false,
+  "IsDefaultForTaskLists": false,
+  "Items": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts",
+        "Action": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "completeTask",
+          "Owner": "ServiceRequestProcessingMulti",
+          "Solution": "CMW_FM",
+          "Type": "UserCommand"
+        },
+        "IconClass": "arrow-right",
+        "IconType": "Undefined",
+        "Name": "Next",
+        "Order": 0,
+        "Severity": "None",
+        "Type": "Action"
+      }
+    ]
+  },
+  "Name": "Toolbar for “New form”"
+}

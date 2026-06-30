@@ -1,0 +1,59 @@
+{
+  "$type": "Comindware.Platform.Contracts.ToolbarModel, Comindware.Platform.Contracts",
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "ServiceRequestProcessingBasic",
+    "Solution": "CMW_FM",
+    "Type": "ProcessTemplate"
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "toolbar7766a08ea93b475d8fe8073cf9a7a036",
+    "Owner": "ServiceRequestProcessingBasic",
+    "Solution": "CMW_FM",
+    "Type": "Toolbar"
+  },
+  "IsDefaultForForms": false,
+  "IsDefaultForLists": false,
+  "IsDefaultForModelDesigner": false,
+  "IsDefaultForProcess": false,
+  "IsDefaultForProcessDesigner": false,
+  "IsDefaultForTaskLists": false,
+  "Items": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts",
+        "Action": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "completeTask",
+          "Owner": "ServiceRequestProcessingBasic",
+          "Solution": "CMW_FM",
+          "Type": "UserCommand"
+        },
+        "IconClass": "arrow-right",
+        "IconType": "Undefined",
+        "Name": "Next",
+        "Order": 0,
+        "Severity": "None",
+        "Type": "Action"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts",
+        "Action": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "editTask",
+          "Owner": "ServiceRequestProcessingBasic",
+          "Solution": "CMW_FM",
+          "Type": "UserCommand"
+        },
+        "IconType": "Undefined",
+        "Name": "Save",
+        "Order": 1,
+        "Severity": "None",
+        "Type": "Action"
+      }
+    ]
+  },
+  "Name": "Toolbar for “New form”"
+}

@@ -1,0 +1,259 @@
+{
+  "$type": "Comindware.Platform.Contracts.DatasetModel, Comindware.Platform.Contracts",
+  "Columns": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": false,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Employee",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "RecordLink_calc",
+              "Owner": "Staff_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": true,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "ID",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "id",
+              "Owner": "System#",
+              "Solution": "",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": true,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Full name",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "cmw_account_fullName",
+              "Owner": "System#",
+              "Solution": "",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": true,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Position",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "cmw_account_title",
+              "Owner": "System#",
+              "Solution": "",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": false,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Work assignee",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "WorkAssignee_calc",
+              "Owner": "Staff_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": true,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Phone",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "cmw_account_phone",
+              "Owner": "System#",
+              "Solution": "",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": false,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Work order count",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "WorkOrderCount",
+              "Owner": "Staff_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": false,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Work orders by assignee",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "WorkOrdersByAssignee",
+              "Owner": "Staff_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": false,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Work count by assignee",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "WorkCountByAssignee_calc",
+              "Owner": "Staff_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Staff_calc",
+    "Solution": "CMW_FM",
+    "Type": "AccountTemplate"
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "StaffUtilization",
+    "Owner": "Staff_calc",
+    "Solution": "CMW_FM",
+    "Type": "Dataset"
+  },
+  "IsDefault": false,
+  "IsLazyLoading": false,
+  "Name": "Staff utilization",
+  "Paging": {
+    "$type": "Comindware.Platform.Contracts.PagingConfigurationModel, Comindware.Platform.Contracts",
+    "Page": 0,
+    "Size": 50
+  },
+  "ShowDisabled": true,
+  "Sorting": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.SortingConfigurationModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.SortingConfigurationModel, Comindware.Platform.Contracts",
+        "Direction": "Asc",
+        "NullValuesOnTop": false,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "RecordLink_calc",
+              "Owner": "Staff_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "StickedColumnCount": 0,
+  "Toolbar": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "toolbar1eedba855d57485081f93eaad4252293",
+    "Owner": "Staff_calc",
+    "Solution": "CMW_FM",
+    "Type": "Toolbar"
+  },
+  "ViewType": "General"
+}

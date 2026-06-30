@@ -1,0 +1,82 @@
+{
+  "$type": "Comindware.Platform.Contracts.SubProcessActivityModel, Comindware.Platform.Contracts",
+  "AdvancedConfiguration": false,
+  "BehaviourState": "Active",
+  "Definition": {
+    "$type": "Comindware.Platform.Contracts.SubProcessDefinitionModel, Comindware.Platform.Contracts",
+    "InputMapping": {
+      "$type": "Comindware.Platform.Contracts.MakeObjectRuleModel, Comindware.Platform.Contracts",
+      "Type": "MakeObject"
+    },
+    "ProcessObjectStrategy": "Undefined",
+    "ProcessRelation": "Undefined",
+    "ReturnMapping": {
+      "$type": "Comindware.Platform.Contracts.MakeObjectRuleModel, Comindware.Platform.Contracts",
+      "Type": "MakeObject"
+    }
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "subProcess1",
+    "Owner": "DailyScheduledTechnicalProcess",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "IsTitleSet": false,
+  "Loop": {
+    "$type": "Comindware.Platform.Contracts.LoopModel, Comindware.Platform.Contracts",
+    "Expression": "$AnnualPlan_calc",
+    "Kind": "ForEach",
+    "LoopExecutionOrder": "Once"
+  },
+  "LoopAdapter": {
+    "$type": "Comindware.Platform.Contracts.SubProcessLoopAdapterModel, Comindware.Platform.Contracts",
+    "ModificationActions": {
+      "$type": "Comindware.Platform.Contracts.ModificationActionModel[], Comindware.Platform.Contracts",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+          "PropertyAction": "Replace",
+          "PropertyPath": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Alias": "id",
+                "Owner": "System#",
+                "Solution": "",
+                "Type": "Attribute"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "Owner": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "pool1",
+    "Owner": "DailyScheduledTechnicalProcess",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "Position": {
+    "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+    "X": 525.0,
+    "Y": 130.0
+  },
+  "ProcessTemplateAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "AnnualPlanning",
+    "Solution": "CMW_FM",
+    "Type": "ProcessTemplate"
+  },
+  "Size": {
+    "$type": "Comindware.Platform.Contracts.DimensionsModel, Comindware.Platform.Contracts",
+    "Height": 100.0,
+    "Width": 150.0
+  },
+  "SystemName": "subProcess1",
+  "Title": "Planning",
+  "Type": "SubProcess"
+}

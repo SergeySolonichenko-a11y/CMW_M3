@@ -1,0 +1,51 @@
+{
+  "$type": "Comindware.Platform.Contracts.StartEventActivityModel, Comindware.Platform.Contracts",
+  "BehaviourState": "Active",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "noneStartEvent1",
+    "Owner": "DailyScheduledTechnicalProcess",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "IsInterrupting": false,
+  "IsTitleSet": false,
+  "Kind": "Timer",
+  "Owner": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "pool1",
+    "Owner": "DailyScheduledTechnicalProcess",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "Position": {
+    "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+    "X": 240.0,
+    "Y": 180.0
+  },
+  "Size": {
+    "$type": "Comindware.Platform.Contracts.DimensionsModel, Comindware.Platform.Contracts",
+    "Height": 50.0,
+    "Width": 50.0
+  },
+  "SystemName": "noneStartEvent1",
+  "TimerDefinition": {
+    "$type": "Comindware.Platform.Contracts.TimerEventDefinitionModel, Comindware.Platform.Contracts",
+    "Schedule": {
+      "$type": "Comindware.Platform.Contracts.ScheduleModel, Comindware.Platform.Contracts",
+      "Algorithm": "Daily_Every_interval_day",
+      "DayOfMonth": 0,
+      "DayOfMonthNumber": "First",
+      "IgnoreTime": false,
+      "Interval": 1,
+      "IntervalDays": 0,
+      "IntervalHours": 0,
+      "MonthOfYear": 0,
+      "OccurenceTime": "06:00:00",
+      "OlsonTimeZoneId": "Europe/Moscow",
+      "RecurrenceType": "Daily",
+      "RegenerateInterval": 0
+    }
+  },
+  "Type": "StartEvent"
+}

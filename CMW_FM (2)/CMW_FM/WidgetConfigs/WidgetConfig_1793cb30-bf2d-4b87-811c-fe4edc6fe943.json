@@ -1,0 +1,172 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.IndicatorWidgetConfigModel, Comindware.Platform.Contracts",
+  "AggregationMethod": "Count",
+  "AllowDrillDown": true,
+  "Children": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.WidgetConfigModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.IconWidgetConfigModel, Comindware.Platform.Contracts",
+        "Color": "#e85c20",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_47d81652-cf46-4be5-8508-e5f60c2f6942",
+          "Owner": "WidgetConfig_1793cb30-bf2d-4b87-811c-fe4edc6fe943",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "IconClass": "user-group",
+        "IconType": "Undefined",
+        "Name": "Image",
+        "Order": 1,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "Tenants_calc",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "Icon"
+      }
+    ]
+  },
+  "Columns": {
+    "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Tenant",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "DebtorNameLink",
+              "Owner": "Tenants_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Unpaid invoices",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "DebtInvoiceCounter",
+              "Owner": "Tenants_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Debt, $",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Debt_calc",
+              "Owner": "Tenants_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Less than 30 days, $",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Debt30_calc",
+              "Owner": "Tenants_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "30-60 days, $",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Debt3060_calc",
+              "Owner": "Tenants_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Over 60 days, $",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Debt60plus_calc",
+              "Owner": "Tenants_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "FieldType": "Indicator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WidgetConfig_1793cb30-bf2d-4b87-811c-fe4edc6fe943",
+    "Owner": "CMW_FM",
+    "Solution": "",
+    "Type": "DesktopWidgetConfig"
+  },
+  "Label": {
+    "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+    "Alignment": "Undefined",
+    "Hidden": false,
+    "Text": "Debtors"
+  },
+  "Name": "Delinquencies",
+  "Order": 0,
+  "PropertyPath": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "QueryRule": "from a in db->Tenants_calc where AND(NOT(EMPTY(a->Debt0_calc)), GREATER(a->Debt0_calc, 0)) select a->id",
+  "Template": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Tenants_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Toolbar": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "newToolbar2651",
+    "Owner": "Tenants_calc",
+    "Solution": "CMW_FM",
+    "Type": "Toolbar"
+  },
+  "Type": "FieldComponent"
+}

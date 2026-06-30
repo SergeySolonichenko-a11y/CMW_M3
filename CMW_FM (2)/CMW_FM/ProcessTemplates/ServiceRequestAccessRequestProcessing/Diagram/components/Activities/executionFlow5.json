@@ -1,0 +1,81 @@
+{
+  "$type": "Comindware.Platform.Contracts.FlowActivityModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "executionFlow5",
+    "Owner": "ServiceRequestAccessRequestProcessing",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "IsTitleSet": false,
+  "Owner": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "lane3",
+    "Owner": "ServiceRequestAccessRequestProcessing",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "Points": {
+    "$type": "Comindware.Platform.Contracts.VectorModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": 1.48766353010399,
+        "Y": 1.74610670769493
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": 21.487663530104,
+        "Y": 1.74610670769493
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": 41.487663530104,
+        "Y": 1.74610670769493
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": 61.487663530104,
+        "Y": 1.74610670769493
+      }
+    ]
+  },
+  "Position": {
+    "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+    "X": 0.0,
+    "Y": 0.0
+  },
+  "SequenceDefinition": {
+    "$type": "Comindware.Platform.Contracts.SequenceFlowDefinitionModel, Comindware.Platform.Contracts",
+    "IsDefault": false
+  },
+  "Size": {
+    "$type": "Comindware.Platform.Contracts.DimensionsModel, Comindware.Platform.Contracts",
+    "Height": 0.0,
+    "Width": 0.0
+  },
+  "SourceActivity": {
+    "$type": "Comindware.Platform.Contracts.ConnectorModel, Comindware.Platform.Contracts",
+    "Target": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "userTask4",
+      "Owner": "ServiceRequestAccessRequestProcessing",
+      "Solution": "",
+      "Type": "ClientActivity"
+    },
+    "TargetConnectorIndex": 0
+  },
+  "SystemName": "executionFlow5",
+  "TargetActivity": {
+    "$type": "Comindware.Platform.Contracts.ConnectorModel, Comindware.Platform.Contracts",
+    "Target": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "userTask5",
+      "Owner": "ServiceRequestAccessRequestProcessing",
+      "Solution": "",
+      "Type": "ClientActivity"
+    },
+    "TargetConnectorIndex": 0
+  },
+  "Type": "ExecutionFlow"
+}

@@ -1,0 +1,173 @@
+{
+  "$type": "Comindware.Platform.Contracts.FormModel, Comindware.Platform.Contracts",
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Spaces_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "FormRules": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormRuleModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.FormRuleModel, Comindware.Platform.Contracts",
+        "Actions": {
+          "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.RuleActionModel, Comindware.Platform.Contracts]], mscorlib",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.RuleActionModel, Comindware.Platform.Contracts",
+              "ConditionExpression": "GREATEREQ(COUNT(from a in db->InspectionPoints_calc where AND(OR(EQUALS(a->Status_calc->Code_calc,\"planned\"),EQUALS(a->Status_calc->Code_calc,\"started\")),EQUALS(a->Space_calc,$id)) select a->id),1)",
+              "GlobalAlias": {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Alias": "7bd07b91e3164baeab267706b82785e2",
+                "Solution": "",
+                "Type": "FormComponent"
+              },
+              "Severity": "Error",
+              "Type": "SetAccessType",
+              "ValueExpression": "CONST('Editable')"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.RuleActionModel, Comindware.Platform.Contracts",
+              "ConditionExpression": "",
+              "GlobalAlias": {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Alias": "28ad4e9fba064e209bb991c734f12c1c",
+                "Solution": "",
+                "Type": "FormComponent"
+              },
+              "Severity": "Error",
+              "Type": "SetAccessType",
+              "ValueExpression": "CONST('Editable')"
+            }
+          ]
+        },
+        "ConditionExpression": "@prefix cmw: <http://comindware.com/logics#>.\n@prefix account: <http://comindware.com/ontology/account#>.\n{\n#Select current user\ncmw:securityContext cmw:currentUser ?user.\n\n#Select contractor employees group\n?g account:groupName \"Техники\".\n\n#Check that selected user is a member of chosen group\nif{?user account:userGroupMembership ?g.} \nthen {true -> ?value.}\nelse {false -> ?value.}.\n}",
+        "RuleName": "Technician"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.FormRuleModel, Comindware.Platform.Contracts",
+        "Actions": {
+          "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.RuleActionModel, Comindware.Platform.Contracts]], mscorlib",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.RuleActionModel, Comindware.Platform.Contracts",
+              "ConditionExpression": "GREATEREQ(COUNT(from a in db->InspectionPoints_calc where AND(OR(EQUALS(a->Status_calc->Code_calc,\"planned\"),EQUALS(a->Status_calc->Code_calc,\"started\")),EQUALS(a->Space_calc,$id)) select a->id),1)",
+              "GlobalAlias": {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Alias": "7bd07b91e3164baeab267706b82785e2",
+                "Solution": "",
+                "Type": "FormComponent"
+              },
+              "Severity": "Error",
+              "Type": "SetAccessType",
+              "ValueExpression": "CONST('Editable')"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.RuleActionModel, Comindware.Platform.Contracts",
+              "ConditionExpression": "",
+              "GlobalAlias": {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Alias": "28ad4e9fba064e209bb991c734f12c1c",
+                "Solution": "",
+                "Type": "FormComponent"
+              },
+              "Severity": "Error",
+              "Type": "SetAccessType",
+              "ValueExpression": "CONST('Editable')"
+            }
+          ]
+        },
+        "ConditionExpression": "@prefix cmw: <http://comindware.com/logics#>.\n@prefix account: <http://comindware.com/ontology/account#>.\n{\n#Select current user\ncmw:securityContext cmw:currentUser ?user.\n\n#Select contractor employees group\n?g account:groupName \"Техники\".\n\n#Check that selected user is a member of chosen group\nif{?user account:userGroupMembership ?g.} \nthen {false -> ?value.}\nelse {true -> ?value.}.\n}",
+        "RuleName": "Not technician"
+      }
+    ]
+  },
+  "FormSize": "Common",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "form95",
+    "Owner": "Spaces_calc",
+    "Solution": "CMW_FM",
+    "Type": "Form"
+  },
+  "IsDefault": true,
+  "Name": "1. Main display form",
+  "Origination": "Undefined",
+  "Root": {
+    "$type": "Comindware.Platform.Contracts.VerticalLayoutModel, Comindware.Platform.Contracts",
+    "AccessType": "Undefined",
+    "GlobalAlias": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "90f79d854b7b44de9678101a3371935d",
+      "Solution": "",
+      "Type": "FormComponent"
+    },
+    "Rows": {
+      "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.SubFormModel, Comindware.Platform.Contracts",
+          "AccessType": "Hidden",
+          "DataSourcePropertyPath": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Alias": "CurrentInspectionForm",
+                "Owner": "Spaces_calc",
+                "Solution": "CMW_FM",
+                "Type": "Form"
+              }
+            ]
+          },
+          "GlobalAlias": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "7bd07b91e3164baeab267706b82785e2",
+            "Solution": "",
+            "Type": "FormComponent"
+          },
+          "Name": "Current inspection form",
+          "Type": "SubForm",
+          "Width": 0
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.SubFormModel, Comindware.Platform.Contracts",
+          "AccessType": "Editable",
+          "DataSourcePropertyPath": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Alias": "SpaceForm",
+                "Owner": "Spaces_calc",
+                "Solution": "CMW_FM",
+                "Type": "Form"
+              }
+            ]
+          },
+          "GlobalAlias": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "28ad4e9fba064e209bb991c734f12c1c",
+            "Solution": "",
+            "Type": "FormComponent"
+          },
+          "Name": "Space form",
+          "Type": "SubForm",
+          "Width": 0
+        }
+      ]
+    },
+    "Type": "VerticalLayout",
+    "Width": 0
+  },
+  "Toolbar": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "toolbard9333734eec848c78af1dc96b62bfbd4",
+    "Owner": "Spaces_calc",
+    "Solution": "CMW_FM",
+    "Type": "Toolbar"
+  },
+  "Type": "PublicForm",
+  "WithSimpleToolbar": false
+}

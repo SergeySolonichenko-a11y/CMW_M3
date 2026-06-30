@@ -1,0 +1,92 @@
+{
+  "$type": "Comindware.Platform.Contracts.FlowActivityModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "executionFlow8",
+    "Owner": "ServiceRequestProcessingMulti",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "IsTitleSet": false,
+  "Owner": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "lane2",
+    "Owner": "ServiceRequestProcessingMulti",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "Points": {
+    "$type": "Comindware.Platform.Contracts.VectorModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": -503.0,
+        "Y": -432.0
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": -503.0,
+        "Y": -412.0
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": -503.0,
+        "Y": -400.0
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": -166.0,
+        "Y": -400.0
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": -166.0,
+        "Y": -455.0
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": -146.0,
+        "Y": -455.0
+      }
+    ]
+  },
+  "Position": {
+    "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+    "X": 0.0,
+    "Y": 0.0
+  },
+  "SequenceDefinition": {
+    "$type": "Comindware.Platform.Contracts.SequenceFlowDefinitionModel, Comindware.Platform.Contracts",
+    "IsDefault": true
+  },
+  "Size": {
+    "$type": "Comindware.Platform.Contracts.DimensionsModel, Comindware.Platform.Contracts",
+    "Height": 0.0,
+    "Width": 0.0
+  },
+  "SourceActivity": {
+    "$type": "Comindware.Platform.Contracts.ConnectorModel, Comindware.Platform.Contracts",
+    "Target": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "exclusiveGate1",
+      "Owner": "ServiceRequestProcessingMulti",
+      "Solution": "",
+      "Type": "ClientActivity"
+    },
+    "TargetConnectorIndex": 0
+  },
+  "SystemName": "executionFlow8",
+  "TargetActivity": {
+    "$type": "Comindware.Platform.Contracts.ConnectorModel, Comindware.Platform.Contracts",
+    "Target": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "exclusiveGate3",
+      "Owner": "ServiceRequestProcessingMulti",
+      "Solution": "",
+      "Type": "ClientActivity"
+    },
+    "TargetConnectorIndex": 0
+  },
+  "Title": "Yes",
+  "Type": "ExecutionFlow"
+}

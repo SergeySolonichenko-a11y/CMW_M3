@@ -1,0 +1,33 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Expression": "from a in db->Materials_calc where EQUALS(a->id,$Material_calc) select a->Available_calc",
+  "Format": "Text",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Available_calc",
+    "Owner": "WorkOrdersMaterials",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "InstanceGlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Materials_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "IsCalculated": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Available",
+  "Type": "Instance"
+}

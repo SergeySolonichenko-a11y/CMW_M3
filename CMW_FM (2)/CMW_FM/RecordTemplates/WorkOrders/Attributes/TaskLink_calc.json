@@ -1,0 +1,27 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Expression": "IF(NOT(EMPTY($ProcessTask_calc)), \n    IF( $WorkOrderStatus->Code==\"New\", FORMAT('<a style=\"center: auto;\" href=\"#Resolver/{0}\"><b>Do: {1}</b></a>',LIST($ProcessTask_calc, $WorkOrderContent_calc)), \n                                   FORMAT('<a style=\"center: auto;\" href=\"#Resolver/{0}\"><b>Review: {1}</b> </a>',LIST($ProcessTask_calc, $WorkOrderContent_calc))),\n    $WorkOrderContent_calc)",
+  "Format": "HtmlText",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TaskLink_calc",
+    "Owner": "WorkOrders",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "IsCalculated": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Task link",
+  "Type": "String"
+}

@@ -1,0 +1,33 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Expression": "from a in $CleaningAuditTrail_calc where EQUALS(a->CleaningStartDate_calc, MAX(from b in $CleaningAuditTrail_calc select b->CleaningStartDate_calc)) select a->id",
+  "Format": "Link",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "CurrentCleaning_calc",
+    "Owner": "Spaces_calc",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "InstanceGlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "SpaceCleaning_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "IsCalculated": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Active cleaning",
+  "Type": "Instance"
+}

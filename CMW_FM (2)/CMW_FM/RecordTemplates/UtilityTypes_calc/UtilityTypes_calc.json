@@ -1,0 +1,26 @@
+{
+  "$type": "Comindware.Platform.Contracts.TemplateInfoModel, Comindware.Platform.Contracts",
+  "ConversationDisplayConfig": {
+    "$type": "Comindware.Platform.Contracts.ObjectConversationDisplayConfigModel, Comindware.Platform.Contracts",
+    "DisableSidePanelConversations": true,
+    "DisableWidgetConversations": true,
+    "HideArchivedMessages": true,
+    "ProhibitedReferenceTypes": {
+      "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ConversationReferenceTypes, Comindware.Platform.Contracts]], mscorlib",
+      "$values": [
+        "Attachment"
+      ]
+    }
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "UtilityTypes_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "IsDisabled": false,
+  "IsReferenceData": false,
+  "IsTransferable": false,
+  "Name": "Facilities types",
+  "Type": "Record"
+}

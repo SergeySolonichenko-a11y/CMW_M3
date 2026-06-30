@@ -1,0 +1,101 @@
+{
+  "$type": "Comindware.Platform.Contracts.FlowActivityModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "executionFlow10",
+    "Owner": "ServiceRequestProcessingBasic",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "IsTitleSet": false,
+  "Owner": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "lane1",
+    "Owner": "ServiceRequestProcessingBasic",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "Points": {
+    "$type": "Comindware.Platform.Contracts.VectorModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": 404.4586244943,
+        "Y": -504.250459727841
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": 404.4586244943,
+        "Y": -524.250459727841
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": 404.4586244943,
+        "Y": -540.0
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": -975.5413755057,
+        "Y": -540.0
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": -975.5413755057,
+        "Y": -504.250459727841
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": -975.5413755057,
+        "Y": -484.250459727841
+      }
+    ]
+  },
+  "Position": {
+    "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+    "X": 0.0,
+    "Y": 0.0
+  },
+  "SequenceDefinition": {
+    "$type": "Comindware.Platform.Contracts.SequenceFlowDefinitionModel, Comindware.Platform.Contracts",
+    "Condition": {
+      "$type": "Comindware.Platform.Contracts.ConditionRuleModel, Comindware.Platform.Contracts",
+      "Definition": {
+        "$type": "Comindware.Platform.Contracts.ExpressionRuleDefinitionModel, Comindware.Platform.Contracts",
+        "Expression": "$WorkCompletedCorrectly_calc",
+        "Type": "Expression"
+      },
+      "Type": "Condition"
+    },
+    "IsDefault": true
+  },
+  "Size": {
+    "$type": "Comindware.Platform.Contracts.DimensionsModel, Comindware.Platform.Contracts",
+    "Height": 0.0,
+    "Width": 0.0
+  },
+  "SourceActivity": {
+    "$type": "Comindware.Platform.Contracts.ConnectorModel, Comindware.Platform.Contracts",
+    "Target": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "exclusiveGate1",
+      "Owner": "ServiceRequestProcessingBasic",
+      "Solution": "",
+      "Type": "ClientActivity"
+    },
+    "TargetConnectorIndex": 0
+  },
+  "SystemName": "executionFlow10",
+  "TargetActivity": {
+    "$type": "Comindware.Platform.Contracts.ConnectorModel, Comindware.Platform.Contracts",
+    "Target": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "exclusiveGate8",
+      "Owner": "ServiceRequestProcessingBasic",
+      "Solution": "",
+      "Type": "ClientActivity"
+    },
+    "TargetConnectorIndex": 0
+  },
+  "Title": "No",
+  "Type": "ExecutionFlow"
+}

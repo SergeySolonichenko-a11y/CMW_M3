@@ -1,0 +1,105 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.TimelineWidgetConfigModel, Comindware.Platform.Contracts",
+  "Assignee": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "creator",
+    "Owner": "System#",
+    "Solution": "",
+    "Type": "Attribute"
+  },
+  "Children": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.WidgetConfigModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": []
+  },
+  "Deadline": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "lastWriteDate",
+    "Owner": "System#",
+    "Solution": "",
+    "Type": "Attribute"
+  },
+  "EndPlannedProperty": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "creationDate",
+    "Owner": "System#",
+    "Solution": "",
+    "Type": "Attribute"
+  },
+  "EndProperty": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "lastWriteDate",
+    "Owner": "System#",
+    "Solution": "",
+    "Type": "Attribute"
+  },
+  "FieldType": "Timeline",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WidgetConfig_19effd02-1104-43a1-8350-ed4efb28183f",
+    "Owner": "CMW_FM",
+    "Solution": "",
+    "Type": "DesktopWidgetConfig"
+  },
+  "Name": "Calendar",
+  "Order": 0,
+  "ParentTask": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "id",
+    "Owner": "System#",
+    "Solution": "",
+    "Type": "Attribute"
+  },
+  "Predecessor": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "id",
+    "Owner": "System#",
+    "Solution": "",
+    "Type": "Attribute"
+  },
+  "Priority": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "CarryOver",
+    "Owner": "SLA",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "Progress": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "CarryOver",
+    "Owner": "SLA",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "PropertyPath": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "StartPlannedProperty": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "creationDate",
+    "Owner": "System#",
+    "Solution": "",
+    "Type": "Attribute"
+  },
+  "StartProperty": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "lastWriteDate",
+    "Owner": "System#",
+    "Solution": "",
+    "Type": "Attribute"
+  },
+  "Template": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "SLA",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "TitleProperty": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "SLAType",
+    "Owner": "SLA",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "Type": "FieldComponent"
+}

@@ -1,0 +1,29 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "DecimalPlaces": 2,
+  "Expression": "SUM(from a in $InvoicesPayments_calc where AND(\n                                       OR(a->PaymentStatus_calc->Code_calc==\"notpaid\", a->PaymentStatus_calc->Code_calc==\"PartialPayment_calc\", a->PaymentStatus_calc->Code_calc==\"send\"),\n                                       LESS(a->DueDate_calc, NOW())\n                                       ) select a->DebtSumm_calc)",
+  "Format": "Undefined",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Debt0_calc",
+    "Owner": "Tenants_calc",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "IsCalculated": true,
+  "IsDigitGrouping": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Debt 0",
+  "Type": "Decimal"
+}

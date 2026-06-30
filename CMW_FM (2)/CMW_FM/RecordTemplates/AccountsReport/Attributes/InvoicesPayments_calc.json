@@ -1,0 +1,33 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Expression": "from a in db->InvoicesPayments_calc where AND(EQUALS(a->ContractBasis_calc->Property, $Property_calc),\n                                      EQUALS(a->PaymentPeriod_calc, $Period_calc),\n                                      EQUALS(a->Year_calc, $Year_calc)                                      \n                                      ) select a->id",
+  "Format": "Link",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "InvoicesPayments_calc",
+    "Owner": "AccountsReport",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "InstanceGlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "InvoicesPayments_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "IsCalculated": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": true,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Invoices and payments",
+  "Type": "Instance"
+}

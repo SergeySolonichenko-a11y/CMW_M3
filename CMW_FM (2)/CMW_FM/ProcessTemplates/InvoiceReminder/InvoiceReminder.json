@@ -1,0 +1,20 @@
+{
+  "$type": "Comindware.Platform.Contracts.TemplateInfoModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "InvoiceReminder",
+    "Solution": "CMW_FM",
+    "Type": "ProcessTemplate"
+  },
+  "IsDisabled": false,
+  "IsReferenceData": false,
+  "IsTransferable": false,
+  "Name": "Invoice reminder",
+  "RelatedTemplate": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "InvoicesPayments_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Type": "Process"
+}

@@ -1,0 +1,27 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Expression": "IF(AND(OR($WorkStatus_calc->Code==\"preplanned\", EMPTY($WorkStatus_calc)), LESS(NOW(), ADDYEARS($PlannedPeriod_calc->WorkStartDate_calc, ($Year_calc->Year - 2024)))),\n    \"<span Title='Future period Maintenance' style='color:#f1f1f1; font-size: 20px; align-self: center; top:0px;'> ● </span>\",\n\tIF(AND($WorkStatus_calc->Code==\"preplanned\", LESS(ADDYEARS($PlannedPeriod_calc->WorkStartDate_calc, ($Year_calc->Year - 2024)), NOW())),\n    \"<span Title='Work date and Assignee not set' style='color:blue; font-size: 20px; align-self: center; top:0px;'> ● </span>\",                                                                        \n\t\tIF(AND($WorkStatus_calc->Code==\"assigned\", LESSEQ(NOW(), ENDOFDAY($AssignedWorkDate_calc))),\n\t\t\"<span Title='Work date and Assignee set' style='color:yellow; font-size: 20px; align-self: center; top:0px;'>  ●  </span>\",\n\t\t\tIF(AND($WorkStatus_calc->Code==\"assigned\", LESS($AssignedWorkDate_calc, NOW()), LESSEQ(NOW(), ADDYEARS($PlannedPeriod_calc->WorkEndDate_calc, ($Year_calc->Year - 2024)))),\n\t\t\t\"<span Title='Maintenance execution delay' style='color:orange; font-size: 20px; align-self: center; top:5px;'>  ●  </span>\",\n\t\t\tIF($WorkStatus_calc->Code==\"Complete_calc\",\n    \t\t\t\"<span Title='Maintenance completed' style='color:#44f459; font-size: 20px; align-self: center; top:0px;'> ● </span>\",\n                IF($WorkStatus_calc->Code==\"inacceptance\",\n                    \"<span Title='Pending review' style='color:orange; font-size: 20px; align-self: center; top:0px;'>  ●  </span>\",\n\t\t\t\t    \"<span Title='Maintenance execution overdue' style='color:red; font-size: 20px; align-self: center; top:0px;'>  ●  </span>\"\n))))))",
+  "Format": "HtmlText",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "MaintenanceStatusIndicator",
+    "Owner": "MaintenanceExecution_calc",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "IsCalculated": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Maintenance status indicator",
+  "Type": "String"
+}

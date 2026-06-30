@@ -1,0 +1,167 @@
+{
+  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.TriggerModel, Comindware.Platform.Contracts",
+  "ActionsHead": {
+    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.OnProcessActivityEntry, Comindware.Platform.Contracts",
+    "Description": "Token entered “Approve contract addendum” <activity_4ca08e6b15fa4691ac8c24d7b4f29e89>, process “Contract renewal process” <ProcessForDeals>",
+    "IsAsync": false,
+    "IsCleaningCache": false,
+    "IsSafe": false,
+    "Kind": "OnProcessActivityEntry",
+    "Name": "Token entered “Approve contract addendum”",
+    "NextAction": {
+      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectChange, Comindware.Platform.Contracts",
+      "IsAsync": false,
+      "IsCleaningCache": false,
+      "IsSafe": false,
+      "Kind": "ReferenceObjectChange",
+      "ReferenceExpression": "$$BusinessObject",
+      "Scope": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "ProcessDeals",
+        "Solution": "CMW_FM",
+        "Type": "ProcessTemplate"
+      },
+      "SubAction": {
+        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectChange, Comindware.Platform.Contracts",
+        "IsAsync": false,
+        "IsCleaningCache": false,
+        "IsSafe": false,
+        "Kind": "ReferenceObjectChange",
+        "Name": "On “Tenant” records by attribute “Arendatory”",
+        "ReferenceExpression": "$Tenant_calc",
+        "Scope": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "Contracts_calc",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "SubAction": {
+          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectCreate, Comindware.Platform.Contracts",
+          "IsAsync": false,
+          "IsCleaningCache": false,
+          "IsSafe": false,
+          "Kind": "ReferenceObjectCreate",
+          "Name": "In template \\u201cTenant relationship history\\u201d and",
+          "Property": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "EventHistory_calc",
+            "Owner": "Tenants_calc",
+            "Solution": "CMW_FM",
+            "Type": "Attribute"
+          },
+          "Scope": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Tenants_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "SetValueKind": "Add",
+          "SubAction": {
+            "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+            "IsAsync": false,
+            "IsCleaningCache": false,
+            "IsSafe": false,
+            "Kind": "PropertySetValue",
+            "Name": "In record “Tenant relationship history”",
+            "Scope": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "RenterHistory",
+              "Solution": "CMW_FM",
+              "Type": "RecordTemplate"
+            },
+            "SetValueProperties": {
+              "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                  "PropertyPath": {
+                    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                    "$values": [
+                      {
+                        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                        "Alias": "EventDate",
+                        "Owner": "RenterHistory",
+                        "Solution": "CMW_FM",
+                        "Type": "Attribute"
+                      }
+                    ]
+                  },
+                  "SetValueKind": "Replace",
+                  "ValueExpression": "NOW()"
+                },
+                {
+                  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                  "PropertyPath": {
+                    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                    "$values": [
+                      {
+                        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                        "Alias": "EventTypes_calc",
+                        "Owner": "RenterHistory",
+                        "Solution": "CMW_FM",
+                        "Type": "Attribute"
+                      }
+                    ]
+                  },
+                  "SetValueKind": "Replace",
+                  "ValueExpression": "ENUMVALUE(\"\tEventTypes_calc\", \"Leases_calc\")"
+                },
+                {
+                  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                  "PropertyPath": {
+                    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                    "$values": [
+                      {
+                        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                        "Alias": "Comment_calc",
+                        "Owner": "RenterHistory",
+                        "Solution": "CMW_FM",
+                        "Type": "Attribute"
+                      }
+                    ]
+                  },
+                  "SetValueKind": "Replace",
+                  "ValueExpression": "\"Renewal addendum prepared\""
+                }
+              ]
+            }
+          },
+          "TargetContainer": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "RenterHistory",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          }
+        },
+        "TargetContainer": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "Tenants_calc",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        }
+      },
+      "TargetContainer": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "Contracts_calc",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      }
+    },
+    "Scope": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "ProcessDeals",
+      "Solution": "CMW_FM",
+      "Type": "ProcessTemplate"
+    }
+  },
+  "BehaviourState": "Active",
+  "Description": "Scenario on token entry to “Approve contract addendum” <activity_4ca08e6b15fa4691ac8c24d7b4f29e89>, process “Contract renewal process” <ProcessForDeals>",
+  "ExecutionContext": "ByInitiator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TokenEnters_activity_4ca08e6b15fa4691ac8c24d7b4f29e89_ProcessDeals",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Name": "Token entry into 'approve addendum' element of 'contract renewal process' process"
+}

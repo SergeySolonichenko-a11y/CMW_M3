@@ -1,0 +1,102 @@
+{
+  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.TriggerModel, Comindware.Platform.Contracts",
+  "ActionsHead": {
+    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.OnRecordChange, Comindware.Platform.Contracts",
+    "ChangedProperties": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "Name_calc",
+          "Owner": "SAPNumber_calc",
+          "Solution": "CMW_FM",
+          "Type": "Attribute"
+        }
+      ]
+    },
+    "IsAsync": false,
+    "IsCleaningCache": false,
+    "IsSafe": false,
+    "Kind": "OnRecordChange",
+    "Name": "Modified attribute “Name”, record “SAPnumber”",
+    "NextAction": {
+      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectCreate, Comindware.Platform.Contracts",
+      "IsAsync": false,
+      "IsCleaningCache": false,
+      "IsSafe": false,
+      "Kind": "ReferenceObjectCreate",
+      "Name": "In template “Assets” and add a reference to a new record in attribute “Asset cart”",
+      "Property": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "AssetCard",
+        "Owner": "SAPNumber_calc",
+        "Solution": "CMW_FM",
+        "Type": "Attribute"
+      },
+      "Scope": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "SAPNumber_calc",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      },
+      "SetValueKind": "Add",
+      "SubAction": {
+        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+        "IsAsync": false,
+        "IsCleaningCache": false,
+        "IsSafe": false,
+        "Kind": "PropertySetValue",
+        "Name": "In record “Assets”",
+        "Scope": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "Assets_calc",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "SetValueProperties": {
+          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+              "PropertyPath": {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                "$values": [
+                  {
+                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                    "Alias": "Name_calc",
+                    "Owner": "Assets_calc",
+                    "Solution": "CMW_FM",
+                    "Type": "Attribute"
+                  }
+                ]
+              },
+              "SetValueKind": "Replace",
+              "ValueExpression": "$SAPNumber_calc->Name_calc"
+            }
+          ]
+        }
+      },
+      "TargetContainer": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "Assets_calc",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      }
+    },
+    "Scope": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "SAPNumber_calc",
+      "Solution": "CMW_FM",
+      "Type": "RecordTemplate"
+    }
+  },
+  "BehaviourState": "Active",
+  "ExecutionContext": "ByInitiator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "AddSapnumber",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Name": "Add sapnumber"
+}

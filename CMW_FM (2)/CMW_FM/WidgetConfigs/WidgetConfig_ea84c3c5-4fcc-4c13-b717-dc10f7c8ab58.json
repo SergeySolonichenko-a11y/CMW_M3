@@ -1,0 +1,161 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.IndicatorWidgetConfigModel, Comindware.Platform.Contracts",
+  "AggregationMethod": "Count",
+  "AggregationProperty": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "id",
+        "Owner": "System#",
+        "Solution": "",
+        "Type": "Attribute"
+      }
+    ]
+  },
+  "AllowDrillDown": true,
+  "Children": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.WidgetConfigModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.IconWidgetConfigModel, Comindware.Platform.Contracts",
+        "Color": "#e70000",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_9019eb37-7a99-4c11-a89b-4fda272250d8",
+          "Owner": "WidgetConfig_ea84c3c5-4fcc-4c13-b717-dc10f7c8ab58",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "IconClass": "light-emergency-on",
+        "IconType": "Undefined",
+        "Name": "Image",
+        "Order": 1,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "ServiceRequests",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "Icon"
+      }
+    ]
+  },
+  "Columns": {
+    "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Work order number",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Number_calc",
+              "Owner": "ServiceRequests",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Service request type",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Type_calc",
+              "Owner": "ServiceRequests",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Message",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Description_calc",
+              "Owner": "ServiceRequests",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Receipt date and time",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "RegistrationDateTime_calc",
+              "Owner": "ServiceRequests",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Priority",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Priority_calc",
+              "Owner": "ServiceRequests",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "FieldType": "Indicator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WidgetConfig_ea84c3c5-4fcc-4c13-b717-dc10f7c8ab58",
+    "Owner": "CMW_FM",
+    "Solution": "",
+    "Type": "DesktopWidgetConfig"
+  },
+  "Label": {
+    "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+    "Alignment": "Undefined",
+    "Hidden": false,
+    "Text": "Incidents"
+  },
+  "Name": "Incidents",
+  "Order": 0,
+  "PropertyPath": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "QueryRule": "from a in db->ServiceRequests where EQUALS(a->Priority_calc->Code_calc,\"critical\") select a->id",
+  "Template": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "ServiceRequests",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Type": "FieldComponent"
+}

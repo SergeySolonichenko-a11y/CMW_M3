@@ -1,0 +1,27 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Expression": "FORMAT('Report on {0} for {1} {2}', LIST($Property_calc->Name_calc , $Period_calc->MonthAux_calc, $Year_calc->Year))",
+  "Format": "PlainText",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Name",
+    "Owner": "AccountsReport",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "IsCalculated": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": true,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Name",
+  "Type": "String"
+}

@@ -1,0 +1,109 @@
+{
+  "$type": "Comindware.Platform.Contracts.DatasetModel, Comindware.Platform.Contracts",
+  "Columns": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": false,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Short name",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "ShortName",
+              "Owner": "Counterparties_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": false,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Full name",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "FullName",
+              "Owner": "Counterparties_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": false,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Tax ID",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "TaxID",
+              "Owner": "Counterparties_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Counterparties_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "defaultList",
+    "Owner": "Counterparties_calc",
+    "Solution": "CMW_FM",
+    "Type": "Dataset"
+  },
+  "IsDefault": false,
+  "IsLazyLoading": false,
+  "Name": "Counterparty directory",
+  "Paging": {
+    "$type": "Comindware.Platform.Contracts.PagingConfigurationModel, Comindware.Platform.Contracts",
+    "Page": 0,
+    "Size": 50
+  },
+  "ShowDisabled": false,
+  "Sorting": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.SortingConfigurationModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": []
+  },
+  "StickedColumnCount": 0,
+  "Toolbar": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "toolbar1774d1ad9c8d4eb1980d9ed4df97225f",
+    "Owner": "Counterparties_calc",
+    "Solution": "CMW_FM",
+    "Type": "Toolbar"
+  },
+  "ViewType": "General"
+}

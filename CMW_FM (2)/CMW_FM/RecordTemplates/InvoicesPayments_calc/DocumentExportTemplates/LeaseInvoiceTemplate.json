@@ -1,0 +1,24 @@
+{
+  "$type": "Comindware.Platform.Contracts.DocumentExportTemplateModel, Comindware.Platform.Contracts",
+  "ExportAsPdf": true,
+  "ExportSourceTemplate": {
+    "$type": "Comindware.Platform.Contracts.ExportSourceTemplateFromDocument, Comindware.Platform.Contracts",
+    "FileName": "Lease invoice template.docx",
+    "FileType": "Word",
+    "Type": "Document"
+  },
+  "ExportTemplateType": "RecordTemplate",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "LeaseInvoiceTemplate",
+    "Owner": "InvoicesPayments_calc",
+    "Solution": "CMW_FM",
+    "Type": "ExportTemplate"
+  },
+  "Name": "Lease invoice template",
+  "OutputFileNameTemplate": {
+    "$type": "Comindware.Platform.Contracts.OutputFileNameTemplateFromRule, Comindware.Platform.Contracts",
+    "Expression": "\"Rent InvoiceIssued_calc \" + $PeriodYear_calc + \" \" + $Tenants_calc->TenantName_calc",
+    "Type": "Rule"
+  }
+}

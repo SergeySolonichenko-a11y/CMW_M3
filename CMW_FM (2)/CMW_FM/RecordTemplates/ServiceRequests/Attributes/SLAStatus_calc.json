@@ -1,0 +1,34 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Description": "SLA compliance status as text",
+  "Expression": "IF($SLAOverdue_calc, OBJECT(\"CMW_FM\",\"Slastatus_calc\",\"Code_calc\",\"Bad\"), OBJECT(\"CMW_FM\",\"Slastatus_calc\",\"Code_calc\",\"Good\"))",
+  "Format": "Text",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "SLAStatus_calc",
+    "Owner": "ServiceRequests",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "InstanceGlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Slastatus_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "IsCalculated": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "SLA status",
+  "Type": "Instance"
+}

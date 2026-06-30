@@ -1,0 +1,24 @@
+{
+  "$type": "Comindware.Platform.Contracts.DocumentExportTemplateModel, Comindware.Platform.Contracts",
+  "ExportAsPdf": false,
+  "ExportSourceTemplate": {
+    "$type": "Comindware.Platform.Contracts.ExportSourceTemplateFromDocument, Comindware.Platform.Contracts",
+    "FileName": "Property card.docx",
+    "FileType": "Word",
+    "Type": "Document"
+  },
+  "ExportTemplateType": "RecordTemplate",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "asd",
+    "Owner": "Properties",
+    "Solution": "CMW_FM",
+    "Type": "ExportTemplate"
+  },
+  "Name": "Asd",
+  "OutputFileNameTemplate": {
+    "$type": "Comindware.Platform.Contracts.OutputFileNameTemplateFromRule, Comindware.Platform.Contracts",
+    "Expression": "\"asd\"",
+    "Type": "Rule"
+  }
+}

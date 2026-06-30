@@ -1,0 +1,58 @@
+{
+  "$type": "Comindware.Platform.Contracts.ToolbarModel, Comindware.Platform.Contracts",
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "RoleTemplate",
+    "Solution": "",
+    "Type": "RoleTemplate"
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Button area for forms",
+    "Owner": "RoleTemplate",
+    "Solution": "CMW_FM",
+    "Type": "Toolbar"
+  },
+  "IsDefaultForForms": false,
+  "IsDefaultForLists": true,
+  "IsDefaultForModelDesigner": false,
+  "IsDefaultForProcess": false,
+  "IsDefaultForProcessDesigner": false,
+  "IsDefaultForTaskLists": false,
+  "Items": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts",
+        "Action": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "create",
+          "Owner": "RoleTemplate",
+          "Solution": "CMW_FM",
+          "Type": "UserCommand"
+        },
+        "IconType": "Plus",
+        "Name": "Create",
+        "Order": 1,
+        "Severity": "None",
+        "Type": "Action"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts",
+        "Action": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "deleteRole",
+          "Owner": "RoleTemplate",
+          "Solution": "CMW_FM",
+          "Type": "UserCommand"
+        },
+        "IconType": "Remove",
+        "Name": "Delete",
+        "Order": 3,
+        "Severity": "Fatal",
+        "Type": "Action"
+      }
+    ]
+  },
+  "Name": "Table toolbar"
+}

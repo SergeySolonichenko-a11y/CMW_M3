@@ -1,0 +1,132 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.TileWidgetConfigModel, Comindware.Platform.Contracts",
+  "Children": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.WidgetConfigModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.IconWidgetConfigModel, Comindware.Platform.Contracts",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_83be50eb-30c0-444b-89fa-c27d1c977057",
+          "Owner": "WidgetConfig_649a582c-d437-4707-824a-fee7d28c69f4",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "IconClass": "lamp-desk",
+        "IconType": "Undefined",
+        "Name": "Icon",
+        "Order": 1,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "SLA",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "Icon"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.StaticContentWidgetConfigModel, Comindware.Platform.Contracts",
+        "Content": "<p>Coworking</p>\n",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_0dace81a-ff27-4aac-b93a-d19d6791b776",
+          "Owner": "WidgetConfig_649a582c-d437-4707-824a-fee7d28c69f4",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "Name": "Title",
+        "Order": 2,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "SLA",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "StaticContent"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.StaticContentWidgetConfigModel, Comindware.Platform.Contracts",
+        "Content": "<p>Most popular community service in 2026</p>\n",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_cc7fbc0b-47d7-4719-9dad-fa424de43235",
+          "Owner": "WidgetConfig_649a582c-d437-4707-824a-fee7d28c69f4",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "Name": "Description",
+        "Order": 3,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "SLA",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "StaticContent"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.ActionButtonWidgetConfigModel, Comindware.Platform.Contracts",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_a1efe521-1d66-44a9-8f43-463545e08bfc",
+          "Owner": "WidgetConfig_649a582c-d437-4707-824a-fee7d28c69f4",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "IsLink": true,
+        "Label": {
+          "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+          "Alignment": "Undefined",
+          "Hidden": false,
+          "Text": "Learn more"
+        },
+        "Name": "Learn more",
+        "Order": 4,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "SLA",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "ActionButton"
+      }
+    ]
+  },
+  "FieldType": "Tile",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WidgetConfig_649a582c-d437-4707-824a-fee7d28c69f4",
+    "Owner": "CMW_FM",
+    "Solution": "",
+    "Type": "DesktopWidgetConfig"
+  },
+  "Name": "Coworking",
+  "Order": 0,
+  "PropertyPath": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "Template": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "SLA",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Type": "FieldComponent"
+}

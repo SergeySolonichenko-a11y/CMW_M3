@@ -1,0 +1,64 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Expression": "IF(EMPTY(from a in $Contracts_calc where a->Status->Code==\"active\" select a->id), ENUMVALUE(\"ContractStatus\", \"inactive\"), ENUMVALUE(\"ContractStatus\", \"effective\"))",
+  "Format": "Badge",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "ContractStatus",
+    "Owner": "Tenants_calc",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "IsCalculated": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Contract status",
+  "Type": "Enum",
+  "Variants": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ObjectPropertyVariantValueModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ObjectPropertyVariantValueModel, Comindware.Platform.Contracts",
+        "Alias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "effective",
+          "Owner": "ContractStatus",
+          "Solution": "",
+          "Type": "Variant"
+        },
+        "Color": "#90ee90",
+        "Name": {
+          "$type": "Comindware.Platform.Contracts.LocalizedTextModel, Comindware.Platform.Contracts",
+          "En": "Active",
+          "Ru": "Active"
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ObjectPropertyVariantValueModel, Comindware.Platform.Contracts",
+        "Alias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "inactive",
+          "Owner": "ContractStatus",
+          "Solution": "",
+          "Type": "Variant"
+        },
+        "Color": "#d3d3d3",
+        "Name": {
+          "$type": "Comindware.Platform.Contracts.LocalizedTextModel, Comindware.Platform.Contracts",
+          "En": "Not effective",
+          "Ru": "Not effective"
+        }
+      }
+    ]
+  }
+}

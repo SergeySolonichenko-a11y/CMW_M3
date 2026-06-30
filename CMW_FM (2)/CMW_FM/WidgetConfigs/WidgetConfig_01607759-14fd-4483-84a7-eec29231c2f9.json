@@ -1,0 +1,216 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.ChartWidgetConfigModel, Comindware.Platform.Contracts",
+  "AllowDrillDown": true,
+  "Charts": {
+    "$type": "Comindware.Platform.Contracts.Desktop.ChartConfigurationModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.ChartConfigurationModel, Comindware.Platform.Contracts",
+        "AggregationMethod": "Count",
+        "AggregationProperty": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "op.965"
+          ]
+        },
+        "ChartType": "Bar",
+        "DataContext": {
+          "$type": "Comindware.Platform.Contracts.Desktop.DataContextModel, Comindware.Platform.Contracts",
+          "Aggregation": {
+            "$type": "Comindware.Platform.Contracts.Desktop.AggregationConfigurationModel, Comindware.Platform.Contracts",
+            "Method": "Count",
+            "QueryPredicate": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "Status",
+                  "Owner": "ServiceRequests",
+                  "Solution": "CMW_FM",
+                  "Type": "Attribute"
+                }
+              ]
+            }
+          },
+          "Groupings": {
+            "$type": "Comindware.Platform.Contracts.Desktop.GroupingConfigurationModel[], Comindware.Platform.Contracts",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.Desktop.GroupingConfigurationModel, Comindware.Platform.Contracts",
+                "QueryPredicate": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                  "$values": [
+                    {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                      "Alias": "MonthAux_calc",
+                      "Owner": "ServiceRequests",
+                      "Solution": "CMW_FM",
+                      "Type": "Attribute"
+                    }
+                  ]
+                }
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.Desktop.GroupingConfigurationModel, Comindware.Platform.Contracts"
+              }
+            ]
+          },
+          "Sorting": {
+            "$type": "Comindware.Platform.Contracts.Desktop.SortingConfigurationModel, Comindware.Platform.Contracts",
+            "Direction": "Asc",
+            "NullValuesOnTop": false
+          }
+        },
+        "GroupingAlgorithm": "Undefined",
+        "GroupingText": "Total work orders",
+        "Id": "chart.20",
+        "IsHorizontal": true,
+        "IsStacked": false,
+        "Label": {
+          "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+          "Alignment": "Undefined",
+          "Hidden": false,
+          "Text": "Work orders by month"
+        },
+        "ShowLegendValue": true,
+        "ShowTotalValue": false,
+        "SortDirection": "Asc",
+        "SubgroupingAlgorithm": "Undefined"
+      }
+    ]
+  },
+  "Children": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.WidgetConfigModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": []
+  },
+  "Columns": {
+    "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Month",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "MonthAux_calc",
+              "Owner": "ServiceRequests",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Registered",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "RegistrationDateTime_calc",
+              "Owner": "ServiceRequests",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Work order",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Description_calc",
+              "Owner": "ServiceRequests",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Status",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Status",
+              "Owner": "ServiceRequests",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Status",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Status",
+              "Owner": "ServiceRequests",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "DateFilter": {
+    "$type": "Comindware.Platform.Contracts.Desktop.DateFilterModel, Comindware.Platform.Contracts",
+    "DefaultType": "CurrentYear",
+    "FilterTypesSet": "Years",
+    "QueryPredicate": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "RegistrationDateTime_calc",
+          "Owner": "ServiceRequests",
+          "Solution": "CMW_FM",
+          "Type": "Attribute"
+        }
+      ]
+    },
+    "UseAllTimeFilterType": true
+  },
+  "FieldType": "Chart",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WidgetConfig_01607759-14fd-4483-84a7-eec29231c2f9",
+    "Owner": "CMW_FM",
+    "Solution": "",
+    "Type": "DesktopWidgetConfig"
+  },
+  "Label": {
+    "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+    "Alignment": "Undefined",
+    "Hidden": false,
+    "Text": "Work orders by month"
+  },
+  "Name": "Work orders by month",
+  "Order": 0,
+  "PropertyPath": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "Template": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "ServiceRequests",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Type": "FieldComponent"
+}

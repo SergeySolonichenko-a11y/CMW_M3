@@ -1,0 +1,105 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.PageModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Page_247353a1-8018-41e3-94c6-d32133068ef4",
+    "Owner": "Page_247353a1-8018-41e3-94c6-d32133068ef4",
+    "Solution": "",
+    "Type": "SimplePage"
+  },
+  "Name": "Dispatcher reports",
+  "Root": {
+    "$type": "Comindware.Platform.Contracts.Desktop.VerticalLayoutComponentModel, Comindware.Platform.Contracts",
+    "AccessType": "Undefined",
+    "GlobalAlias": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "Component_08948193-4d0d-4492-b718-229b5aec95ed",
+      "Owner": "Page_247353a1-8018-41e3-94c6-d32133068ef4",
+      "Solution": "",
+      "Type": "DesktopComponent"
+    },
+    "Order": 1,
+    "Rows": {
+      "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.Desktop.GroupPanelComponentModel, Comindware.Platform.Contracts",
+          "AccessType": "Editable",
+          "GlobalAlias": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Component_68138a20-aaa8-4160-b0b7-00b5c67f404b",
+            "Owner": "Component_08948193-4d0d-4492-b718-229b5aec95ed",
+            "Solution": "",
+            "Type": "DesktopComponent"
+          },
+          "Name": "Reports",
+          "Order": 1,
+          "Rows": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.Desktop.VerticalLayoutComponentModel, Comindware.Platform.Contracts",
+                "AccessType": "Undefined",
+                "GlobalAlias": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "Component_b67d5c44-c0f2-4c81-a205-6c16c805b842",
+                  "Owner": "Component_68138a20-aaa8-4160-b0b7-00b5c67f404b",
+                  "Solution": "",
+                  "Type": "DesktopComponent"
+                },
+                "Order": 1,
+                "Rows": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Type": "VerticalLayout",
+                "Width": "100"
+              }
+            ]
+          },
+          "Type": "GroupPanel",
+          "Width": "100"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.Desktop.GroupPanelComponentModel, Comindware.Platform.Contracts",
+          "AccessType": "Editable",
+          "GlobalAlias": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Component_0a22b96a-5333-4a30-8871-9051b6cd398d",
+            "Owner": "Component_08948193-4d0d-4492-b718-229b5aec95ed",
+            "Solution": "",
+            "Type": "DesktopComponent"
+          },
+          "Name": "Work order statistics",
+          "Order": 2,
+          "Rows": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.Desktop.VerticalLayoutComponentModel, Comindware.Platform.Contracts",
+                "AccessType": "Undefined",
+                "GlobalAlias": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "Component_eabd2f04-2f52-471b-85db-8140721caf36",
+                  "Owner": "Component_0a22b96a-5333-4a30-8871-9051b6cd398d",
+                  "Solution": "",
+                  "Type": "DesktopComponent"
+                },
+                "Order": 1,
+                "Rows": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Type": "VerticalLayout",
+                "Width": "100"
+              }
+            ]
+          },
+          "Type": "GroupPanel",
+          "Width": "100"
+        }
+      ]
+    },
+    "Type": "VerticalLayout"
+  }
+}

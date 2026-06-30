@@ -1,0 +1,59 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.BannerWidgetConfigModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WidgetConfig_ec2e8e03-0efc-4193-aa64-9a03c47dc1da",
+    "Owner": "CMW_FM",
+    "Solution": "",
+    "Type": "DesktopWidgetConfig"
+  },
+  "Image": {
+    "$type": "Comindware.Platform.Contracts.ReferenceModel, Comindware.Platform.Contracts",
+    "Extension": "png",
+    "GlobalAlias": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "img.1",
+      "Solution": "",
+      "Type": "Image"
+    },
+    "Id": "img.1",
+    "Name": "Cmw_intro_clients.png",
+    "Url": "/ImageContent/GetContent?imageId=img.1"
+  },
+  "Label": {
+    "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+    "Alignment": "Undefined",
+    "Hidden": false,
+    "Text": "First management company"
+  },
+  "Links": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.LinkModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.LinkModel, Comindware.Platform.Contracts",
+        "IconClass": "apartment",
+        "Name": "Riverbend BC",
+        "Url": "#desktop/desktopPage.88"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.LinkModel, Comindware.Platform.Contracts",
+        "IconClass": "glasses",
+        "Name": "Business center panorama surgut",
+        "Url": "#desktop/desktopPage.89"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.LinkModel, Comindware.Platform.Contracts",
+        "IconClass": "ice-skate",
+        "Name": "Ice arena",
+        "Url": "#desktop/desktopPage.90"
+      }
+    ]
+  },
+  "Name": "All properties",
+  "Order": 0,
+  "PropertyPath": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "Type": "Banner"
+}

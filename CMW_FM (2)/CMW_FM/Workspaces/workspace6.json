@@ -1,0 +1,93 @@
+{
+  "$type": "Comindware.Platform.Contracts.RoleWorkspaceConfigurationModel, Comindware.Platform.Contracts",
+  "Description": "",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "workspace6",
+    "Solution": "CMW_FM",
+    "Type": "RoleWorkspace"
+  },
+  "Name": "Reception",
+  "NavigationItems": {
+    "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "ChildrenItems": {
+          "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "",
+              "Description": "",
+              "IconClass": "tablet-screen",
+              "ItemType": "SimplePage",
+              "Name": "Reception",
+              "Priority": 1,
+              "Severity": "None",
+              "Target": ""
+            }
+          ]
+        },
+        "Container": "",
+        "Description": "",
+        "IconClass": "desktop",
+        "ItemType": "DesktopPage",
+        "Name": "Dashboard",
+        "Priority": 3,
+        "Severity": "None",
+        "Target": ""
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "ChildrenItems": {
+          "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "",
+              "Description": "",
+              "IconClass": "flag-swallowtail",
+              "ItemType": "MyTasksList",
+              "Name": "Active tasks",
+              "Priority": 2,
+              "Severity": "None",
+              "Target": ""
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "",
+              "Description": "",
+              "IconClass": "check-double",
+              "ItemType": "MyTasksList",
+              "Name": "Completed tasks",
+              "Priority": 1,
+              "Severity": "None",
+              "Target": ""
+            }
+          ]
+        },
+        "Container": "",
+        "Description": "",
+        "IconClass": "tasks",
+        "ItemType": "MyTasks",
+        "Name": "My tasks",
+        "Priority": 2,
+        "Severity": "None",
+        "Target": ""
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Container": "ServiceRequestAccessBadgeRequest_calc",
+        "Description": "",
+        "IconClass": "id-badge",
+        "ItemType": "RecordTemplateList",
+        "Name": "Access badge requests",
+        "Priority": 1,
+        "Severity": "None",
+        "Target": "defaultList1",
+        "TargetSolution": "CMW_FM"
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.TriggerModel, Comindware.Platform.Contracts",
+  "ActionsHead": {
+    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.OnUserCommand, Comindware.Platform.Contracts",
+    "IsAsync": false,
+    "IsCleaningCache": false,
+    "IsSafe": false,
+    "Kind": "OnUserCommand",
+    "Name": "Button “Clone” clicked for “PM types”",
+    "NextAction": {
+      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectClone, Comindware.Platform.Contracts",
+      "IsAsync": false,
+      "IsCleaningCache": false,
+      "IsDeepClone": false,
+      "IsSafe": false,
+      "Kind": "ReferenceObjectClone",
+      "Name": "Find records by attribute “id”",
+      "ReferenceExpression": "$id",
+      "Scope": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "PMTypes_calc",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      },
+      "SetValueKind": "Undefined",
+      "TargetContainer": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "PMTypes_calc",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      }
+    },
+    "Scope": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "PMTypes_calc",
+      "Solution": "CMW_FM",
+      "Type": "RecordTemplate"
+    },
+    "UserCommand": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "Duplicate",
+      "Owner": "PMTypes_calc",
+      "Solution": "CMW_FM",
+      "Type": "UserCommand"
+    }
+  },
+  "BehaviourState": "Active",
+  "ExecutionContext": "ByInitiator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "DuplicateMaintenanceType",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Name": "Duplicate maintenance type"
+}

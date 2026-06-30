@@ -1,0 +1,999 @@
+{
+  "$type": "Comindware.Platform.Contracts.FormModel, Comindware.Platform.Contracts",
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "EventCalendar_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "FormSize": "Undefined",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "defaultForm",
+    "Owner": "EventCalendar_calc",
+    "Solution": "CMW_FM",
+    "Type": "Form"
+  },
+  "IsDefault": true,
+  "Name": "Work order calendar - default form",
+  "Origination": "Undefined",
+  "Root": {
+    "$type": "Comindware.Platform.Contracts.VerticalLayoutModel, Comindware.Platform.Contracts",
+    "AccessType": "Undefined",
+    "GlobalAlias": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "f699d52b48654b77a709c8060b7dcb1e",
+      "Solution": "",
+      "Type": "FormComponent"
+    },
+    "Rows": {
+      "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.PanelModel, Comindware.Platform.Contracts",
+          "AccessType": "Editable",
+          "DisplayName": "Events this day",
+          "GlobalAlias": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "4d40949f0d61402dbf19c499972f91a4",
+            "Solution": "",
+            "Type": "FormComponent"
+          },
+          "OriginalType": "GroupPanel",
+          "Rows": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.VerticalLayoutModel, Comindware.Platform.Contracts",
+                "AccessType": "Undefined",
+                "GlobalAlias": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "02e4644637bc44abbbcfa2f830805050",
+                  "Solution": "",
+                  "Type": "FormComponent"
+                },
+                "Rows": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": [
+                    {
+                      "$type": "Comindware.Platform.Contracts.FieldComponentModel, Comindware.Platform.Contracts",
+                      "AccessType": "Editable",
+                      "CreationType": "None",
+                      "DevicePhotoOnly": false,
+                      "DisableSidePanelConversations": false,
+                      "DisableWidgetConversations": false,
+                      "DisplayFormat": "ShowAsPicture",
+                      "DisplayTime": false,
+                      "EditorType": "Radio",
+                      "EditType": "None",
+                      "FieldType": "Date",
+                      "GlobalAlias": {
+                        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                        "Alias": "8fc66b22061d4e53b63c5163d4c08e70",
+                        "Solution": "",
+                        "Type": "FormComponent"
+                      },
+                      "HideArchivedMessages": false,
+                      "Label": {
+                        "$type": "Comindware.Platform.Contracts.LabelModel, Comindware.Platform.Contracts",
+                        "Alignment": "Top",
+                        "Hidden": false,
+                        "Text": "Calendar day"
+                      },
+                      "PropertyPath": {
+                        "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                        "$values": [
+                          {
+                            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                            "Alias": "Calendarday_calc",
+                            "Owner": "EventCalendar_calc",
+                            "Solution": "CMW_FM",
+                            "Type": "Attribute"
+                          }
+                        ]
+                      },
+                      "RemovalType": "None",
+                      "SortingDirection": "Asc",
+                      "Type": "FieldComponent",
+                      "Width": 0
+                    },
+                    {
+                      "$type": "Comindware.Platform.Contracts.LayoutModel, Comindware.Platform.Contracts",
+                      "AccessType": "Editable",
+                      "Components": {
+                        "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                        "$values": [
+                          {
+                            "$type": "Comindware.Platform.Contracts.PanelModel, Comindware.Platform.Contracts",
+                            "AccessType": "Editable",
+                            "DisplayName": "Work orders",
+                            "GlobalAlias": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "686ab6eff613410389b6971a3f02653d",
+                              "Solution": "",
+                              "Type": "FormComponent"
+                            },
+                            "OriginalType": "TabPanel",
+                            "Rows": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": [
+                                {
+                                  "$type": "Comindware.Platform.Contracts.LayoutModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Undefined",
+                                  "Components": {
+                                    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                    "$values": [
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.VerticalLayoutModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "e3540a5d6fff47b18d797d0d78615c35",
+                                          "Solution": "",
+                                          "Type": "FormComponent"
+                                        },
+                                        "Rows": {
+                                          "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                          "$values": [
+                                            {
+                                              "$type": "Comindware.Platform.Contracts.FieldComponentModel, Comindware.Platform.Contracts",
+                                              "AccessType": "Readonly",
+                                              "AllowDecimal": false,
+                                              "CreationType": "None",
+                                              "DevicePhotoOnly": false,
+                                              "DisableSidePanelConversations": false,
+                                              "DisableWidgetConversations": false,
+                                              "DisplayFormat": "ShowAsPicture",
+                                              "EditorType": "Radio",
+                                              "EditType": "None",
+                                              "FieldType": "Number",
+                                              "GlobalAlias": {
+                                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                                "Alias": "414a2ec61dd74467a5b72d310520091a",
+                                                "Solution": "",
+                                                "Type": "FormComponent"
+                                              },
+                                              "HelpText": "Update the formula to use the collection, not the entire service request.",
+                                              "HideArchivedMessages": false,
+                                              "Label": {
+                                                "$type": "Comindware.Platform.Contracts.LabelModel, Comindware.Platform.Contracts",
+                                                "Alignment": "Top",
+                                                "Hidden": false,
+                                                "Text": "Work Orders Per Day"
+                                              },
+                                              "PropertyPath": {
+                                                "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                                                "$values": [
+                                                  {
+                                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                                    "Alias": "ServiceRequestsPerDay",
+                                                    "Owner": "EventCalendar_calc",
+                                                    "Solution": "CMW_FM",
+                                                    "Type": "Attribute"
+                                                  }
+                                                ]
+                                              },
+                                              "RemovalType": "None",
+                                              "SortingDirection": "Asc",
+                                              "Type": "FieldComponent",
+                                              "Width": 0
+                                            },
+                                            {
+                                              "$type": "Comindware.Platform.Contracts.FieldComponentModel, Comindware.Platform.Contracts",
+                                              "AccessType": "Editable",
+                                              "CreationType": "None",
+                                              "DevicePhotoOnly": false,
+                                              "DisableSidePanelConversations": false,
+                                              "DisableWidgetConversations": false,
+                                              "DisplayFormat": "ShowAsPicture",
+                                              "EditorType": "Multiline",
+                                              "EditType": "None",
+                                              "FieldType": "Text",
+                                              "GlobalAlias": {
+                                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                                "Alias": "cd4a75888be8450db5c9796df61eb220",
+                                                "Solution": "",
+                                                "Type": "FormComponent"
+                                              },
+                                              "HideArchivedMessages": false,
+                                              "Label": {
+                                                "$type": "Comindware.Platform.Contracts.LabelModel, Comindware.Platform.Contracts",
+                                                "Alignment": "Top",
+                                                "Hidden": false,
+                                                "Text": "Sla"
+                                              },
+                                              "MaxLength": 0,
+                                              "PropertyPath": {
+                                                "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                                                "$values": [
+                                                  {
+                                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                                    "Alias": "SLA",
+                                                    "Owner": "EventCalendar_calc",
+                                                    "Solution": "CMW_FM",
+                                                    "Type": "Attribute"
+                                                  }
+                                                ]
+                                              },
+                                              "RemovalType": "None",
+                                              "SortingDirection": "Asc",
+                                              "TextHeight": 0,
+                                              "TextHeightAuto": false,
+                                              "Type": "FieldComponent",
+                                              "Width": 0
+                                            }
+                                          ]
+                                        },
+                                        "Type": "VerticalLayout",
+                                        "Width": 50
+                                      },
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.VerticalLayoutModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "fa193f466c51436998ed562074decc13",
+                                          "Solution": "",
+                                          "Type": "FormComponent"
+                                        },
+                                        "Rows": {
+                                          "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                          "$values": [
+                                            {
+                                              "$type": "Comindware.Platform.Contracts.FieldComponentModel, Comindware.Platform.Contracts",
+                                              "AccessType": "Editable",
+                                              "AllowEdit": false,
+                                              "CreationType": "None",
+                                              "DevicePhotoOnly": false,
+                                              "DisableSidePanelConversations": false,
+                                              "DisableWidgetConversations": false,
+                                              "DisplayFormat": "ShowAsPicture",
+                                              "EditorType": "Radio",
+                                              "EditType": "None",
+                                              "FieldType": "Reference",
+                                              "GlobalAlias": {
+                                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                                "Alias": "fa3d9da82005498d89a2c5e22fdbd974",
+                                                "Solution": "",
+                                                "Type": "FormComponent"
+                                              },
+                                              "HideArchivedMessages": false,
+                                              "HideSearchBar": false,
+                                              "Label": {
+                                                "$type": "Comindware.Platform.Contracts.LabelModel, Comindware.Platform.Contracts",
+                                                "Alignment": "Top",
+                                                "Hidden": false,
+                                                "Text": "Incidents"
+                                              },
+                                              "PropertyPath": {
+                                                "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                                                "$values": [
+                                                  {
+                                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                                    "Alias": "Incidents",
+                                                    "Owner": "EventCalendar_calc",
+                                                    "Solution": "CMW_FM",
+                                                    "Type": "Attribute"
+                                                  }
+                                                ]
+                                              },
+                                              "RemovalType": "None",
+                                              "ShowAsLink": false,
+                                              "SortingDirection": "Asc",
+                                              "Type": "FieldComponent",
+                                              "Width": 0
+                                            },
+                                            {
+                                              "$type": "Comindware.Platform.Contracts.FieldComponentModel, Comindware.Platform.Contracts",
+                                              "AccessType": "Editable",
+                                              "CreationType": "None",
+                                              "DevicePhotoOnly": false,
+                                              "DisableSidePanelConversations": false,
+                                              "DisableWidgetConversations": false,
+                                              "DisplayFormat": "ShowAsPicture",
+                                              "EditorType": "Multiline",
+                                              "EditType": "None",
+                                              "FieldType": "Text",
+                                              "GlobalAlias": {
+                                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                                "Alias": "d7ce1354b57f4f9fb6f66a291b2d07ba",
+                                                "Solution": "",
+                                                "Type": "FormComponent"
+                                              },
+                                              "HideArchivedMessages": false,
+                                              "Label": {
+                                                "$type": "Comindware.Platform.Contracts.LabelModel, Comindware.Platform.Contracts",
+                                                "Alignment": "Top",
+                                                "Hidden": false,
+                                                "Text": "Efficiency"
+                                              },
+                                              "MaxLength": 0,
+                                              "PropertyPath": {
+                                                "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                                                "$values": [
+                                                  {
+                                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                                    "Alias": "Efficiency",
+                                                    "Owner": "EventCalendar_calc",
+                                                    "Solution": "CMW_FM",
+                                                    "Type": "Attribute"
+                                                  }
+                                                ]
+                                              },
+                                              "RemovalType": "None",
+                                              "SortingDirection": "Asc",
+                                              "TextHeight": 0,
+                                              "TextHeightAuto": false,
+                                              "Type": "FieldComponent",
+                                              "Width": 0
+                                            }
+                                          ]
+                                        },
+                                        "Type": "VerticalLayout",
+                                        "Width": 50
+                                      }
+                                    ]
+                                  },
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "c30b8d74cfaf4a4b9a9f0389411d8ff4",
+                                    "Solution": "",
+                                    "Type": "FormComponent"
+                                  },
+                                  "OriginalType": "HorizontalLayout",
+                                  "Type": "LayoutModel",
+                                  "Width": 0
+                                },
+                                {
+                                  "$type": "Comindware.Platform.Contracts.FieldComponentModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Readonly",
+                                  "Card": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "card1094",
+                                    "Owner": "ServiceRequests",
+                                    "Solution": "CMW_FM",
+                                    "Type": "Card"
+                                  },
+                                  "Columns": {
+                                    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FieldComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                    "$values": [
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.FieldComponentModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Readonly",
+                                        "AllowEdit": false,
+                                        "CreationType": "None",
+                                        "DevicePhotoOnly": false,
+                                        "DisableSidePanelConversations": false,
+                                        "DisableWidgetConversations": false,
+                                        "DisplayFormat": "ShowAsPicture",
+                                        "EditorType": "Radio",
+                                        "EditType": "None",
+                                        "FieldType": "TableColumn",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "1e81ac76d5804c8f94cbecc2f5c1a032",
+                                          "Solution": "",
+                                          "Type": "FormComponent"
+                                        },
+                                        "HideArchivedMessages": false,
+                                        "Label": {
+                                          "$type": "Comindware.Platform.Contracts.LabelModel, Comindware.Platform.Contracts",
+                                          "Alignment": "Undefined",
+                                          "Hidden": false,
+                                          "Text": "Indicator"
+                                        },
+                                        "PropertyPath": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                                          "$values": [
+                                            {
+                                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                              "Alias": "IndicatorStatus",
+                                              "Owner": "ServiceRequests",
+                                              "Solution": "CMW_FM",
+                                              "Type": "Attribute"
+                                            }
+                                          ]
+                                        },
+                                        "RemovalType": "None",
+                                        "SortingDirection": "Asc",
+                                        "Type": "FieldComponent",
+                                        "Width": 120
+                                      },
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.FieldComponentModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Editable",
+                                        "AllowEdit": false,
+                                        "CreationType": "None",
+                                        "DevicePhotoOnly": false,
+                                        "DisableSidePanelConversations": false,
+                                        "DisableWidgetConversations": false,
+                                        "DisplayFormat": "ShowAsPicture",
+                                        "EditorType": "Radio",
+                                        "EditType": "None",
+                                        "FieldType": "TableColumn",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "54a34f27ff5d4808bd6730adbe85f6ab",
+                                          "Solution": "",
+                                          "Type": "FormComponent"
+                                        },
+                                        "HideArchivedMessages": false,
+                                        "Label": {
+                                          "$type": "Comindware.Platform.Contracts.LabelModel, Comindware.Platform.Contracts",
+                                          "Alignment": "Undefined",
+                                          "Hidden": false,
+                                          "Text": "Registration time"
+                                        },
+                                        "PropertyPath": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                                          "$values": [
+                                            {
+                                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                              "Alias": "RegistrationDateTime_calc",
+                                              "Owner": "ServiceRequests",
+                                              "Solution": "CMW_FM",
+                                              "Type": "Attribute"
+                                            }
+                                          ]
+                                        },
+                                        "RemovalType": "None",
+                                        "SortingDirection": "Asc",
+                                        "TimeZonePropertyPath": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                                          "$values": [
+                                            {
+                                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                              "Alias": "Property",
+                                              "Owner": "ServiceRequests",
+                                              "Solution": "CMW_FM",
+                                              "Type": "Attribute"
+                                            },
+                                            {
+                                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                              "Alias": "Timezone",
+                                              "Owner": "Properties",
+                                              "Solution": "CMW_FM",
+                                              "Type": "Attribute"
+                                            }
+                                          ]
+                                        },
+                                        "Type": "FieldComponent",
+                                        "Width": 150
+                                      },
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.FieldComponentModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Editable",
+                                        "AllowEdit": false,
+                                        "CreationType": "None",
+                                        "DevicePhotoOnly": false,
+                                        "DisableSidePanelConversations": false,
+                                        "DisableWidgetConversations": false,
+                                        "DisplayFormat": "ShowAsPicture",
+                                        "EditorType": "Radio",
+                                        "EditType": "None",
+                                        "FieldType": "TableColumn",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "984af7bd35684c63bb4a2d386ee3b4ee",
+                                          "Solution": "",
+                                          "Type": "FormComponent"
+                                        },
+                                        "HideArchivedMessages": false,
+                                        "Label": {
+                                          "$type": "Comindware.Platform.Contracts.LabelModel, Comindware.Platform.Contracts",
+                                          "Alignment": "Undefined",
+                                          "Hidden": false,
+                                          "Text": "Message"
+                                        },
+                                        "PropertyPath": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                                          "$values": [
+                                            {
+                                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                              "Alias": "Description_calc",
+                                              "Owner": "ServiceRequests",
+                                              "Solution": "CMW_FM",
+                                              "Type": "Attribute"
+                                            }
+                                          ]
+                                        },
+                                        "RemovalType": "None",
+                                        "SortingDirection": "Asc",
+                                        "Type": "FieldComponent",
+                                        "Width": 300
+                                      }
+                                    ]
+                                  },
+                                  "CreationType": "None",
+                                  "DevicePhotoOnly": false,
+                                  "DisableSidePanelConversations": false,
+                                  "DisableWidgetConversations": false,
+                                  "DisplayFormat": "ShowAsPicture",
+                                  "EditorType": "Radio",
+                                  "EditType": "None",
+                                  "FieldType": "Table",
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "f24c7c685fee440092d740695fd19862",
+                                    "Solution": "",
+                                    "Type": "FormComponent"
+                                  },
+                                  "HideArchivedMessages": false,
+                                  "Label": {
+                                    "$type": "Comindware.Platform.Contracts.LabelModel, Comindware.Platform.Contracts",
+                                    "Alignment": "Top",
+                                    "Hidden": false,
+                                    "Text": "Incoming Work Orders"
+                                  },
+                                  "PropertyPath": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                                    "$values": [
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                        "Alias": "ServiceRequestIncomingWorkOrders",
+                                        "Owner": "EventCalendar_calc",
+                                        "Solution": "CMW_FM",
+                                        "Type": "Attribute"
+                                      }
+                                    ]
+                                  },
+                                  "RemovalType": "None",
+                                  "ShowArchiveRecords": false,
+                                  "SortingDirection": "Asc",
+                                  "Toolbar": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "toolbarcc894235c5224b23b8c6316445aca791",
+                                    "Owner": "ServiceRequests",
+                                    "Solution": "CMW_FM",
+                                    "Type": "Toolbar"
+                                  },
+                                  "Type": "FieldComponent",
+                                  "Width": 0
+                                }
+                              ]
+                            },
+                            "Toolbar": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "ToolbarComponent",
+                              "Owner": "EventCalendar_calc",
+                              "Solution": "CMW_FM",
+                              "Type": "Toolbar"
+                            },
+                            "Type": "PanelModel",
+                            "Width": 0
+                          },
+                          {
+                            "$type": "Comindware.Platform.Contracts.PanelModel, Comindware.Platform.Contracts",
+                            "AccessType": "Editable",
+                            "DisplayName": "Inspections",
+                            "GlobalAlias": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "d2b64c296ade45d69652a388f7ce77e6",
+                              "Solution": "",
+                              "Type": "FormComponent"
+                            },
+                            "OriginalType": "TabPanel",
+                            "Rows": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": [
+                                {
+                                  "$type": "Comindware.Platform.Contracts.FieldComponentModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Editable",
+                                  "CreationType": "None",
+                                  "DevicePhotoOnly": false,
+                                  "DisableSidePanelConversations": false,
+                                  "DisableWidgetConversations": false,
+                                  "DisplayFormat": "ShowAsPicture",
+                                  "EditorType": "Multiline",
+                                  "EditType": "None",
+                                  "FieldType": "Text",
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "32ab1e94b43f4844a296a0131384408e",
+                                    "Solution": "",
+                                    "Type": "FormComponent"
+                                  },
+                                  "HideArchivedMessages": false,
+                                  "Label": {
+                                    "$type": "Comindware.Platform.Contracts.LabelModel, Comindware.Platform.Contracts",
+                                    "Alignment": "Top",
+                                    "Hidden": false,
+                                    "Text": "Inspections Completed"
+                                  },
+                                  "MaxLength": 0,
+                                  "PropertyPath": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                                    "$values": [
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                        "Alias": "InspectionsCompleted",
+                                        "Owner": "EventCalendar_calc",
+                                        "Solution": "CMW_FM",
+                                        "Type": "Attribute"
+                                      }
+                                    ]
+                                  },
+                                  "RemovalType": "None",
+                                  "SortingDirection": "Asc",
+                                  "TextHeight": 0,
+                                  "TextHeightAuto": false,
+                                  "Type": "FieldComponent",
+                                  "Width": 0
+                                },
+                                {
+                                  "$type": "Comindware.Platform.Contracts.LayoutModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Undefined",
+                                  "Components": {
+                                    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                    "$values": [
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.VerticalLayoutModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "d843ebbdfe744dbda6bfbd2967107285",
+                                          "Solution": "",
+                                          "Type": "FormComponent"
+                                        },
+                                        "Type": "VerticalLayout",
+                                        "Width": 50
+                                      },
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.VerticalLayoutModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "a77f8a35224e4abb8b6eab0d2599c609",
+                                          "Solution": "",
+                                          "Type": "FormComponent"
+                                        },
+                                        "Type": "VerticalLayout",
+                                        "Width": 50
+                                      }
+                                    ]
+                                  },
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "ff8d03fbf82942ed9c11ed20f56b0716",
+                                    "Solution": "",
+                                    "Type": "FormComponent"
+                                  },
+                                  "OriginalType": "HorizontalLayout",
+                                  "Type": "LayoutModel",
+                                  "Width": 0
+                                }
+                              ]
+                            },
+                            "Toolbar": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "ToolbarComponent2",
+                              "Owner": "EventCalendar_calc",
+                              "Solution": "CMW_FM",
+                              "Type": "Toolbar"
+                            },
+                            "Type": "PanelModel",
+                            "Width": 0
+                          },
+                          {
+                            "$type": "Comindware.Platform.Contracts.PanelModel, Comindware.Platform.Contracts",
+                            "AccessType": "Editable",
+                            "DisplayName": "PM and CM",
+                            "GlobalAlias": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "ebac92e717b54203aeaf591fc0a41e38",
+                              "Solution": "",
+                              "Type": "FormComponent"
+                            },
+                            "OriginalType": "TabPanel",
+                            "Rows": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": [
+                                {
+                                  "$type": "Comindware.Platform.Contracts.FieldComponentModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Editable",
+                                  "CreationType": "None",
+                                  "DevicePhotoOnly": false,
+                                  "DisableSidePanelConversations": false,
+                                  "DisableWidgetConversations": false,
+                                  "DisplayFormat": "ShowAsPicture",
+                                  "EditorType": "Multiline",
+                                  "EditType": "None",
+                                  "FieldType": "Text",
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "35a52b980ab54fb2b4a48d30dee2553b",
+                                    "Solution": "",
+                                    "Type": "FormComponent"
+                                  },
+                                  "HideArchivedMessages": false,
+                                  "Label": {
+                                    "$type": "Comindware.Platform.Contracts.LabelModel, Comindware.Platform.Contracts",
+                                    "Alignment": "Top",
+                                    "Hidden": false,
+                                    "Text": "PMCompleted"
+                                  },
+                                  "MaxLength": 0,
+                                  "PropertyPath": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                                    "$values": [
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                        "Alias": "PMCompleted",
+                                        "Owner": "EventCalendar_calc",
+                                        "Solution": "CMW_FM",
+                                        "Type": "Attribute"
+                                      }
+                                    ]
+                                  },
+                                  "RemovalType": "None",
+                                  "SortingDirection": "Asc",
+                                  "TextHeight": 0,
+                                  "TextHeightAuto": false,
+                                  "Type": "FieldComponent",
+                                  "Width": 0
+                                },
+                                {
+                                  "$type": "Comindware.Platform.Contracts.LayoutModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Undefined",
+                                  "Components": {
+                                    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                    "$values": [
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.VerticalLayoutModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "496ea0cab455430e98ba9af44eebac80",
+                                          "Solution": "",
+                                          "Type": "FormComponent"
+                                        },
+                                        "Type": "VerticalLayout",
+                                        "Width": 50
+                                      },
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.VerticalLayoutModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "243ec31a9cd34f2f9ab3224e7562bf88",
+                                          "Solution": "",
+                                          "Type": "FormComponent"
+                                        },
+                                        "Type": "VerticalLayout",
+                                        "Width": 50
+                                      }
+                                    ]
+                                  },
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "9d03fe710e344820aaa7328328b0c5b4",
+                                    "Solution": "",
+                                    "Type": "FormComponent"
+                                  },
+                                  "OriginalType": "HorizontalLayout",
+                                  "Type": "LayoutModel",
+                                  "Width": 0
+                                }
+                              ]
+                            },
+                            "Toolbar": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "ToolbarComponent3",
+                              "Owner": "EventCalendar_calc",
+                              "Solution": "CMW_FM",
+                              "Type": "Toolbar"
+                            },
+                            "Type": "PanelModel",
+                            "Width": 0
+                          },
+                          {
+                            "$type": "Comindware.Platform.Contracts.PanelModel, Comindware.Platform.Contracts",
+                            "AccessType": "Editable",
+                            "DisplayName": "Cleaning",
+                            "GlobalAlias": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "71ba832d1fb344a69e31724ed420f3da",
+                              "Solution": "",
+                              "Type": "FormComponent"
+                            },
+                            "OriginalType": "TabPanel",
+                            "Rows": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": [
+                                {
+                                  "$type": "Comindware.Platform.Contracts.LayoutModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Undefined",
+                                  "Components": {
+                                    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                    "$values": [
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.VerticalLayoutModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "fe6eec45b6bb45fbb90e0813f8590400",
+                                          "Solution": "",
+                                          "Type": "FormComponent"
+                                        },
+                                        "Type": "VerticalLayout",
+                                        "Width": 50
+                                      },
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.VerticalLayoutModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "e3893caea39047a3aaf0c733728bc582",
+                                          "Solution": "",
+                                          "Type": "FormComponent"
+                                        },
+                                        "Type": "VerticalLayout",
+                                        "Width": 50
+                                      }
+                                    ]
+                                  },
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "bfac6ed4864a441a9c934efb39c09b00",
+                                    "Solution": "",
+                                    "Type": "FormComponent"
+                                  },
+                                  "OriginalType": "HorizontalLayout",
+                                  "Type": "LayoutModel",
+                                  "Width": 0
+                                }
+                              ]
+                            },
+                            "Toolbar": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "ToolbarComponent4",
+                              "Owner": "EventCalendar_calc",
+                              "Solution": "CMW_FM",
+                              "Type": "Toolbar"
+                            },
+                            "Type": "PanelModel",
+                            "Width": 0
+                          },
+                          {
+                            "$type": "Comindware.Platform.Contracts.PanelModel, Comindware.Platform.Contracts",
+                            "AccessType": "Editable",
+                            "DisplayName": "Materials",
+                            "GlobalAlias": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "03c4a9f503d04cbbad87c9f0eeb480ee",
+                              "Solution": "",
+                              "Type": "FormComponent"
+                            },
+                            "OriginalType": "TabPanel",
+                            "Rows": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": [
+                                {
+                                  "$type": "Comindware.Platform.Contracts.LayoutModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Undefined",
+                                  "Components": {
+                                    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                    "$values": [
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.VerticalLayoutModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "1666bdef07ea45719bdb99219f343beb",
+                                          "Solution": "",
+                                          "Type": "FormComponent"
+                                        },
+                                        "Rows": {
+                                          "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                          "$values": [
+                                            {
+                                              "$type": "Comindware.Platform.Contracts.StaticContentModel, Comindware.Platform.Contracts",
+                                              "AccessType": "Undefined",
+                                              "Content": "<p><strong>Write-offs</strong></p>",
+                                              "DisplayName": "<p><strong>Write-offs</strong></p>",
+                                              "GlobalAlias": {
+                                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                                "Alias": "cb10eb911ce846b0ab56faaad4ef086c",
+                                                "Solution": "",
+                                                "Type": "FormComponent"
+                                              },
+                                              "Type": "StaticContent",
+                                              "Width": 0
+                                            }
+                                          ]
+                                        },
+                                        "Type": "VerticalLayout",
+                                        "Width": 50
+                                      },
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.VerticalLayoutModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "b87b833b844342258cfe4e96c316046d",
+                                          "Solution": "",
+                                          "Type": "FormComponent"
+                                        },
+                                        "Rows": {
+                                          "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                          "$values": [
+                                            {
+                                              "$type": "Comindware.Platform.Contracts.StaticContentModel, Comindware.Platform.Contracts",
+                                              "AccessType": "Undefined",
+                                              "Content": "<p><strong>Receipts</strong></p>",
+                                              "DisplayName": "<p><strong>Receipts</strong></p>",
+                                              "GlobalAlias": {
+                                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                                "Alias": "7a3eaaa1f13d4811b722ba0d76575d34",
+                                                "Solution": "",
+                                                "Type": "FormComponent"
+                                              },
+                                              "Type": "StaticContent",
+                                              "Width": 0
+                                            }
+                                          ]
+                                        },
+                                        "Type": "VerticalLayout",
+                                        "Width": 50
+                                      }
+                                    ]
+                                  },
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "c31d8133a99b4a35b590567eb9c46297",
+                                    "Solution": "",
+                                    "Type": "FormComponent"
+                                  },
+                                  "OriginalType": "HorizontalLayout",
+                                  "Type": "LayoutModel",
+                                  "Width": 0
+                                }
+                              ]
+                            },
+                            "Toolbar": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "ToolbarComponent5",
+                              "Owner": "EventCalendar_calc",
+                              "Solution": "CMW_FM",
+                              "Type": "Toolbar"
+                            },
+                            "Type": "PanelModel",
+                            "Width": 0
+                          }
+                        ]
+                      },
+                      "GlobalAlias": {
+                        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                        "Alias": "ef6b88f5d4504ef7b895b607271ef210",
+                        "Solution": "",
+                        "Type": "FormComponent"
+                      },
+                      "OriginalType": "TabLayout",
+                      "Type": "LayoutModel",
+                      "Width": 0
+                    }
+                  ]
+                },
+                "Type": "VerticalLayout",
+                "Width": 0
+              }
+            ]
+          },
+          "Toolbar": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "toolbarf50ef4f0bf644b9ba1662c98236f6f0e",
+            "Owner": "EventCalendar_calc",
+            "Solution": "CMW_FM",
+            "Type": "Toolbar"
+          },
+          "Type": "PanelModel",
+          "Width": 100
+        }
+      ]
+    },
+    "Type": "VerticalLayout",
+    "Width": 0
+  },
+  "Type": "PublicForm",
+  "WithSimpleToolbar": false
+}

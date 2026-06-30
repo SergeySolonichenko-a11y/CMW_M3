@@ -1,0 +1,124 @@
+{
+  "$type": "Comindware.Platform.Contracts.DatasetModel, Comindware.Platform.Contracts",
+  "Columns": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": false,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Name",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Name_calc",
+              "Owner": "QuickLinks",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": false,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Link",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Link",
+              "Owner": "QuickLinks",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": false,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Picture",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Picture",
+              "Owner": "QuickLinks",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ColumnConfigurationModel, Comindware.Platform.Contracts",
+        "IsHidden": false,
+        "Layout": {
+          "$type": "Comindware.Platform.Contracts.ColumnLayoutModel, Comindware.Platform.Contracts",
+          "Flex": 1.0,
+          "Width": 0.0
+        },
+        "Name": "Equipment ID",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "EquipmentID_calc",
+              "Owner": "QuickLinks",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "QuickLinks",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "defaultList",
+    "Owner": "QuickLinks",
+    "Solution": "CMW_FM",
+    "Type": "Dataset"
+  },
+  "IsDefault": true,
+  "IsLazyLoading": false,
+  "Name": "Card examples",
+  "Paging": {
+    "$type": "Comindware.Platform.Contracts.PagingConfigurationModel, Comindware.Platform.Contracts",
+    "Page": 0,
+    "Size": 50
+  },
+  "ShowDisabled": false,
+  "Sorting": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.SortingConfigurationModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": []
+  },
+  "StickedColumnCount": 0,
+  "ViewType": "General"
+}

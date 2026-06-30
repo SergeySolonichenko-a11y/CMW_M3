@@ -1,0 +1,58 @@
+{
+  "$type": "Comindware.Platform.Contracts.ToolbarModel, Comindware.Platform.Contracts",
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Report",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "toolbar1544c26abdee4e16b6c4387b0349e7f3",
+    "Owner": "Report",
+    "Solution": "CMW_FM",
+    "Type": "Toolbar"
+  },
+  "IsDefaultForForms": false,
+  "IsDefaultForLists": false,
+  "IsDefaultForModelDesigner": false,
+  "IsDefaultForProcess": false,
+  "IsDefaultForProcessDesigner": false,
+  "IsDefaultForTaskLists": false,
+  "Items": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts",
+        "Action": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "create",
+          "Owner": "Report",
+          "Solution": "CMW_FM",
+          "Type": "UserCommand"
+        },
+        "IconType": "Undefined",
+        "Name": "Create",
+        "Order": 0,
+        "Severity": "None",
+        "Type": "Action"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts",
+        "Action": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "delete",
+          "Owner": "Report",
+          "Solution": "CMW_FM",
+          "Type": "UserCommand"
+        },
+        "IconType": "Undefined",
+        "Name": "Delete",
+        "Order": 0,
+        "Severity": "None",
+        "Type": "Action"
+      }
+    ]
+  },
+  "Name": "Toolbar for “All”"
+}

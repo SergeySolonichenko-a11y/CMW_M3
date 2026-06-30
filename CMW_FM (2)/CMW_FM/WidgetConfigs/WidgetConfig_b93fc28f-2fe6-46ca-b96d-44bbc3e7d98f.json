@@ -1,0 +1,153 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.ListWidgetConfigModel, Comindware.Platform.Contracts",
+  "Children": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.WidgetConfigModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.IconWidgetConfigModel, Comindware.Platform.Contracts",
+        "Color": "#0575bd",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_a22aeda3-2bce-4624-afb5-3e843fbe0d47",
+          "Owner": "WidgetConfig_b93fc28f-2fe6-46ca-b96d-44bbc3e7d98f",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "IconClass": "map-location",
+        "IconType": "Undefined",
+        "Name": "Image",
+        "Order": 1,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "InspectionRoutes_calc",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "Icon"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.DateFieldWidgetConfigModel, Comindware.Platform.Contracts",
+        "FieldType": "Date",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_7363fb06-3ffd-46cc-a44d-2af0f9248953",
+          "Owner": "WidgetConfig_b93fc28f-2fe6-46ca-b96d-44bbc3e7d98f",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "Label": {
+          "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+          "Alignment": "Undefined",
+          "Hidden": false,
+          "Text": "Dates"
+        },
+        "Name": "Dates",
+        "Order": 2,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "NextInspectionDate",
+              "Owner": "InspectionRoutes_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "InspectionRoutes_calc",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "TimeDisplayed": false,
+        "Type": "FieldComponent"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.TextFieldWidgetConfigModel, Comindware.Platform.Contracts",
+        "EditorType": "Simple",
+        "FieldType": "Text",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_39b96670-5d19-49f7-807e-88d2bc68472c",
+          "Owner": "WidgetConfig_b93fc28f-2fe6-46ca-b96d-44bbc3e7d98f",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "Label": {
+          "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+          "Alignment": "Undefined",
+          "Hidden": false,
+          "Text": "Headers"
+        },
+        "MaxLength": 0,
+        "Name": "Headers",
+        "Order": 3,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "RouteName_calc",
+              "Owner": "InspectionRoutes_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "InspectionRoutes_calc",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "TextHeight": 0,
+        "TextHeightAuto": false,
+        "Type": "FieldComponent"
+      }
+    ]
+  },
+  "Dataset": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TechnicianInspections",
+    "Owner": "InspectionRoutes_calc",
+    "Solution": "CMW_FM",
+    "Type": "Dataset"
+  },
+  "FieldType": "List",
+  "Form": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TechnicianRoutes",
+    "Owner": "InspectionRoutes_calc",
+    "Solution": "CMW_FM",
+    "Type": "Form"
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WidgetConfig_b93fc28f-2fe6-46ca-b96d-44bbc3e7d98f",
+    "Owner": "CMW_FM",
+    "Solution": "",
+    "Type": "DesktopWidgetConfig"
+  },
+  "HighlightPastDates": false,
+  "MaxCount": 5,
+  "Name": "New inspections",
+  "Order": 0,
+  "PropertyPath": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "ShowAllText": "View all",
+  "Template": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "InspectionRoutes_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Type": "FieldComponent"
+}

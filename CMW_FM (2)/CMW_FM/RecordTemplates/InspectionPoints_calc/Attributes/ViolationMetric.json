@@ -1,0 +1,27 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Expression": "IF(COUNT(from a in $KPIRecords_calc where NOT(EMPTY(a->Comment_calc)) select a->id)>0,\n\"<span Title='Has notes' style='color:yellow;  font-size: 20px; align-self: center; top:0px;'> ● </span>\",\n\"<span Title='No notes' style='color:green;  font-size: 20px; align-self: center; top:0px;'> ● </span>\"\n)",
+  "Format": "HtmlText",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "ViolationMetric",
+    "Owner": "InspectionPoints_calc",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "IsCalculated": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Violation metric",
+  "Type": "String"
+}

@@ -1,0 +1,49 @@
+{
+  "$type": "Comindware.Platform.Contracts.ToolbarModel, Comindware.Platform.Contracts",
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "KPIRecords_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "toolbar6857c5d407ce4fd5acc226dc0601fd4e",
+    "Owner": "KPIRecords_calc",
+    "Solution": "CMW_FM",
+    "Type": "Toolbar"
+  },
+  "IsDefaultForForms": false,
+  "IsDefaultForLists": false,
+  "IsDefaultForModelDesigner": false,
+  "IsDefaultForProcess": false,
+  "IsDefaultForProcessDesigner": false,
+  "IsDefaultForTaskLists": false,
+  "Items": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts",
+        "CollectionAction": {
+          "$type": "Comindware.Platform.Contracts.CollectionActionModel, Comindware.Platform.Contracts",
+          "ExecutionFormat": "Undefined",
+          "Form": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "form1585",
+            "Owner": "KPIRecords_calc",
+            "Solution": "CMW_FM",
+            "Type": "Form"
+          },
+          "Type": "FormEdit"
+        },
+        "IconClass": "pen",
+        "IconType": "Undefined",
+        "Name": "Confirm",
+        "Order": 0,
+        "Severity": "None",
+        "Type": "Action"
+      }
+    ]
+  },
+  "Name": "Toolbar"
+}

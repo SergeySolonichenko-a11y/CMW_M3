@@ -1,0 +1,182 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.IndicatorWidgetConfigModel, Comindware.Platform.Contracts",
+  "AggregationMethod": "Count",
+  "AllowDrillDown": true,
+  "Children": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.WidgetConfigModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.IconWidgetConfigModel, Comindware.Platform.Contracts",
+        "Color": "#be8686",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_c4cb2dce-c12c-4327-9ff3-040c85bea23c",
+          "Owner": "WidgetConfig_cd837bf0-dca1-4ae4-9bf5-3e5ce3a33c7f",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "IconClass": "braille",
+        "IconType": "Undefined",
+        "Name": "Image",
+        "Order": 1,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WorkOrders",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "Icon"
+      }
+    ]
+  },
+  "Columns": {
+    "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Creation date",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "creationDate",
+              "Owner": "System#",
+              "Solution": "",
+              "Type": "Attribute"
+            }
+          ]
+        },
+        "TimeZonePropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "ServiceRequest",
+              "Owner": "WorkOrders",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Property",
+              "Owner": "ServiceRequests",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Timezone",
+              "Owner": "Properties",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Work text",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "WorkOrderContent_calc",
+              "Owner": "WorkOrders",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Planned completion date",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "PlannedCompletionDate",
+              "Owner": "WorkOrders",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Priority",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "ServiceRequest",
+              "Owner": "WorkOrders",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Priority_calc",
+              "Owner": "ServiceRequests",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Status",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "WorkOrderStatus",
+              "Owner": "WorkOrders",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "FieldType": "Indicator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WidgetConfig_cd837bf0-dca1-4ae4-9bf5-3e5ce3a33c7f",
+    "Owner": "CMW_FM",
+    "Solution": "",
+    "Type": "DesktopWidgetConfig"
+  },
+  "Label": {
+    "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+    "Alignment": "Undefined",
+    "Hidden": false,
+    "Text": "Tasks by service requests"
+  },
+  "Name": "In progress test",
+  "Order": 0,
+  "PropertyPath": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "QueryRule": "@prefix cmw: <http://comindware.com/logics#>.\n@prefix task: <http://comindware.com/ontology/task#>.\n@prefix taskStatus: <http://comindware.com/ontology/taskStatus#>.\n@prefix cmwui: <http://comindware.com/ontology/ui#>.\n@prefix account: <http://comindware.com/ontology/account#>.\n@prefix role: <http://comindware.com/ontology/role#>.\n\n{\n  ?task task:objectId ?item.\n  ?task cmw:taskStatus taskStatus:inProgress.\n  cmw:securityContext cmw:currentUser ?currentUser.  \n  ?task cmw:possibleAssignee ?currentUser.\n  #or {?task cmw:assignee ?currentUser.}\n  #or {?task cmw:possibleAssignee ?currentUser.}.\n  ?task -> ?value.\n}",
+  "Template": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WorkOrderExecution",
+    "Solution": "CMW_FM",
+    "Type": "ProcessTemplate"
+  },
+  "Type": "FieldComponent"
+}

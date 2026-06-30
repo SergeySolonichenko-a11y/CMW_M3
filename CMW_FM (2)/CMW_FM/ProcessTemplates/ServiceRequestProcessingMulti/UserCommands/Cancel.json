@@ -1,0 +1,38 @@
+{
+  "$type": "Comindware.Platform.Contracts.UserCommandConfigurationModel, Comindware.Platform.Contracts",
+  "ConfirmationModelConfiguration": {
+    "$type": "Comindware.Platform.Contracts.UserCommandConfirmationModel, Comindware.Platform.Contracts",
+    "Template": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "Cancel_8494",
+      "Solution": "",
+      "Type": "MessageTemplate"
+    }
+  },
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "ServiceRequestProcessingMulti",
+    "Solution": "CMW_FM",
+    "Type": "ProcessTemplate"
+  },
+  "Context": "Task",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Cancel",
+    "Owner": "ServiceRequestProcessingMulti",
+    "Solution": "CMW_FM",
+    "Type": "UserCommand"
+  },
+  "IsConfirmationActive": false,
+  "IsDisabled": false,
+  "IsPrepare": false,
+  "IsSystem": false,
+  "Kind": "CompleteTask",
+  "LockStateChangeType": "Undefined",
+  "LockStateVisibilityType": "Undefined",
+  "Multiplicity": "OneByOne",
+  "Name": "Cancel",
+  "NavigationTarget": "GoBack",
+  "ResultType": "Navigate",
+  "SkipValidation": false
+}

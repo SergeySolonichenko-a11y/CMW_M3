@@ -1,0 +1,146 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.ListWidgetConfigModel, Comindware.Platform.Contracts",
+  "Children": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.WidgetConfigModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.IconWidgetConfigModel, Comindware.Platform.Contracts",
+        "Color": "#0575bd",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_a0dbf6b4-baad-4bbd-803c-b5dc35fe1cdf",
+          "Owner": "WidgetConfig_b30585d0-0361-4798-bd47-5198f233b415",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "IconClass": "screwdriver-wrench",
+        "IconType": "Undefined",
+        "Name": "Image",
+        "Order": 1,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "ServiceRequestProcessingBasic",
+          "Solution": "CMW_FM",
+          "Type": "ProcessTemplate"
+        },
+        "Type": "Icon"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.DateFieldWidgetConfigModel, Comindware.Platform.Contracts",
+        "FieldType": "Date",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_f9312b83-0747-4d15-a772-76599eb4dfdf",
+          "Owner": "WidgetConfig_b30585d0-0361-4798-bd47-5198f233b415",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "Label": {
+          "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+          "Alignment": "Undefined",
+          "Hidden": false,
+          "Text": "Dates"
+        },
+        "Name": "Dates",
+        "Order": 2,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "creationDate",
+              "Owner": "System#",
+              "Solution": "",
+              "Type": "Attribute"
+            }
+          ]
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "ServiceRequestProcessingBasic",
+          "Solution": "CMW_FM",
+          "Type": "ProcessTemplate"
+        },
+        "TimeDisplayed": false,
+        "Type": "FieldComponent"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.TextFieldWidgetConfigModel, Comindware.Platform.Contracts",
+        "EditorType": "Simple",
+        "FieldType": "Text",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_a10c1880-12d0-41ec-a1d6-d79fc1be43d1",
+          "Owner": "WidgetConfig_b30585d0-0361-4798-bd47-5198f233b415",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "Label": {
+          "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+          "Alignment": "Undefined",
+          "Hidden": false,
+          "Text": "Headers"
+        },
+        "MaxLength": 0,
+        "Name": "Headers",
+        "Order": 3,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "title",
+              "Owner": "System#",
+              "Solution": "",
+              "Type": "Attribute"
+            }
+          ]
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "ServiceRequestProcessingBasic",
+          "Solution": "CMW_FM",
+          "Type": "ProcessTemplate"
+        },
+        "TextHeight": 0,
+        "TextHeightAuto": false,
+        "Type": "FieldComponent"
+      }
+    ]
+  },
+  "Dataset": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "list491",
+    "Owner": "ServiceRequestProcessingBasic",
+    "Solution": "CMW_FM",
+    "Type": "Dataset"
+  },
+  "FieldType": "List",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WidgetConfig_b30585d0-0361-4798-bd47-5198f233b415",
+    "Owner": "CMW_FM",
+    "Solution": "",
+    "Type": "DesktopWidgetConfig"
+  },
+  "HighlightPastDates": false,
+  "MaxCount": 5,
+  "Name": "Work order tasks",
+  "Order": 0,
+  "PropertyPath": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "ShowAllText": "View all",
+  "Template": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "ServiceRequestProcessingBasic",
+    "Solution": "CMW_FM",
+    "Type": "ProcessTemplate"
+  },
+  "Type": "FieldComponent"
+}

@@ -1,0 +1,91 @@
+{
+  "$type": "Comindware.Platform.Contracts.FlowActivityModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "executionFlow15",
+    "Owner": "ServiceRequestProcessingBasic",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "IsTitleSet": false,
+  "Owner": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "lane1",
+    "Owner": "ServiceRequestProcessingBasic",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "Points": {
+    "$type": "Comindware.Platform.Contracts.VectorModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": 72.102529771034,
+        "Y": -365.151522351565
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": 92.102529771034,
+        "Y": -365.151522351565
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": 167.102529771034,
+        "Y": -365.151522351565
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+        "X": 187.102529771034,
+        "Y": -365.151522351565
+      }
+    ]
+  },
+  "Position": {
+    "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+    "X": 0.0,
+    "Y": 0.0
+  },
+  "SequenceDefinition": {
+    "$type": "Comindware.Platform.Contracts.SequenceFlowDefinitionModel, Comindware.Platform.Contracts",
+    "Condition": {
+      "$type": "Comindware.Platform.Contracts.ConditionRuleModel, Comindware.Platform.Contracts",
+      "Definition": {
+        "$type": "Comindware.Platform.Contracts.ExpressionRuleDefinitionModel, Comindware.Platform.Contracts",
+        "Expression": "EQUALS($DispatcherWorkDecision_calc->Code_calc,\"reject\")",
+        "Type": "Expression"
+      },
+      "Type": "Condition"
+    },
+    "IsDefault": false
+  },
+  "Size": {
+    "$type": "Comindware.Platform.Contracts.DimensionsModel, Comindware.Platform.Contracts",
+    "Height": 0.0,
+    "Width": 0.0
+  },
+  "SourceActivity": {
+    "$type": "Comindware.Platform.Contracts.ConnectorModel, Comindware.Platform.Contracts",
+    "Target": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "exclusiveGate9",
+      "Owner": "ServiceRequestProcessingBasic",
+      "Solution": "",
+      "Type": "ClientActivity"
+    },
+    "TargetConnectorIndex": 0
+  },
+  "SystemName": "executionFlow15",
+  "TargetActivity": {
+    "$type": "Comindware.Platform.Contracts.ConnectorModel, Comindware.Platform.Contracts",
+    "Target": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "noneEndEvent3",
+      "Owner": "ServiceRequestProcessingBasic",
+      "Solution": "",
+      "Type": "ClientActivity"
+    },
+    "TargetConnectorIndex": 0
+  },
+  "Title": "Reject",
+  "Type": "ExecutionFlow"
+}

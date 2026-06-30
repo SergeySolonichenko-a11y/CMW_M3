@@ -1,0 +1,24 @@
+{
+  "$type": "Comindware.Platform.Contracts.DocumentExportTemplateModel, Comindware.Platform.Contracts",
+  "ExportAsPdf": false,
+  "ExportSourceTemplate": {
+    "$type": "Comindware.Platform.Contracts.ExportSourceTemplateFromDocument, Comindware.Platform.Contracts",
+    "FileName": "PM work order 3.docx",
+    "FileType": "Word",
+    "Type": "Document"
+  },
+  "ExportTemplateType": "RecordTemplate",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "PrintPMWorkOrder",
+    "Owner": "MaintenanceExecution_calc",
+    "Solution": "CMW_FM",
+    "Type": "ExportTemplate"
+  },
+  "Name": "Print PM work order",
+  "OutputFileNameTemplate": {
+    "$type": "Comindware.Platform.Contracts.OutputFileNameTemplateFromRule, Comindware.Platform.Contracts",
+    "Expression": "\"Maintenance work order\"",
+    "Type": "Rule"
+  }
+}

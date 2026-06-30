@@ -1,0 +1,35 @@
+{
+  "$type": "Comindware.Platform.Contracts.StartEventActivityModel, Comindware.Platform.Contracts",
+  "BehaviourState": "Active",
+  "Description": "Default start event",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "noneStartEvent1",
+    "Owner": "DailyProcessTech",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "IsInterrupting": false,
+  "IsTitleSet": false,
+  "Kind": "None",
+  "Owner": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "pool1",
+    "Owner": "DailyProcessTech",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "Position": {
+    "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+    "X": 300.0,
+    "Y": 45.0
+  },
+  "Size": {
+    "$type": "Comindware.Platform.Contracts.DimensionsModel, Comindware.Platform.Contracts",
+    "Height": 50.0,
+    "Width": 50.0
+  },
+  "SystemName": "noneStartEvent1",
+  "Title": "Start process manually",
+  "Type": "StartEvent"
+}

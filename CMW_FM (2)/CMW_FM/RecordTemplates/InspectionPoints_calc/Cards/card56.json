@@ -1,0 +1,142 @@
+{
+  "$type": "Comindware.Platform.Contracts.CardModel, Comindware.Platform.Contracts",
+  "ColumnsTemplate": {
+    "$type": "System.Int32[], mscorlib",
+    "$values": [
+      67,
+      33
+    ]
+  },
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "InspectionPoints_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "card56",
+    "Owner": "InspectionPoints_calc",
+    "Solution": "CMW_FM",
+    "Type": "Card"
+  },
+  "IsDefault": false,
+  "IsHideLabels": false,
+  "Items": {
+    "$type": "Comindware.Platform.Contracts.CardItemModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.CardItemModel, Comindware.Platform.Contracts",
+        "AlignType": "Left",
+        "Component": {
+          "$type": "Comindware.Platform.Contracts.CardFieldComponentModel, Comindware.Platform.Contracts",
+          "DisplayType": "Text",
+          "FontSize": "Normal",
+          "IsBold": false,
+          "IsItalic": false,
+          "IsStrikeThrough": false,
+          "Label": "Floor",
+          "Name": "Floor",
+          "PropertyPath": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Alias": "Floor_calc",
+                "Owner": "InspectionPoints_calc",
+                "Solution": "CMW_FM",
+                "Type": "Attribute"
+              }
+            ]
+          },
+          "TimeZonePropertyPath": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+            "$values": []
+          },
+          "Type": "FieldComponent"
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.CardItemModel, Comindware.Platform.Contracts",
+        "AlignType": "Left",
+        "RowSpan": 4
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.CardItemModel, Comindware.Platform.Contracts",
+        "AlignType": "Left",
+        "Component": {
+          "$type": "Comindware.Platform.Contracts.CardFieldComponentModel, Comindware.Platform.Contracts",
+          "DisplayType": "Text",
+          "FontSize": "Normal",
+          "IsBold": false,
+          "IsItalic": false,
+          "IsStrikeThrough": false,
+          "Label": "Unit",
+          "Name": "Space",
+          "PropertyPath": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Alias": "Space_calc",
+                "Owner": "InspectionPoints_calc",
+                "Solution": "CMW_FM",
+                "Type": "Attribute"
+              }
+            ]
+          },
+          "TimeZonePropertyPath": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+            "$values": []
+          },
+          "Type": "FieldComponent"
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.CardItemModel, Comindware.Platform.Contracts",
+        "AlignType": "Left",
+        "Component": {
+          "$type": "Comindware.Platform.Contracts.CardFieldComponentModel, Comindware.Platform.Contracts",
+          "DisplayType": "Text",
+          "FontSize": "Normal",
+          "IsBold": false,
+          "IsItalic": false,
+          "IsStrikeThrough": false,
+          "Label": "KPI",
+          "Name": "KPI",
+          "PropertyPath": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Alias": "BadgeIndicator",
+                "Owner": "InspectionPoints_calc",
+                "Solution": "CMW_FM",
+                "Type": "Attribute"
+              }
+            ]
+          },
+          "TimeZonePropertyPath": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+            "$values": []
+          },
+          "Type": "FieldComponent"
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.CardItemModel, Comindware.Platform.Contracts",
+        "AlignType": "Left"
+      }
+    ]
+  },
+  "Name": "New card",
+  "RowsTemplate": {
+    "$type": "System.Int32[], mscorlib",
+    "$values": [
+      25,
+      25,
+      25,
+      25
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "DecimalPlaces": 0,
+  "Expression": "@prefix object: <http://comindware.com/ontology/object#>.\n@prefix math: <http://www.w3.org/2000/10/swap/math#>.\n@prefix assert: <http://comindware.com/logics/assert#>.\n\n{\n\n    (\"WorkOrdersMaterials\" \"Material_calc\") object:findProperty ?materialProp.\n    (\"Materials_calc\" \"Stock_calc\") object:findProperty ?nalichienaskladeProp.\n    (\"Materials_calc\" \"Reserved_calc\") object:findProperty ?zarezervirovanodProp.\n    ?item ?nalichienaskladeProp ?nalichienasklade.\n    ?item ?zarezervirovanodProp ?zarezervirovanod.\n    if {\n        {(\n            {?all ?materialProp ?item.}\n        ) assert:union true.\n        }assert:count ?count1.\n    ?count1 math:greaterThan 0.\n        \n    }\n    then {(?nalichienasklade ?zarezervirovanod) math:difference ?value. }\n    else {?nalichienasklade -> ?value. }.\n}",
+  "Format": "Undefined",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Available_calc",
+    "Owner": "Materials_calc",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "IsCalculated": true,
+  "IsDigitGrouping": false,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Available",
+  "Type": "Decimal"
+}

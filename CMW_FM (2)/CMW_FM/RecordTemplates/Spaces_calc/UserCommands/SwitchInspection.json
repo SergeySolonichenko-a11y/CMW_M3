@@ -1,0 +1,49 @@
+{
+  "$type": "Comindware.Platform.Contracts.UserCommandConfigurationModel, Comindware.Platform.Contracts",
+  "ConditionRule": "GREATEREQ(COUNT(from a in db->Inspections_calc select a->id),1)",
+  "ConfirmationModelConfiguration": {
+    "$type": "Comindware.Platform.Contracts.UserCommandConfirmationModel, Comindware.Platform.Contracts",
+    "Template": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "SwitchInspection0e0d",
+      "Solution": "",
+      "Type": "MessageTemplate"
+    }
+  },
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Spaces_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Context": "Record",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "SwitchInspection",
+    "Owner": "Spaces_calc",
+    "Solution": "CMW_FM",
+    "Type": "UserCommand"
+  },
+  "IsConfirmationActive": false,
+  "IsDisabled": false,
+  "IsPrepare": false,
+  "IsSystem": false,
+  "Kind": "Script",
+  "LockStateChangeType": "Undefined",
+  "LockStateVisibilityType": "Undefined",
+  "Multiplicity": "OneByOne",
+  "Name": "Switch inspection",
+  "NavigationTarget": "Undefined",
+  "ResultType": "DataChange",
+  "ScriptRule": {
+    "$type": "Comindware.Platform.Contracts.UserCommandScriptRuleModel, Comindware.Platform.Contracts",
+    "Definition": {
+      "$type": "Comindware.Platform.Contracts.CSharpRuleDefinitionModel, Comindware.Platform.Contracts",
+      "Code": "using System; \nusing System.Collections.Generic;\nusing System.Linq;\nusing Comindware.Data.Entity;\nusing Comindware.TeamNetwork.Api.Data.UserCommands;\nusing Comindware.TeamNetwork.Api.Data;\n\nclass Script\n{\n    public static UserCommandResult Main(UserCommandContext userCommandContext, Comindware.Entities entities)\n    { \n    var id = userCommandContext.ObjectIds[0];\n        var data = Api.TeamNetwork.ObjectService.GetPropertyValues(new []{id}, new[]{\"Floor_calc\"});\n        var navid = data[id][\"Floor_calc\"].ToString();\n        // Put your code here\n    var result = new UserCommandResult\n        {\n            Success = true,\n            Commited = true,\n            ResultType = UserCommandResultType.Navigate,\n            NavigationResult = new UserCommandNavigationResult//в результате выполнения скрипта происходит смена навигации\n              {  \n                  ContainerId = \"oa.9\",//Id шаблон записи\n                  ObjectId = navid,\n                  Context = ContextType.List,\n               },\n               Messages = new[]\n               {\n                   new UserCommandMessage\n                   {\n                       Severity = SeverityLevel.Normal,\n                       Text = \"Success\"\n                   }\n               }\n        };\n        return result;\n    }\n}",
+      "EntryPoint": "Script",
+      "Type": "CSharpExpression"
+    },
+    "Type": "UserCommandScript"
+  },
+  "SkipValidation": false
+}

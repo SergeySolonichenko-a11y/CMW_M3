@@ -1,0 +1,865 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.PageModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Page_7d144573-7ab2-47e9-88df-ba428661bf7f",
+    "Owner": "Page_7d144573-7ab2-47e9-88df-ba428661bf7f",
+    "Solution": "",
+    "Type": "SimplePage"
+  },
+  "Name": "Technician",
+  "Root": {
+    "$type": "Comindware.Platform.Contracts.Desktop.VerticalLayoutComponentModel, Comindware.Platform.Contracts",
+    "AccessType": "Undefined",
+    "GlobalAlias": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "Component_c299d1ab-217c-4f1c-9559-d2097395a918",
+      "Owner": "Page_7d144573-7ab2-47e9-88df-ba428661bf7f",
+      "Solution": "",
+      "Type": "DesktopComponent"
+    },
+    "Order": 1,
+    "Rows": {
+      "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.Desktop.GroupPanelComponentModel, Comindware.Platform.Contracts",
+          "AccessType": "Editable",
+          "GlobalAlias": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Component_f31851e6-e964-4f4e-b249-febb5346ef87",
+            "Owner": "Component_c299d1ab-217c-4f1c-9559-d2097395a918",
+            "Solution": "",
+            "Type": "DesktopComponent"
+          },
+          "Name": "Tasks",
+          "Order": 1,
+          "Rows": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.Desktop.VerticalLayoutComponentModel, Comindware.Platform.Contracts",
+                "AccessType": "Undefined",
+                "GlobalAlias": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "Component_9d04990b-9722-4287-b816-83e32b3c1763",
+                  "Owner": "Component_f31851e6-e964-4f4e-b249-febb5346ef87",
+                  "Solution": "",
+                  "Type": "DesktopComponent"
+                },
+                "Order": 1,
+                "Rows": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": [
+                    {
+                      "$type": "Comindware.Platform.Contracts.Desktop.HorizontalLayoutComponentModel, Comindware.Platform.Contracts",
+                      "AccessType": "Undefined",
+                      "Components": {
+                        "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                        "$values": [
+                          {
+                            "$type": "Comindware.Platform.Contracts.Desktop.VerticalLayoutComponentModel, Comindware.Platform.Contracts",
+                            "AccessType": "Undefined",
+                            "GlobalAlias": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "Component_72897dc4-f143-48b0-99e5-20d0bce9fa86",
+                              "Owner": "Component_64b776d5-6d52-43e1-95db-6358bf10b4da",
+                              "Solution": "",
+                              "Type": "DesktopComponent"
+                            },
+                            "Order": 1,
+                            "Rows": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": [
+                                {
+                                  "$type": "Comindware.Platform.Contracts.Desktop.FieldComponentModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Undefined",
+                                  "Children": {
+                                    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                    "$values": [
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.Desktop.IconComponentModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "Color": "#f5a921",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "WidgetConfig_9a007ac5-4e16-440b-91e3-8e555874174c",
+                                          "Owner": "WidgetConfig_9a007ac5-4e16-440b-91e3-8e555874174c",
+                                          "Solution": "",
+                                          "Type": "DesktopComponent"
+                                        },
+                                        "IconClass": "clock-five",
+                                        "IconType": "Undefined",
+                                        "Name": "Image",
+                                        "Order": 1,
+                                        "Type": "Icon"
+                                      }
+                                    ]
+                                  },
+                                  "FieldType": "Indicator",
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_9a007ac5-4e16-440b-91e3-8e555874174c",
+                                    "Owner": "Component_72897dc4-f143-48b0-99e5-20d0bce9fa86",
+                                    "Solution": "",
+                                    "Type": "DesktopComponent"
+                                  },
+                                  "Name": "In progress",
+                                  "Order": 1,
+                                  "Type": "FieldComponent",
+                                  "WidgetConfig": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_9a007ac5-4e16-440b-91e3-8e555874174c",
+                                    "Solution": "",
+                                    "Type": "DesktopWidgetConfig"
+                                  }
+                                }
+                              ]
+                            },
+                            "Type": "VerticalLayout",
+                            "Width": "33"
+                          },
+                          {
+                            "$type": "Comindware.Platform.Contracts.Desktop.VerticalLayoutComponentModel, Comindware.Platform.Contracts",
+                            "AccessType": "Undefined",
+                            "GlobalAlias": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "Component_e800dcc9-b6c5-4a97-b3bf-a0647168fc54",
+                              "Owner": "Component_64b776d5-6d52-43e1-95db-6358bf10b4da",
+                              "Solution": "",
+                              "Type": "DesktopComponent"
+                            },
+                            "Order": 2,
+                            "Rows": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": [
+                                {
+                                  "$type": "Comindware.Platform.Contracts.Desktop.FieldComponentModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Undefined",
+                                  "Children": {
+                                    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                    "$values": [
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.Desktop.IconComponentModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "WidgetConfig_3a9daacb-0f36-47a4-b663-30559e9a61ce",
+                                          "Owner": "WidgetConfig_3a9daacb-0f36-47a4-b663-30559e9a61ce",
+                                          "Solution": "",
+                                          "Type": "DesktopComponent"
+                                        },
+                                        "IconClass": "circle-check",
+                                        "IconType": "Undefined",
+                                        "Name": "Image",
+                                        "Order": 1,
+                                        "Type": "Icon"
+                                      }
+                                    ]
+                                  },
+                                  "FieldType": "Indicator",
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_3a9daacb-0f36-47a4-b663-30559e9a61ce",
+                                    "Owner": "Component_e800dcc9-b6c5-4a97-b3bf-a0647168fc54",
+                                    "Solution": "",
+                                    "Type": "DesktopComponent"
+                                  },
+                                  "Name": "Tasks today",
+                                  "Order": 1,
+                                  "Type": "FieldComponent",
+                                  "WidgetConfig": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_3a9daacb-0f36-47a4-b663-30559e9a61ce",
+                                    "Solution": "",
+                                    "Type": "DesktopWidgetConfig"
+                                  }
+                                }
+                              ]
+                            },
+                            "Type": "VerticalLayout",
+                            "Width": "33"
+                          },
+                          {
+                            "$type": "Comindware.Platform.Contracts.Desktop.VerticalLayoutComponentModel, Comindware.Platform.Contracts",
+                            "AccessType": "Undefined",
+                            "GlobalAlias": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "Component_c011bbbe-8730-48a4-9e1a-1f4c32796b42",
+                              "Owner": "Component_64b776d5-6d52-43e1-95db-6358bf10b4da",
+                              "Solution": "",
+                              "Type": "DesktopComponent"
+                            },
+                            "Order": 3,
+                            "Rows": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": [
+                                {
+                                  "$type": "Comindware.Platform.Contracts.Desktop.FieldComponentModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Undefined",
+                                  "Children": {
+                                    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                    "$values": [
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.Desktop.IconComponentModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "Color": "#e70000",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "WidgetConfig_ea84c3c5-4fcc-4c13-b717-dc10f7c8ab58",
+                                          "Owner": "WidgetConfig_ea84c3c5-4fcc-4c13-b717-dc10f7c8ab58",
+                                          "Solution": "",
+                                          "Type": "DesktopComponent"
+                                        },
+                                        "IconClass": "light-emergency-on",
+                                        "IconType": "Undefined",
+                                        "Name": "Image",
+                                        "Order": 1,
+                                        "Type": "Icon",
+                                        "WidgetConfig": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "WidgetConfig_9019eb37-7a99-4c11-a89b-4fda272250d8",
+                                          "Solution": "",
+                                          "Type": "DesktopWidgetConfig"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "FieldType": "Indicator",
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_ea84c3c5-4fcc-4c13-b717-dc10f7c8ab58",
+                                    "Owner": "Component_c011bbbe-8730-48a4-9e1a-1f4c32796b42",
+                                    "Solution": "",
+                                    "Type": "DesktopComponent"
+                                  },
+                                  "Name": "Incidents",
+                                  "Order": 1,
+                                  "Type": "FieldComponent",
+                                  "WidgetConfig": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_ea84c3c5-4fcc-4c13-b717-dc10f7c8ab58",
+                                    "Solution": "",
+                                    "Type": "DesktopWidgetConfig"
+                                  }
+                                }
+                              ]
+                            },
+                            "Type": "VerticalLayout",
+                            "Width": "33"
+                          }
+                        ]
+                      },
+                      "GlobalAlias": {
+                        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                        "Alias": "Component_64b776d5-6d52-43e1-95db-6358bf10b4da",
+                        "Owner": "Component_9d04990b-9722-4287-b816-83e32b3c1763",
+                        "Solution": "",
+                        "Type": "DesktopComponent"
+                      },
+                      "Name": "Columns",
+                      "Order": 1,
+                      "Type": "HorizontalLayout"
+                    }
+                  ]
+                },
+                "Type": "VerticalLayout",
+                "Width": "100"
+              }
+            ]
+          },
+          "Type": "GroupPanel",
+          "Width": "100"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.Desktop.HorizontalLayoutComponentModel, Comindware.Platform.Contracts",
+          "AccessType": "Undefined",
+          "Components": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.Desktop.GroupPanelComponentModel, Comindware.Platform.Contracts",
+                "AccessType": "Editable",
+                "GlobalAlias": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "Component_a513eda0-cbfd-40df-bc35-c881955dd7da",
+                  "Owner": "Component_ff4b11f5-c955-46f4-b4f4-5e4b1f63313b",
+                  "Solution": "",
+                  "Type": "DesktopComponent"
+                },
+                "Name": "Work order tasks",
+                "Order": 1,
+                "Rows": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": [
+                    {
+                      "$type": "Comindware.Platform.Contracts.Desktop.VerticalLayoutComponentModel, Comindware.Platform.Contracts",
+                      "AccessType": "Undefined",
+                      "GlobalAlias": {
+                        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                        "Alias": "Component_41a371da-42e3-46d5-bc2d-a1b0a9dc046a",
+                        "Owner": "Component_a513eda0-cbfd-40df-bc35-c881955dd7da",
+                        "Solution": "",
+                        "Type": "DesktopComponent"
+                      },
+                      "Order": 1,
+                      "Rows": {
+                        "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                        "$values": [
+                          {
+                            "$type": "Comindware.Platform.Contracts.Desktop.FieldComponentModel, Comindware.Platform.Contracts",
+                            "AccessType": "Undefined",
+                            "Children": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": [
+                                {
+                                  "$type": "Comindware.Platform.Contracts.Desktop.IconComponentModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Undefined",
+                                  "Color": "#0575bd",
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_4429dd69-78aa-456a-837f-d34d4e0b6daa",
+                                    "Owner": "WidgetConfig_1f54b785-3a1c-4810-9b7d-92891bf414dc",
+                                    "Solution": "",
+                                    "Type": "DesktopComponent"
+                                  },
+                                  "IconType": "Undefined",
+                                  "Name": "Image",
+                                  "Order": 1,
+                                  "Type": "Icon",
+                                  "WidgetConfig": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_4429dd69-78aa-456a-837f-d34d4e0b6daa",
+                                    "Solution": "",
+                                    "Type": "DesktopWidgetConfig"
+                                  }
+                                },
+                                {
+                                  "$type": "Comindware.Platform.Contracts.Desktop.FieldComponentModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Undefined",
+                                  "Children": {
+                                    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                    "$values": []
+                                  },
+                                  "FieldType": "Date",
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "Date",
+                                    "Owner": "WidgetConfig_1f54b785-3a1c-4810-9b7d-92891bf414dc",
+                                    "Solution": "",
+                                    "Type": "DesktopComponent"
+                                  },
+                                  "Name": "Dates",
+                                  "Order": 2,
+                                  "Type": "FieldComponent",
+                                  "WidgetConfig": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_7e96b907-960e-44bb-bccb-02a5c72a6111",
+                                    "Solution": "",
+                                    "Type": "DesktopWidgetConfig"
+                                  }
+                                },
+                                {
+                                  "$type": "Comindware.Platform.Contracts.Desktop.FieldComponentModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Undefined",
+                                  "Children": {
+                                    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                    "$values": []
+                                  },
+                                  "FieldType": "Text",
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_9fa2b3d9-14df-4774-b5dd-4ada4803a26c",
+                                    "Owner": "WidgetConfig_1f54b785-3a1c-4810-9b7d-92891bf414dc",
+                                    "Solution": "",
+                                    "Type": "DesktopComponent"
+                                  },
+                                  "Name": "Headers",
+                                  "Order": 3,
+                                  "Type": "FieldComponent",
+                                  "WidgetConfig": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_9fa2b3d9-14df-4774-b5dd-4ada4803a26c",
+                                    "Solution": "",
+                                    "Type": "DesktopWidgetConfig"
+                                  }
+                                }
+                              ]
+                            },
+                            "FieldType": "List",
+                            "GlobalAlias": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "WidgetConfig_1f54b785-3a1c-4810-9b7d-92891bf414dc",
+                              "Owner": "Component_41a371da-42e3-46d5-bc2d-a1b0a9dc046a",
+                              "Solution": "",
+                              "Type": "DesktopComponent"
+                            },
+                            "Name": "Job items",
+                            "Order": 1,
+                            "Type": "FieldComponent",
+                            "WidgetConfig": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "WidgetConfig_1f54b785-3a1c-4810-9b7d-92891bf414dc",
+                              "Solution": "",
+                              "Type": "DesktopWidgetConfig"
+                            }
+                          }
+                        ]
+                      },
+                      "Type": "VerticalLayout",
+                      "Width": "100"
+                    }
+                  ]
+                },
+                "Type": "GroupPanel",
+                "Width": "50"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.Desktop.GroupPanelComponentModel, Comindware.Platform.Contracts",
+                "AccessType": "Editable",
+                "GlobalAlias": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "Component_434069ee-acd9-405e-b9ab-090671307d8b",
+                  "Owner": "Component_ff4b11f5-c955-46f4-b4f4-5e4b1f63313b",
+                  "Solution": "",
+                  "Type": "DesktopComponent"
+                },
+                "Name": "PM and CM",
+                "Order": 2,
+                "Rows": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": [
+                    {
+                      "$type": "Comindware.Platform.Contracts.Desktop.VerticalLayoutComponentModel, Comindware.Platform.Contracts",
+                      "AccessType": "Undefined",
+                      "GlobalAlias": {
+                        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                        "Alias": "Component_fa181548-77f5-4560-ad6d-88c7078046c1",
+                        "Owner": "Component_434069ee-acd9-405e-b9ab-090671307d8b",
+                        "Solution": "",
+                        "Type": "DesktopComponent"
+                      },
+                      "Order": 1,
+                      "Rows": {
+                        "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                        "$values": [
+                          {
+                            "$type": "Comindware.Platform.Contracts.Desktop.FieldComponentModel, Comindware.Platform.Contracts",
+                            "AccessType": "Undefined",
+                            "Children": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": [
+                                {
+                                  "$type": "Comindware.Platform.Contracts.Desktop.IconComponentModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Undefined",
+                                  "Color": "#0575bd",
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_3346ea08-e785-4b64-98b7-fcd3b095ae60",
+                                    "Owner": "WidgetConfig_07f8e3a2-cef7-4ec4-bc35-2f50f8a89954",
+                                    "Solution": "",
+                                    "Type": "DesktopComponent"
+                                  },
+                                  "IconClass": "engine-warning",
+                                  "IconType": "Undefined",
+                                  "Name": "Image",
+                                  "Order": 1,
+                                  "Type": "Icon",
+                                  "WidgetConfig": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_3346ea08-e785-4b64-98b7-fcd3b095ae60",
+                                    "Solution": "",
+                                    "Type": "DesktopWidgetConfig"
+                                  }
+                                },
+                                {
+                                  "$type": "Comindware.Platform.Contracts.Desktop.FieldComponentModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Undefined",
+                                  "Children": {
+                                    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                    "$values": []
+                                  },
+                                  "FieldType": "Date",
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "Date",
+                                    "Owner": "WidgetConfig_07f8e3a2-cef7-4ec4-bc35-2f50f8a89954",
+                                    "Solution": "",
+                                    "Type": "DesktopComponent"
+                                  },
+                                  "Name": "Dates",
+                                  "Order": 2,
+                                  "Type": "FieldComponent",
+                                  "WidgetConfig": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_bf07bac0-58df-4ae6-a49e-7d61772f70fd",
+                                    "Solution": "",
+                                    "Type": "DesktopWidgetConfig"
+                                  }
+                                },
+                                {
+                                  "$type": "Comindware.Platform.Contracts.Desktop.FieldComponentModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Undefined",
+                                  "Children": {
+                                    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                    "$values": []
+                                  },
+                                  "FieldType": "Text",
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_363c3dc3-7401-4d83-9fcc-1659f395bed2",
+                                    "Owner": "WidgetConfig_07f8e3a2-cef7-4ec4-bc35-2f50f8a89954",
+                                    "Solution": "",
+                                    "Type": "DesktopComponent"
+                                  },
+                                  "Name": "Headers",
+                                  "Order": 3,
+                                  "Type": "FieldComponent",
+                                  "WidgetConfig": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_363c3dc3-7401-4d83-9fcc-1659f395bed2",
+                                    "Solution": "",
+                                    "Type": "DesktopWidgetConfig"
+                                  }
+                                }
+                              ]
+                            },
+                            "FieldType": "List",
+                            "GlobalAlias": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "WidgetConfig_07f8e3a2-cef7-4ec4-bc35-2f50f8a89954",
+                              "Owner": "Component_fa181548-77f5-4560-ad6d-88c7078046c1",
+                              "Solution": "",
+                              "Type": "DesktopComponent"
+                            },
+                            "Name": "Planned work",
+                            "Order": 1,
+                            "Type": "FieldComponent",
+                            "WidgetConfig": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "WidgetConfig_07f8e3a2-cef7-4ec4-bc35-2f50f8a89954",
+                              "Solution": "",
+                              "Type": "DesktopWidgetConfig"
+                            }
+                          }
+                        ]
+                      },
+                      "Type": "VerticalLayout",
+                      "Width": "100"
+                    }
+                  ]
+                },
+                "Type": "GroupPanel",
+                "Width": "50"
+              }
+            ]
+          },
+          "GlobalAlias": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Component_ff4b11f5-c955-46f4-b4f4-5e4b1f63313b",
+            "Owner": "Component_c299d1ab-217c-4f1c-9559-d2097395a918",
+            "Solution": "",
+            "Type": "DesktopComponent"
+          },
+          "Order": 2,
+          "Type": "HorizontalLayout"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.Desktop.GroupPanelComponentModel, Comindware.Platform.Contracts",
+          "AccessType": "Editable",
+          "GlobalAlias": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Component_708566fb-9d40-473e-a37c-4d9af79c2869",
+            "Owner": "Component_c299d1ab-217c-4f1c-9559-d2097395a918",
+            "Solution": "",
+            "Type": "DesktopComponent"
+          },
+          "Name": "Inspections",
+          "Order": 3,
+          "Rows": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.Desktop.VerticalLayoutComponentModel, Comindware.Platform.Contracts",
+                "AccessType": "Undefined",
+                "GlobalAlias": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "Component_24e034f1-9a91-44e9-bac1-b5b63df0611e",
+                  "Owner": "Component_708566fb-9d40-473e-a37c-4d9af79c2869",
+                  "Solution": "",
+                  "Type": "DesktopComponent"
+                },
+                "Order": 1,
+                "Rows": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": [
+                    {
+                      "$type": "Comindware.Platform.Contracts.Desktop.HorizontalLayoutComponentModel, Comindware.Platform.Contracts",
+                      "AccessType": "Undefined",
+                      "Components": {
+                        "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                        "$values": [
+                          {
+                            "$type": "Comindware.Platform.Contracts.Desktop.VerticalLayoutComponentModel, Comindware.Platform.Contracts",
+                            "AccessType": "Undefined",
+                            "GlobalAlias": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "Component_e319402e-6604-4b1b-b8a1-d77aafeea674",
+                              "Owner": "Component_3f52c6b3-6ba6-4bcb-ae4e-9b836dc920b0",
+                              "Solution": "",
+                              "Type": "DesktopComponent"
+                            },
+                            "Order": 1,
+                            "Rows": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": [
+                                {
+                                  "$type": "Comindware.Platform.Contracts.Desktop.FieldComponentModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Undefined",
+                                  "Children": {
+                                    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                    "$values": [
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.Desktop.IconComponentModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "Color": "#24f13f",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "WidgetConfig_0309427e-6c1a-4434-8e32-64e30039a6ae",
+                                          "Owner": "WidgetConfig_7c7b9073-4497-4842-bacc-044fce585c3f",
+                                          "Solution": "",
+                                          "Type": "DesktopComponent"
+                                        },
+                                        "IconClass": "map-location-dot",
+                                        "IconType": "Undefined",
+                                        "Name": "Image",
+                                        "Order": 1,
+                                        "Type": "Icon",
+                                        "WidgetConfig": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "WidgetConfig_0309427e-6c1a-4434-8e32-64e30039a6ae",
+                                          "Solution": "",
+                                          "Type": "DesktopWidgetConfig"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.Desktop.FieldComponentModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "Children": {
+                                          "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                          "$values": []
+                                        },
+                                        "FieldType": "Date",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "Date3",
+                                          "Owner": "WidgetConfig_7c7b9073-4497-4842-bacc-044fce585c3f",
+                                          "Solution": "",
+                                          "Type": "DesktopComponent"
+                                        },
+                                        "Name": "Dates",
+                                        "Order": 2,
+                                        "Type": "FieldComponent",
+                                        "WidgetConfig": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "WidgetConfig_50d996f0-6e7b-4a70-81e7-857d96be1dbd",
+                                          "Solution": "",
+                                          "Type": "DesktopWidgetConfig"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.Desktop.FieldComponentModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "Children": {
+                                          "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                          "$values": []
+                                        },
+                                        "FieldType": "Text",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "WidgetConfig_5b0c595d-c901-4576-9fd4-2496974cf2f1",
+                                          "Owner": "WidgetConfig_7c7b9073-4497-4842-bacc-044fce585c3f",
+                                          "Solution": "",
+                                          "Type": "DesktopComponent"
+                                        },
+                                        "Name": "Headers",
+                                        "Order": 3,
+                                        "Type": "FieldComponent",
+                                        "WidgetConfig": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "WidgetConfig_5b0c595d-c901-4576-9fd4-2496974cf2f1",
+                                          "Solution": "",
+                                          "Type": "DesktopWidgetConfig"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "FieldType": "List",
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_7c7b9073-4497-4842-bacc-044fce585c3f",
+                                    "Owner": "Component_e319402e-6604-4b1b-b8a1-d77aafeea674",
+                                    "Solution": "",
+                                    "Type": "DesktopComponent"
+                                  },
+                                  "Name": "Inspections in progress",
+                                  "Order": 1,
+                                  "Type": "FieldComponent",
+                                  "WidgetConfig": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_7c7b9073-4497-4842-bacc-044fce585c3f",
+                                    "Solution": "",
+                                    "Type": "DesktopWidgetConfig"
+                                  }
+                                }
+                              ]
+                            },
+                            "Type": "VerticalLayout",
+                            "Width": "50"
+                          },
+                          {
+                            "$type": "Comindware.Platform.Contracts.Desktop.VerticalLayoutComponentModel, Comindware.Platform.Contracts",
+                            "AccessType": "Undefined",
+                            "GlobalAlias": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "Component_a8582368-e9d0-49dc-9fdc-f4fd8999083e",
+                              "Owner": "Component_3f52c6b3-6ba6-4bcb-ae4e-9b836dc920b0",
+                              "Solution": "",
+                              "Type": "DesktopComponent"
+                            },
+                            "Order": 2,
+                            "Rows": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": [
+                                {
+                                  "$type": "Comindware.Platform.Contracts.Desktop.FieldComponentModel, Comindware.Platform.Contracts",
+                                  "AccessType": "Undefined",
+                                  "Children": {
+                                    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                    "$values": [
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.Desktop.IconComponentModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "Color": "#0575bd",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "WidgetConfig_a22aeda3-2bce-4624-afb5-3e843fbe0d47",
+                                          "Owner": "WidgetConfig_b93fc28f-2fe6-46ca-b96d-44bbc3e7d98f",
+                                          "Solution": "",
+                                          "Type": "DesktopComponent"
+                                        },
+                                        "IconClass": "map-location",
+                                        "IconType": "Undefined",
+                                        "Name": "Image",
+                                        "Order": 1,
+                                        "Type": "Icon",
+                                        "WidgetConfig": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "WidgetConfig_a22aeda3-2bce-4624-afb5-3e843fbe0d47",
+                                          "Solution": "",
+                                          "Type": "DesktopWidgetConfig"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.Desktop.FieldComponentModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "Children": {
+                                          "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                          "$values": []
+                                        },
+                                        "FieldType": "Date",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "Date2",
+                                          "Owner": "WidgetConfig_b93fc28f-2fe6-46ca-b96d-44bbc3e7d98f",
+                                          "Solution": "",
+                                          "Type": "DesktopComponent"
+                                        },
+                                        "Name": "Dates",
+                                        "Order": 2,
+                                        "Type": "FieldComponent",
+                                        "WidgetConfig": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "WidgetConfig_7363fb06-3ffd-46cc-a44d-2af0f9248953",
+                                          "Solution": "",
+                                          "Type": "DesktopWidgetConfig"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Comindware.Platform.Contracts.Desktop.FieldComponentModel, Comindware.Platform.Contracts",
+                                        "AccessType": "Undefined",
+                                        "Children": {
+                                          "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                                          "$values": []
+                                        },
+                                        "FieldType": "Text",
+                                        "GlobalAlias": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "WidgetConfig_39b96670-5d19-49f7-807e-88d2bc68472c",
+                                          "Owner": "WidgetConfig_b93fc28f-2fe6-46ca-b96d-44bbc3e7d98f",
+                                          "Solution": "",
+                                          "Type": "DesktopComponent"
+                                        },
+                                        "Name": "Headers",
+                                        "Order": 3,
+                                        "Type": "FieldComponent",
+                                        "WidgetConfig": {
+                                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                          "Alias": "WidgetConfig_39b96670-5d19-49f7-807e-88d2bc68472c",
+                                          "Solution": "",
+                                          "Type": "DesktopWidgetConfig"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "FieldType": "List",
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_b93fc28f-2fe6-46ca-b96d-44bbc3e7d98f",
+                                    "Owner": "Component_a8582368-e9d0-49dc-9fdc-f4fd8999083e",
+                                    "Solution": "",
+                                    "Type": "DesktopComponent"
+                                  },
+                                  "Name": "New inspections",
+                                  "Order": 1,
+                                  "Type": "FieldComponent",
+                                  "WidgetConfig": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "WidgetConfig_b93fc28f-2fe6-46ca-b96d-44bbc3e7d98f",
+                                    "Solution": "",
+                                    "Type": "DesktopWidgetConfig"
+                                  }
+                                }
+                              ]
+                            },
+                            "Type": "VerticalLayout",
+                            "Width": "50"
+                          }
+                        ]
+                      },
+                      "GlobalAlias": {
+                        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                        "Alias": "Component_3f52c6b3-6ba6-4bcb-ae4e-9b836dc920b0",
+                        "Owner": "Component_24e034f1-9a91-44e9-bac1-b5b63df0611e",
+                        "Solution": "",
+                        "Type": "DesktopComponent"
+                      },
+                      "Name": "Columns",
+                      "Order": 1,
+                      "Type": "HorizontalLayout"
+                    }
+                  ]
+                },
+                "Type": "VerticalLayout",
+                "Width": "100"
+              }
+            ]
+          },
+          "Type": "GroupPanel",
+          "Width": "100"
+        }
+      ]
+    },
+    "Type": "VerticalLayout"
+  }
+}

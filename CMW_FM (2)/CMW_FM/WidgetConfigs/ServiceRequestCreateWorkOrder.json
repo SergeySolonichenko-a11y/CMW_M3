@@ -1,0 +1,164 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.ShowcaseWidgetConfigModel, Comindware.Platform.Contracts",
+  "Children": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.WidgetConfigModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.ImageFieldWidgetConfigModel, Comindware.Platform.Contracts",
+        "FieldType": "Image",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_7f0d4dc8-c5e7-4725-9a66-ecc677482c3c",
+          "Owner": "ServiceRequestCreateWorkOrder",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "Label": {
+          "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+          "Alignment": "Undefined",
+          "Hidden": false,
+          "Text": "Picture"
+        },
+        "Name": "Picture",
+        "Order": 1,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "ServiceRequests",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "FieldComponent"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.TextFieldWidgetConfigModel, Comindware.Platform.Contracts",
+        "EditorType": "Simple",
+        "FieldType": "Text",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_445ee89c-2ff7-4536-bb14-cb1f2d765cb4",
+          "Owner": "ServiceRequestCreateWorkOrder",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "Label": {
+          "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+          "Alignment": "Undefined",
+          "Hidden": false,
+          "Text": "Create event."
+        },
+        "MaxLength": 0,
+        "Name": "Create event.",
+        "Order": 2,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "ServiceRequests",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "TextHeight": 0,
+        "TextHeightAuto": false,
+        "Type": "FieldComponent"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.TextFieldWidgetConfigModel, Comindware.Platform.Contracts",
+        "EditorType": "Simple",
+        "FieldType": "Text",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_aaa91531-d0be-48d0-ba29-74ecab07ccc3",
+          "Owner": "ServiceRequestCreateWorkOrder",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "Label": {
+          "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+          "Alignment": "Undefined",
+          "Hidden": false,
+          "Text": "Create event."
+        },
+        "MaxLength": 0,
+        "Name": "Create event.",
+        "Order": 3,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "ServiceRequests",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "TextHeight": 0,
+        "TextHeightAuto": false,
+        "Type": "FieldComponent"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.ActionButtonWidgetConfigModel, Comindware.Platform.Contracts",
+        "GlobalAlias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "WidgetConfig_4c5dff2d-5e7c-48de-8ee9-7abd5a1c9884",
+          "Owner": "ServiceRequestCreateWorkOrder",
+          "Solution": "",
+          "Type": "DesktopWidgetConfig"
+        },
+        "IsLink": false,
+        "Label": {
+          "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+          "Alignment": "Undefined",
+          "Hidden": false,
+          "Text": "Create event"
+        },
+        "Name": "Create event",
+        "Order": 4,
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": []
+        },
+        "Template": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "ServiceRequests",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "Type": "ActionButton",
+        "UserCommand": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "create",
+          "Owner": "ServiceRequests",
+          "Solution": "CMW_FM",
+          "Type": "UserCommand"
+        }
+      }
+    ]
+  },
+  "FieldType": "Showcase",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "ServiceRequestCreateWorkOrder",
+    "Owner": "CMW_FM",
+    "Solution": "",
+    "Type": "DesktopWidgetConfig"
+  },
+  "Name": "Create service request",
+  "Order": 0,
+  "PropertyPath": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "Template": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "ServiceRequests",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Type": "FieldComponent"
+}

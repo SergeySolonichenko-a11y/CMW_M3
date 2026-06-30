@@ -1,0 +1,61 @@
+{
+  "$type": "Comindware.Platform.Contracts.ToolbarModel, Comindware.Platform.Contracts",
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "AnnualPlans_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "defaultListToolbar",
+    "Owner": "AnnualPlans_calc",
+    "Solution": "CMW_FM",
+    "Type": "Toolbar"
+  },
+  "IsDefaultForForms": false,
+  "IsDefaultForLists": true,
+  "IsDefaultForModelDesigner": false,
+  "IsDefaultForProcess": false,
+  "IsDefaultForProcessDesigner": false,
+  "IsDefaultForTaskLists": false,
+  "Items": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts",
+        "Action": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "CreateAnnualPlan",
+          "Owner": "AnnualPlans_calc",
+          "Solution": "CMW_FM",
+          "Type": "UserCommand"
+        },
+        "Description": "Create annual plan",
+        "IconClass": "align-justify",
+        "IconType": "Undefined",
+        "Name": "Create annual plan",
+        "Order": 0,
+        "Severity": "None",
+        "Type": "Action"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ToolbarItemModel, Comindware.Platform.Contracts",
+        "Action": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "delete",
+          "Owner": "AnnualPlans_calc",
+          "Solution": "CMW_FM",
+          "Type": "UserCommand"
+        },
+        "Description": "Delete",
+        "IconType": "Undefined",
+        "Name": "Delete",
+        "Order": 1,
+        "Severity": "Fatal",
+        "Type": "Action"
+      }
+    ]
+  },
+  "Name": "Table toolbar"
+}

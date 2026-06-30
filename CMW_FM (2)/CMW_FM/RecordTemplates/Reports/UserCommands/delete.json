@@ -1,0 +1,29 @@
+{
+  "$type": "Comindware.Platform.Contracts.UserCommandConfigurationModel, Comindware.Platform.Contracts",
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Reports",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Context": "Record",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "delete",
+    "Owner": "Reports",
+    "Solution": "CMW_FM",
+    "Type": "UserCommand"
+  },
+  "IsConfirmationActive": false,
+  "IsDisabled": false,
+  "IsPrepare": false,
+  "IsSystem": false,
+  "Kind": "Delete",
+  "LockStateChangeType": "Undefined",
+  "LockStateVisibilityType": "Undefined",
+  "Multiplicity": "Package",
+  "Name": "Delete",
+  "NavigationTarget": "Undefined",
+  "ResultType": "Navigate",
+  "SkipValidation": false
+}

@@ -1,0 +1,54 @@
+{
+  "$type": "Comindware.Platform.Contracts.UserCommandConfigurationModel, Comindware.Platform.Contracts",
+  "ConfirmationModelConfiguration": {
+    "$type": "Comindware.Platform.Contracts.UserCommandConfirmationModel, Comindware.Platform.Contracts",
+    "Template": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "createbf91",
+      "Solution": "",
+      "Type": "MessageTemplate"
+    }
+  },
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Staff_calc",
+    "Solution": "CMW_FM",
+    "Type": "AccountTemplate"
+  },
+  "Context": "Record",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "create",
+    "Owner": "Staff_calc",
+    "Solution": "CMW_FM",
+    "Type": "UserCommand"
+  },
+  "IsConfirmationActive": false,
+  "IsDisabled": false,
+  "IsPrepare": false,
+  "IsSystem": false,
+  "Kind": "Create",
+  "LockStateChangeType": "Undefined",
+  "LockStateVisibilityType": "Undefined",
+  "Multiplicity": "OneByOne",
+  "Name": "Create",
+  "NavigationTarget": "Undefined",
+  "RelatedAction": {
+    "$type": "Comindware.Platform.Contracts.UserCommandRelatedActionModel, Comindware.Platform.Contracts",
+    "ContainerGlobalAlias": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "Staff_calc",
+      "Solution": "CMW_FM",
+      "Type": "AccountTemplate"
+    },
+    "FormGlobalAlias": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "defaultForm",
+      "Owner": "Staff_calc",
+      "Solution": "CMW_FM",
+      "Type": "Form"
+    }
+  },
+  "ResultType": "DataChange",
+  "SkipValidation": false
+}

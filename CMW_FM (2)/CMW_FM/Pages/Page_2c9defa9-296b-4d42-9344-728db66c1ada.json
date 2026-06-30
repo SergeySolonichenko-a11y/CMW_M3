@@ -1,0 +1,93 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.PageModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Page_2c9defa9-296b-4d42-9344-728db66c1ada",
+    "Owner": "Page_2c9defa9-296b-4d42-9344-728db66c1ada",
+    "Solution": "",
+    "Type": "SimplePage"
+  },
+  "Name": "Equipment charts",
+  "Root": {
+    "$type": "Comindware.Platform.Contracts.Desktop.VerticalLayoutComponentModel, Comindware.Platform.Contracts",
+    "AccessType": "Undefined",
+    "GlobalAlias": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "Component_96477a81-05ed-4017-bc92-3a54a745f7a4",
+      "Owner": "Page_2c9defa9-296b-4d42-9344-728db66c1ada",
+      "Solution": "",
+      "Type": "DesktopComponent"
+    },
+    "Order": 1,
+    "Rows": {
+      "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.Desktop.GroupPanelComponentModel, Comindware.Platform.Contracts",
+          "AccessType": "Editable",
+          "GlobalAlias": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Component_afc71de6-310a-478b-9686-fde79494fd71",
+            "Owner": "Component_96477a81-05ed-4017-bc92-3a54a745f7a4",
+            "Solution": "",
+            "Type": "DesktopComponent"
+          },
+          "Name": "Test charts",
+          "Order": 1,
+          "Rows": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.Desktop.VerticalLayoutComponentModel, Comindware.Platform.Contracts",
+                "AccessType": "Undefined",
+                "GlobalAlias": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "Component_28f3afbf-1b2b-4e87-b65b-58cc998075d2",
+                  "Owner": "Component_afc71de6-310a-478b-9686-fde79494fd71",
+                  "Solution": "",
+                  "Type": "DesktopComponent"
+                },
+                "Order": 1,
+                "Rows": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": [
+                    {
+                      "$type": "Comindware.Platform.Contracts.Desktop.FieldComponentModel, Comindware.Platform.Contracts",
+                      "AccessType": "Undefined",
+                      "Children": {
+                        "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.ComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                        "$values": []
+                      },
+                      "FieldType": "Chart",
+                      "GlobalAlias": {
+                        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                        "Alias": "WidgetConfig_9476d005-e94e-4a99-97ef-0486af768b74",
+                        "Owner": "Component_28f3afbf-1b2b-4e87-b65b-58cc998075d2",
+                        "Solution": "",
+                        "Type": "DesktopComponent"
+                      },
+                      "Name": "Pressure diagram",
+                      "Order": 1,
+                      "Type": "FieldComponent",
+                      "WidgetConfig": {
+                        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                        "Alias": "WidgetConfig_9476d005-e94e-4a99-97ef-0486af768b74",
+                        "Solution": "",
+                        "Type": "DesktopWidgetConfig"
+                      }
+                    }
+                  ]
+                },
+                "Type": "VerticalLayout",
+                "Width": "100"
+              }
+            ]
+          },
+          "Type": "GroupPanel",
+          "Width": "100"
+        }
+      ]
+    },
+    "Type": "VerticalLayout"
+  }
+}

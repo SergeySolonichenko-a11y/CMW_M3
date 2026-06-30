@@ -1,0 +1,2581 @@
+{
+  "$type": "Comindware.Platform.Contracts.RoleConfigurationModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "PropertyStructure",
+    "Solution": "CMW_FM",
+    "Type": "RoleConfiguration"
+  },
+  "IsActive": true,
+  "Members": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "beaver",
+        "Solution": "",
+        "Type": "Account"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "demo",
+        "Solution": "",
+        "Type": "Account"
+      }
+    ]
+  },
+  "Name": "Riverbend Galleria",
+  "RootResource": {
+    "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+    "AvailablePrivileges": "Read, Create, Update, Delete, FullAccess",
+    "Children": {
+      "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Staff",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Staff_calc",
+            "Solution": "CMW_FM",
+            "Type": "AccountTemplate"
+          },
+          "TargetType": "AccountTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Complete task",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "completeTask",
+                  "Owner": "ServiceRequestProcessingBasic",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Save",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "editTask",
+                  "Owner": "ServiceRequestProcessingBasic",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              }
+            ]
+          },
+          "Name": "Service Request Processing Basic",
+          "Privileges": "Read, Create, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "ServiceRequestProcessingBasic",
+            "Solution": "CMW_FM",
+            "Type": "ProcessTemplate"
+          },
+          "TargetType": "ProcessTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Documents",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "Documents",
+                  "Owner": "Buildings_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Attribute"
+                },
+                "TargetType": "Document"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Description": "Change log",
+                "Name": "Change log",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "cmw.role.resource.type.rtapChangeJournal",
+                  "Solution": "",
+                  "Type": "ChangeJournal"
+                },
+                "TargetType": "ChangeJournal"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Building directory",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultList",
+                  "Owner": "Buildings_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Dataset"
+                },
+                "TargetType": "List"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Buildings default form",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "BuildingsDefaultForm",
+                  "Owner": "Buildings_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Building summary form",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "BuildingSummaryForm",
+                  "Owner": "Buildings_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Save",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "edit",
+                  "Owner": "Buildings_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Create service request",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "ServiceRequestCreateWorkOrder",
+                  "Owner": "Buildings_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              }
+            ]
+          },
+          "Name": "Buildings",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Buildings_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "All systems",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultList",
+                  "Owner": "Equipment_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Dataset"
+                },
+                "TargetType": "List"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Equipment - default form",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultForm",
+                  "Owner": "Equipment_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Equipment form",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "EquipmentForm",
+                  "Owner": "Equipment_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              }
+            ]
+          },
+          "Name": "Equipment",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Equipment_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Equipment statuses",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "EquipmentStatuses",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Equipment types",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "EquipmentTypes",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Documents",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "Documents",
+                  "Owner": "Floors",
+                  "Solution": "CMW_FM",
+                  "Type": "Attribute"
+                },
+                "TargetType": "Document"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Description": "Change log",
+                "Name": "Change log",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "cmw.role.resource.type.rtapChangeJournal",
+                  "Solution": "",
+                  "Type": "ChangeJournal"
+                },
+                "TargetType": "ChangeJournal"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "All floors",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "AllProperties",
+                  "Owner": "Floors",
+                  "Solution": "CMW_FM",
+                  "Type": "Dataset"
+                },
+                "TargetType": "List"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "1. Default form",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultForm",
+                  "Owner": "Floors",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Default form short",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "DefaultFormShort",
+                  "Owner": "Floors",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Save",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "edit",
+                  "Owner": "Floors",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Export to Excel",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "ExportExcel",
+                  "Owner": "Floors",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Create service request",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "ServiceRequestCreateWorkOrder",
+                  "Owner": "Floors",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              }
+            ]
+          },
+          "Name": "Floors",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Floors",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Indicator record statuses",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "IndicatorRecordStatuses_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Indicator units of measure",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "IndicatorUnitsMeasure_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Description": "Change log",
+                "Name": "Change log",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "cmw.role.resource.type.rtapChangeJournal",
+                  "Solution": "",
+                  "Type": "ChangeJournal"
+                },
+                "TargetType": "ChangeJournal"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Inspection point directory",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultList",
+                  "Owner": "InspectionPoints_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Dataset"
+                },
+                "TargetType": "List"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Inspection points - default form",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultForm",
+                  "Owner": "InspectionPoints_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              }
+            ]
+          },
+          "Name": "Inspection points",
+          "Privileges": "Read, Create, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "InspectionPoints_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Inspection point statuses",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "InspectionPointStatuses_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Description": "Change log",
+                "Name": "Change log",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "cmw.role.resource.type.rtapChangeJournal",
+                  "Solution": "",
+                  "Type": "ChangeJournal"
+                },
+                "TargetType": "ChangeJournal"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Inspection history",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultList",
+                  "Owner": "Inspections_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Dataset"
+                },
+                "TargetType": "List"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Inspections log",
+                "Privileges": "Undefined",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "InspectionsLog",
+                  "Owner": "Inspections_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Dataset"
+                },
+                "TargetType": "List"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Inspections - default form",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultForm",
+                  "Owner": "Inspections_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              }
+            ]
+          },
+          "Name": "Inspections",
+          "Privileges": "Read, Create, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Inspections_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Inspection statuses",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "InspectionStatuses_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Job types",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "JobTypes",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "KPI record directory",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultList",
+                  "Owner": "KPIRecords_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Dataset"
+                },
+                "TargetType": "List"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "KPI records - default form",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultForm",
+                  "Owner": "KPIRecords_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              }
+            ]
+          },
+          "Name": "KPI records",
+          "Privileges": "Read, Create, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "KPIRecords_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "KPI types",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "KPITypes",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "KPI values",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "KPIValues",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Material change log",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "MaterialChangeAuditTrail_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Material directory",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultList",
+                  "Owner": "Materials_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Dataset"
+                },
+                "TargetType": "List"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Materials - default form",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultForm",
+                  "Owner": "Materials_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Create",
+                "Privileges": "Undefined",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "create",
+                  "Owner": "Materials_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              }
+            ]
+          },
+          "Name": "Materials",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Materials_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Operations",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Operations_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Priorities",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Priorities",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Documents",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "Documents",
+                  "Owner": "Properties",
+                  "Solution": "CMW_FM",
+                  "Type": "Attribute"
+                },
+                "TargetType": "Document"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Description": "Change log",
+                "Name": "Change log",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "cmw.role.resource.type.rtapChangeJournal",
+                  "Solution": "",
+                  "Type": "ChangeJournal"
+                },
+                "TargetType": "ChangeJournal"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Real estate properties",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultList",
+                  "Owner": "Properties",
+                  "Solution": "CMW_FM",
+                  "Type": "Dataset"
+                },
+                "TargetType": "List"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Property summary form",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertySummaryForm",
+                  "Owner": "Properties",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "1. Property edit form",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "Value1PropertyEditForm",
+                  "Owner": "Properties",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Save",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "edit",
+                  "Owner": "Properties",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Create service request",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "ServiceRequestCreateWorkOrder",
+                  "Owner": "Properties",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              }
+            ]
+          },
+          "Name": "Properties",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Properties",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Description": "Change log",
+                "Name": "Change log",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "cmw.role.resource.type.rtapChangeJournal",
+                  "Solution": "",
+                  "Type": "ChangeJournal"
+                },
+                "TargetType": "ChangeJournal"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Metric directory",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultList",
+                  "Owner": "Readings_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Dataset"
+                },
+                "TargetType": "List"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Metrics - default form",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultForm",
+                  "Owner": "Readings_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Create",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "create",
+                  "Owner": "Readings_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Delete",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "delete",
+                  "Owner": "Readings_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Save",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "edit",
+                  "Owner": "Readings_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              }
+            ]
+          },
+          "Name": "Readings",
+          "Privileges": "Read, Create",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Readings_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Reports",
+          "Privileges": "Read, Create, Update, Delete, FullAccess",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Reports",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Dispatcher recommendations nested",
+                "Privileges": "Undefined",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "DispatcherRecommendationsNested",
+                  "Owner": "ServiceRequests",
+                  "Solution": "CMW_FM",
+                  "Type": "Attribute"
+                },
+                "TargetType": "Document"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Description": "Change log",
+                "Name": "Change log",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "cmw.role.resource.type.rtapChangeJournal",
+                  "Solution": "",
+                  "Type": "ChangeJournal"
+                },
+                "TargetType": "ChangeJournal"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Create",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "create",
+                  "Owner": "ServiceRequests",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Save",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "edit",
+                  "Owner": "ServiceRequests",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Export list",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "ExportList",
+                  "Owner": "ServiceRequests",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Save 2",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "Save2",
+                  "Owner": "ServiceRequests",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              }
+            ]
+          },
+          "Name": "Service Requests",
+          "Privileges": "Read, Create, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "ServiceRequests",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Service Request Statuses",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "ServiceRequestStatuses",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Service request types",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "ServiceRequestTypes",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "SOPs",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "SOPs_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Documents",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "Documents",
+                  "Owner": "Spaces_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Attribute"
+                },
+                "TargetType": "Document"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Description": "Change log",
+                "Name": "Change log",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "cmw.role.resource.type.rtapChangeJournal",
+                  "Solution": "",
+                  "Type": "ChangeJournal"
+                },
+                "TargetType": "ChangeJournal"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "All spaces",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultList",
+                  "Owner": "Spaces_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Dataset"
+                },
+                "TargetType": "List"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Spaces - default form",
+                "Privileges": "Undefined",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultForm",
+                  "Owner": "Spaces_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Default form copy without extras",
+                "Privileges": "Undefined",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "DefaultFormCopyWithoutExtras",
+                  "Owner": "Spaces_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Default form short",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "DefaultFormShort",
+                  "Owner": "Spaces_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "1. Main display form",
+                "Privileges": "Undefined",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "form95",
+                  "Owner": "Spaces_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Space form",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "SpaceForm",
+                  "Owner": "Spaces_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Save",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "edit",
+                  "Owner": "Spaces_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Export",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "Export",
+                  "Owner": "Spaces_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Save for technician",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "SaveTechnician",
+                  "Owner": "Spaces_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Create service request",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "ServiceRequestCreateWorkOrder",
+                  "Owner": "Spaces_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Create work order for technician",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "ServiceRequestCreateWorkOrderTechnician",
+                  "Owner": "Spaces_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Switch inspection",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "SwitchInspection",
+                  "Owner": "Spaces_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              }
+            ]
+          },
+          "Name": "Spaces",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Spaces_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Space States",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "SpaceStates",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Space statuses",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "SpaceStatuses_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Space types",
+          "Privileges": "Read, Create, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "SpaceTypes",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Stores directory",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultList",
+                  "Owner": "StoragePlaces",
+                  "Solution": "CMW_FM",
+                  "Type": "Dataset"
+                },
+                "TargetType": "List"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Stores - default form",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultForm",
+                  "Owner": "StoragePlaces",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Save",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PropertyStructure",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "edit",
+                  "Owner": "StoragePlaces",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              }
+            ]
+          },
+          "Name": "Storage Places",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "StoragePlaces",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Technical subsystems",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "TechnicalSubsystems",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Technical systems",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "TechnicalSystems",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Value types",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "ValueTypes",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Work Orders Materials",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "WorkOrdersMaterials",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": []
+          },
+          "Name": "Work Order Statuses",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PropertyStructure",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "WorkOrderStatuses",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        }
+      ]
+    },
+    "Name": "CMW Facility Management",
+    "Privileges": "Read",
+    "Role": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "PropertyStructure",
+      "Solution": "CMW_FM",
+      "Type": "RoleConfiguration"
+    },
+    "Target": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "CMW_FM",
+      "Solution": "",
+      "Type": "Solution"
+    },
+    "TargetType": "BusinessApp"
+  },
+  "Workspace": {
+    "$type": "Comindware.Platform.Contracts.RoleWorkspaceModel, Comindware.Platform.Contracts",
+    "GlobalAlias": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "workspace10",
+      "Solution": "CMW_FM",
+      "Type": "RoleWorkspace"
+    },
+    "Name": "Property structure"
+  }
+}
