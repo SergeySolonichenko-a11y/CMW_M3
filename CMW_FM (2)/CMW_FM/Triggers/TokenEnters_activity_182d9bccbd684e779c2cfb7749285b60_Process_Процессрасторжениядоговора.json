@@ -1,0 +1,48 @@
+{
+  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.TriggerModel, Comindware.Platform.Contracts",
+  "ActionsHead": {
+    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.OnProcessActivityEntry, Comindware.Platform.Contracts",
+    "Description": "Token entered “Create termination addendum” <activity_182d9bccbd684e779c2cfb7749285b60>, process “Contract termination process” <ContractTerminationProcess>",
+    "IsAsync": false,
+    "IsCleaningCache": false,
+    "IsSafe": false,
+    "Kind": "OnProcessActivityEntry",
+    "Name": "Token entered “Create termination addendum”",
+    "NextAction": {
+      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectChange, Comindware.Platform.Contracts",
+      "IsAsync": false,
+      "IsCleaningCache": false,
+      "IsSafe": false,
+      "Kind": "ReferenceObjectChange",
+      "ReferenceExpression": "$$BusinessObject",
+      "Scope": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "ContractTerminationProcess",
+        "Solution": "CMW_FM",
+        "Type": "ProcessTemplate"
+      },
+      "TargetContainer": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "Contracts_calc",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      }
+    },
+    "Scope": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "ContractTerminationProcess",
+      "Solution": "CMW_FM",
+      "Type": "ProcessTemplate"
+    }
+  },
+  "BehaviourState": "Active",
+  "Description": "Scenario on token entry to “Create termination addendum” <activity_182d9bccbd684e779c2cfb7749285b60>, process “Contract termination process” <ContractTerminationProcess>",
+  "ExecutionContext": "ByInitiator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TokenEnters_activity_182d9bccbd684e779c2cfb7749285b60_Process_Процессрасторжениядоговора",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Name": "Token entry into 'create termination addendum' element of 'contract termination process' process"
+}

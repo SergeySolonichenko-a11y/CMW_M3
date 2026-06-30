@@ -1,0 +1,49 @@
+{
+  "$type": "Comindware.Platform.Contracts.UserCommandConfigurationModel, Comindware.Platform.Contracts",
+  "ConditionRule": "NOTEQUALS(1,2)",
+  "ConfirmationModelConfiguration": {
+    "$type": "Comindware.Platform.Contracts.UserCommandConfirmationModel, Comindware.Platform.Contracts",
+    "Template": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "GenerateLink07fa",
+      "Solution": "",
+      "Type": "MessageTemplate"
+    }
+  },
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Spaces_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Context": "Record",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "GenerateLink",
+    "Owner": "Spaces_calc",
+    "Solution": "CMW_FM",
+    "Type": "UserCommand"
+  },
+  "IsConfirmationActive": false,
+  "IsDisabled": false,
+  "IsPrepare": false,
+  "IsSystem": false,
+  "Kind": "Script",
+  "LockStateChangeType": "Undefined",
+  "LockStateVisibilityType": "Undefined",
+  "Multiplicity": "OneByOne",
+  "Name": "Generate link",
+  "NavigationTarget": "Undefined",
+  "ResultType": "DataChange",
+  "ScriptRule": {
+    "$type": "Comindware.Platform.Contracts.UserCommandScriptRuleModel, Comindware.Platform.Contracts",
+    "Definition": {
+      "$type": "Comindware.Platform.Contracts.CSharpRuleDefinitionModel, Comindware.Platform.Contracts",
+      "Code": "using System.Collections.Generic;\nusing Comindware.Platform.Api.Data;\nusing Comindware.TeamNetwork.Api.Data.UserCommands;\n\nclass Script\n{\n    public static UserCommandResult Main(UserCommandContext userCommandContext, Comindware.Entities entities)\n    {\n        var refr = new PredefinedDataNavigationReference();\n        // refr.ObjectId = \"cmw.temp.123\"; // Temporary template record\n        refr.ObjectTypeId = \"oa.104\"; // Template record to reference\n        refr.TargetType = NavigationItemType.Form; // Link type reference\n        refr.TargetId = \"form.238\"; // Form reference\n        foreach (var objectId in userCommandContext.ObjectIds)\n        {\n            var data = new Dictionary<string, object>\n            {\n                { \"Space_calc\", objectId }\n            };\n            refr.PredefinedData = data; // Data pre-fill\n            var link = Api.Base.EncryptedNavigationReferenceService.Generate(refr);\n            var data2 = new Dictionary<string, object>\n            {\n                { \"ServiceRequestQRlinktext_calc\", link } // Attribute to save document into\n            };\n           Api.TeamNetwork.ObjectService.EditWithAlias(\"Spaces_calc\", objectId, data2); // Replace attribute values by key for template record\n        }\n        var result = new UserCommandResult\n        {\n            Success = true,\n            Commited = true,\n            ResultType = UserCommandResultType.Undefined\n        };\n        return result;\n    }\n}",
+      "EntryPoint": "Script",
+      "Type": "CSharpExpression"
+    },
+    "Type": "UserCommandScript"
+  },
+  "SkipValidation": true
+}

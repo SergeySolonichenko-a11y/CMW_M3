@@ -1,0 +1,28 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Expression": "COUNT(from b in db->ServiceRequestWorkOrderTasks_calc where AND(b->Assignee_calc->id==$id, b->TaskStatus_calc->Code_calc==\"Open_calc\") select b->id)",
+  "Format": "Undefined",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WorkCountByAssignee_calc",
+    "Owner": "Staff_calc",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "IsCalculated": true,
+  "IsDigitGrouping": false,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Work count by assignee",
+  "Type": "Decimal"
+}

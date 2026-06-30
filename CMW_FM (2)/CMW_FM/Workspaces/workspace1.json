@@ -1,0 +1,259 @@
+{
+  "$type": "Comindware.Platform.Contracts.RoleWorkspaceConfigurationModel, Comindware.Platform.Contracts",
+  "Description": "",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "workspace1",
+    "Solution": "CMW_FM",
+    "Type": "RoleWorkspace"
+  },
+  "Name": "Leasing",
+  "NavigationItems": {
+    "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "ChildrenItems": {
+          "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "",
+              "Description": "",
+              "IconClass": "circle-user",
+              "ItemType": "SimplePage",
+              "Name": "Manager",
+              "Priority": 1,
+              "Severity": "None",
+              "Target": "Page_613c417e-f79a-478b-a4d5-d3991382000e",
+              "TargetSolution": "CMW_FM"
+            }
+          ]
+        },
+        "Container": "",
+        "Description": "",
+        "IconClass": "desktop",
+        "ItemType": "DesktopPage",
+        "Name": "Dashboard",
+        "Priority": 8,
+        "Severity": "None",
+        "Target": ""
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Container": "",
+        "Description": "",
+        "IconClass": "file-image",
+        "ItemType": "SimplePage",
+        "Name": "Lease manager",
+        "Priority": 7,
+        "Severity": "None",
+        "Target": "Page_613c417e-f79a-478b-a4d5-d3991382000e",
+        "TargetSolution": "CMW_FM"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Container": "Contracts_calc",
+        "Description": "",
+        "IconClass": "books",
+        "ItemType": "RecordTemplateList",
+        "Name": "Contracts",
+        "Priority": 6,
+        "Severity": "None",
+        "Target": "defaultList",
+        "TargetSolution": "CMW_FM"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Container": "Tenants_calc",
+        "Description": "",
+        "IconClass": "circle-exclamation",
+        "ItemType": "RecordTemplateList",
+        "Name": "Debtors",
+        "Priority": 5,
+        "Severity": "None",
+        "Target": "list696",
+        "TargetSolution": "CMW_FM"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Container": "InvoicesPayments_calc",
+        "Description": "",
+        "IconClass": "id-card",
+        "ItemType": "RecordTemplateList",
+        "Name": "Invoices and payments",
+        "Priority": 4,
+        "Severity": "None",
+        "Target": "Unpaid",
+        "TargetSolution": "CMW_FM"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "ChildrenItems": {
+          "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "Properties",
+              "Description": "",
+              "IconClass": "apartment",
+              "ItemType": "RecordTemplateList",
+              "Name": "Properties",
+              "Priority": 6,
+              "Severity": "None",
+              "Target": "defaultList",
+              "TargetSolution": "CMW_FM"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "Floors",
+              "Description": "",
+              "IconClass": "stairs",
+              "ItemType": "RecordTemplateList",
+              "Name": "Floors",
+              "Priority": 5,
+              "Severity": "None",
+              "Target": "AllProperties",
+              "TargetSolution": "CMW_FM"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "RentalLots_calc",
+              "Description": "",
+              "IconClass": "draw-square",
+              "ItemType": "RecordTemplateList",
+              "Name": "Rental lots",
+              "Priority": 4,
+              "Severity": "None",
+              "Target": "defaultList",
+              "TargetSolution": "CMW_FM"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "Spaces_calc",
+              "Description": "",
+              "IconClass": "door-closed",
+              "ItemType": "RecordTemplateList",
+              "Name": "Spaces",
+              "Priority": 3,
+              "Severity": "None",
+              "Target": "list450",
+              "TargetSolution": "CMW_FM"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "Tenants_calc",
+              "Description": "",
+              "IconClass": "user-group",
+              "ItemType": "RecordTemplateList",
+              "Name": "Tenants",
+              "Priority": 2,
+              "Severity": "None",
+              "Target": "defaultList",
+              "TargetSolution": "CMW_FM"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "LeaseCategories",
+              "Description": "",
+              "IconClass": "badge-percent",
+              "ItemType": "RecordTemplateList",
+              "Name": "Rental rates",
+              "Priority": 1,
+              "Severity": "None",
+              "Target": "defaultList",
+              "TargetSolution": "CMW_FM"
+            }
+          ]
+        },
+        "Container": "",
+        "Description": "",
+        "IconClass": "house-building",
+        "ItemType": "Group",
+        "Name": "Property profile",
+        "Priority": 3,
+        "Severity": "None",
+        "Target": ""
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "ChildrenItems": {
+          "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "",
+              "CustomURL": "#form/oa.489/form.3027/487914",
+              "Description": "",
+              "IconClass": "sack-dollar",
+              "ItemType": "CustomURL",
+              "Name": "Receivables",
+              "Priority": 2,
+              "Severity": "None",
+              "Target": ""
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "",
+              "Description": "",
+              "IconClass": "file-image",
+              "ItemType": "SimplePage",
+              "Name": "Financial KPIs",
+              "Priority": 1,
+              "Severity": "None",
+              "Target": "Page_0099404c-36d8-4fa7-a73c-8124829949bd",
+              "TargetSolution": "CMW_FM"
+            }
+          ]
+        },
+        "Container": "",
+        "Description": "",
+        "IconClass": "chart-line-up",
+        "ItemType": "Group",
+        "Name": "Reports",
+        "Priority": 2,
+        "Severity": "None",
+        "Target": ""
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "ChildrenItems": {
+          "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "DailyProcessTech",
+              "Description": "",
+              "IconClass": "random",
+              "ItemType": "ProcessTemplateList",
+              "Name": "Automated processes",
+              "Priority": 1,
+              "Severity": "None",
+              "Target": "defaultList",
+              "TargetSolution": "CMW_FM"
+            }
+          ]
+        },
+        "Container": "",
+        "Description": "",
+        "IconClass": "gears",
+        "ItemType": "Group",
+        "Name": "For demo",
+        "Priority": 1,
+        "Severity": "None",
+        "Target": ""
+      }
+    ]
+  },
+  "Roles": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "LeaseManager",
+        "Solution": "CMW_FM",
+        "Type": "RoleConfiguration"
+      }
+    ]
+  }
+}

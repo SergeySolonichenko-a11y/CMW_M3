@@ -1,0 +1,27 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Expression": "IF($CurrentCleaning_calc->CleaningStatus_calc->Code_calc==\"Started\",\n    \"<span Title='In progress' style='color:yellow; font-size: 200%; text-shadow: 0 0 1px black; align-self: center; top:0px;'> ● </span>\",\n\tIF(AND(NOT(EMPTY($CurrentCleaning_calc->CleaningEndDate_calc)), ADDHOURS($CurrentCleaning_calc->CleaningEndDate_calc, 24) > NOW()),\n\t\t\"<span Title='Clean' style='color:#90EE90; font-size: 200%; text-shadow: 0 0 1px black; align-self: center; top:0px;'> ● </span>\",\n\t\t\"<span Title='Dirty' style='color:#ff0000; font-size: 200%; text-shadow: 0 0 1px black; align-self: center; top:0px;'> ● </span>\"\n))",
+  "Format": "HtmlText",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "CleaningIndicator",
+    "Owner": "Spaces_calc",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "IsCalculated": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Cleaning indicator",
+  "Type": "String"
+}

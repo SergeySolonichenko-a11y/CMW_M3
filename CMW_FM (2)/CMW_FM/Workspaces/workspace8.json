@@ -1,0 +1,170 @@
+{
+  "$type": "Comindware.Platform.Contracts.RoleWorkspaceConfigurationModel, Comindware.Platform.Contracts",
+  "Description": "",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "workspace8",
+    "Solution": "CMW_FM",
+    "Type": "RoleWorkspace"
+  },
+  "Name": "Technician portal",
+  "NavigationItems": {
+    "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "ChildrenItems": {
+          "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "",
+              "Description": "",
+              "IconClass": "file-image",
+              "ItemType": "SimplePage",
+              "Name": "Technician dashboard",
+              "Priority": 1,
+              "Severity": "None",
+              "Target": "Page_7d144573-7ab2-47e9-88df-ba428661bf7f",
+              "TargetSolution": "CMW_FM"
+            }
+          ]
+        },
+        "Container": "",
+        "Description": "",
+        "IconClass": "desktop",
+        "ItemType": "DesktopPage",
+        "Name": "Dashboard",
+        "Priority": 6,
+        "Severity": "None",
+        "Target": ""
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "ChildrenItems": {
+          "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "WorkOrders",
+              "Description": "",
+              "IconClass": "list-alt",
+              "ItemType": "RecordTemplateList",
+              "Name": "Active",
+              "Priority": 2,
+              "Severity": "None",
+              "Target": "list248",
+              "TargetSolution": "CMW_FM"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "",
+              "Description": "",
+              "IconClass": "tasks",
+              "ItemType": "MyTasksList",
+              "Name": "Completed",
+              "Priority": 1,
+              "Severity": "None",
+              "Target": "myCompletedTasksDataset"
+            }
+          ]
+        },
+        "Container": "",
+        "Description": "",
+        "IconClass": "tasks",
+        "ItemType": "MyTasks",
+        "Name": "My tasks",
+        "Priority": 5,
+        "Severity": "None",
+        "Target": ""
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Container": "",
+        "Description": "",
+        "IconClass": "file-image",
+        "ItemType": "SimplePage",
+        "Name": "Technician dashboard",
+        "Priority": 4,
+        "Severity": "None",
+        "Target": "Page_7d144573-7ab2-47e9-88df-ba428661bf7f",
+        "TargetSolution": "CMW_FM"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Container": "MaintenanceExecution_calc",
+        "Description": "",
+        "IconClass": "oil-can-drip",
+        "ItemType": "RecordTemplateList",
+        "Name": "PM and CM",
+        "Priority": 3,
+        "Severity": "None",
+        "Target": "MyMaintenance",
+        "TargetSolution": "CMW_FM"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "ChildrenItems": {
+          "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "InspectionRoutes_calc",
+              "Description": "",
+              "IconClass": "list-alt",
+              "ItemType": "RecordTemplateList",
+              "Name": "New inspection",
+              "Priority": 2,
+              "Severity": "None",
+              "Target": "TechnicianInspections",
+              "TargetSolution": "CMW_FM"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "Inspections_calc",
+              "Description": "",
+              "IconClass": "map-location",
+              "ItemType": "RecordTemplateList",
+              "Name": "Today's inspections",
+              "Priority": 1,
+              "Severity": "None",
+              "Target": "InspectionsLog",
+              "TargetSolution": "CMW_FM"
+            }
+          ]
+        },
+        "Container": "",
+        "Description": "",
+        "IconClass": "folder",
+        "ItemType": "Group",
+        "Name": "Inspections",
+        "Priority": 2,
+        "Severity": "None",
+        "Target": ""
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Container": "Meters_calc",
+        "Description": "",
+        "IconClass": "list-alt",
+        "ItemType": "RecordTemplateList",
+        "Name": "Meters",
+        "Priority": 1,
+        "Severity": "None",
+        "Target": "defaultList",
+        "TargetSolution": "CMW_FM"
+      }
+    ]
+  },
+  "Roles": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "Technician",
+        "Solution": "CMW_FM",
+        "Type": "RoleConfiguration"
+      }
+    ]
+  }
+}

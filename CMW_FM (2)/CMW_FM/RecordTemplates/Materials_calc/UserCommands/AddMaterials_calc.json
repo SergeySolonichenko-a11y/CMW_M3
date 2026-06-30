@@ -1,0 +1,56 @@
+{
+  "$type": "Comindware.Platform.Contracts.UserCommandConfigurationModel, Comindware.Platform.Contracts",
+  "ConditionRule": "@prefix cmw: <http://comindware.com/logics#>.\n@prefix account: <http://comindware.com/ontology/account#>.\n{\n#Select current user\ncmw:securityContext cmw:currentUser ?user.\n\n#Select contractor employees group\n?g account:groupName \"Редакторы_beg\".\n\n#Check that selected user is a member of chosen group\nif{?user account:userGroupMembership ?g.} \nthen {true -> ?value.}\nelse {false -> ?value.}.\n}",
+  "ConfirmationModelConfiguration": {
+    "$type": "Comindware.Platform.Contracts.UserCommandConfirmationModel, Comindware.Platform.Contracts",
+    "Template": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "Createe0ce",
+      "Solution": "",
+      "Type": "MessageTemplate"
+    }
+  },
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Materials_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Context": "Record",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "AddMaterials_calc",
+    "Owner": "Materials_calc",
+    "Solution": "CMW_FM",
+    "Type": "UserCommand"
+  },
+  "IsConfirmationActive": false,
+  "IsDisabled": false,
+  "IsPrepare": false,
+  "IsSystem": false,
+  "Kind": "CreateRelated",
+  "LockStateChangeType": "Undefined",
+  "LockStateVisibilityType": "Undefined",
+  "Multiplicity": "OneByOne",
+  "Name": "Add materials",
+  "NavigationTarget": "Undefined",
+  "RelatedAction": {
+    "$type": "Comindware.Platform.Contracts.UserCommandRelatedActionModel, Comindware.Platform.Contracts",
+    "ContainerGlobalAlias": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "MaterialChangeAuditTrail_calc",
+      "Solution": "CMW_FM",
+      "Type": "RecordTemplate"
+    },
+    "FormGlobalAlias": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "form161",
+      "Owner": "MaterialChangeAuditTrail_calc",
+      "Solution": "CMW_FM",
+      "Type": "Form"
+    },
+    "PropertyPath": "$Istoriyaoperatsiy"
+  },
+  "ResultType": "DataChange",
+  "SkipValidation": false
+}

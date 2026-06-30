@@ -1,0 +1,59 @@
+{
+  "$type": "Comindware.Platform.Contracts.CommunicationRouteModel, Comindware.Platform.Contracts",
+  "DataSet": "MailSet",
+  "IsDisabled": true,
+  "IsInternal": false,
+  "IsUsePersonalCommunicationChannel": false,
+  "Map": {
+    "$type": "Comindware.Platform.Contracts.ResultHandlingMapModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ResultHandlingMapModel, Comindware.Platform.Contracts",
+        "MessageTypeAlias": "{body}",
+        "ResponseKey": "Body"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ResultHandlingMapModel, Comindware.Platform.Contracts",
+        "MessageTypeAlias": "{tittle}",
+        "ResponseKey": "Subject"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ResultHandlingMapModel, Comindware.Platform.Contracts",
+        "MessageTypeAlias": "account.32",
+        "ResponseKey": "ToAccount"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ResultHandlingMapModel, Comindware.Platform.Contracts",
+        "MessageTypeAlias": "false",
+        "ResponseKey": "MeetingEnabled"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ResultHandlingMapModel, Comindware.Platform.Contracts",
+        "MessageTypeAlias": "mail-exp@rosneft.ru",
+        "ResponseKey": "FromAddress"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ResultHandlingMapModel, Comindware.Platform.Contracts",
+        "MessageTypeAlias": "Plain",
+        "ResponseKey": "EmailBodyFormat"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ResultHandlingMapModel, Comindware.Platform.Contracts",
+        "MessageTypeAlias": "RN - Operations",
+        "ResponseKey": "FromName"
+      }
+    ]
+  },
+  "MessageName": "New message",
+  "MessageType": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "SmtpNew11b9",
+    "Solution": "",
+    "Type": "MessageTemplate"
+  },
+  "Name": "SMTP_new",
+  "ResponseFormat": "AsIs",
+  "RouteTarget": "Undefined",
+  "Severity": "Undefined",
+  "Type": "Outbound"
+}

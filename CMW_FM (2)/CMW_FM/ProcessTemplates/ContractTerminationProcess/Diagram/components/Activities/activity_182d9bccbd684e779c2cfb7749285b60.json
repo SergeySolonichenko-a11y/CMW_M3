@@ -1,0 +1,192 @@
+{
+  "$type": "Comindware.Platform.Contracts.TaskActivityModel, Comindware.Platform.Contracts",
+  "BehaviourState": "Active",
+  "FormAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "form_activity_182d9bccbd684e779c2cfb7749285b60",
+    "Owner": "ContractTerminationProcess",
+    "Solution": "",
+    "Type": "ProcessForm"
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "activity_182d9bccbd684e779c2cfb7749285b60",
+    "Owner": "ContractTerminationProcess",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "IsTitleSet": false,
+  "Kind": "User",
+  "OnEnterTrigger": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TokenEnters_activity_182d9bccbd684e779c2cfb7749285b60_Process_Процессрасторжениядоговора",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "OnExitTrigger": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TokenLeaves_activity_182d9bccbd684e779c2cfb7749285b60_Process_Процессрасторжениядоговора",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Owner": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "pool1",
+    "Owner": "ContractTerminationProcess",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "Position": {
+    "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+    "X": 330.0,
+    "Y": 145.0
+  },
+  "Size": {
+    "$type": "Comindware.Platform.Contracts.DimensionsModel, Comindware.Platform.Contracts",
+    "Height": 70.0,
+    "Width": 175.0
+  },
+  "SystemName": "activity_182d9bccbd684e779c2cfb7749285b60",
+  "Title": "Create lease termination addendum",
+  "Type": "Task",
+  "UserDefinition": {
+    "$type": "Comindware.Platform.Contracts.UserTaskDefinitionModel, Comindware.Platform.Contracts",
+    "Modifiers": {
+      "$type": "Comindware.Platform.Contracts.ModificationRuleModel[], Comindware.Platform.Contracts",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.ModificationRuleModel, Comindware.Platform.Contracts",
+          "Action": {
+            "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+            "PropertyAction": "Replace",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "isReassignProhibited",
+                  "Owner": "_UserTask",
+                  "Type": "Attribute"
+                }
+              ]
+            }
+          },
+          "Definition": {
+            "$type": "Comindware.Platform.Contracts.ValuesRuleDefinitionModel, Comindware.Platform.Contracts",
+            "Type": "Values",
+            "Values": {
+              "$type": "System.Object[], mscorlib",
+              "$values": [
+                true
+              ]
+            }
+          },
+          "Type": "Modification"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.MemberValuesModificationRuleModel, Comindware.Platform.Contracts",
+          "Action": {
+            "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+            "PropertyAction": "Replace",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "possibleAssignee",
+                  "Owner": "_UserTask",
+                  "Type": "Attribute"
+                }
+              ]
+            }
+          },
+          "Definition": {
+            "$type": "Comindware.Platform.Contracts.ValuesRuleDefinitionModel, Comindware.Platform.Contracts",
+            "Type": "Values",
+            "Values": {
+              "$type": "System.Object[], mscorlib",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "LeaseManager",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                }
+              ]
+            }
+          },
+          "Type": "Modification"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ModificationRuleModel, Comindware.Platform.Contracts",
+          "Action": {
+            "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+            "PropertyAction": "Replace",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "description",
+                  "Owner": "System#",
+                  "Solution": "",
+                  "Type": "Attribute"
+                }
+              ]
+            }
+          },
+          "Definition": {
+            "$type": "Comindware.Platform.Contracts.ValuesRuleDefinitionModel, Comindware.Platform.Contracts",
+            "Type": "Values"
+          },
+          "Type": "Modification"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ModificationRuleModel, Comindware.Platform.Contracts",
+          "Action": {
+            "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+            "PropertyAction": "Replace",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "dueDate",
+                  "Owner": "System#",
+                  "Solution": "",
+                  "Type": "Attribute"
+                }
+              ]
+            }
+          },
+          "Type": "Modification"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ModificationRuleModel, Comindware.Platform.Contracts",
+          "Action": {
+            "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+            "PropertyAction": "Replace",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "title",
+                  "Owner": "System#",
+                  "Solution": "",
+                  "Type": "Attribute"
+                }
+              ]
+            }
+          },
+          "Definition": {
+            "$type": "Comindware.Platform.Contracts.ExpressionRuleDefinitionModel, Comindware.Platform.Contracts",
+            "Expression": "\"Prepare termination addendum \" + $Tenant_calc->TenantName_calc",
+            "Type": "Expression"
+          },
+          "Type": "Modification"
+        }
+      ]
+    }
+  }
+}

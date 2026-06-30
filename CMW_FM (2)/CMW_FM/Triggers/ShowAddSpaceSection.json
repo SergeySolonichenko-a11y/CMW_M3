@@ -1,0 +1,69 @@
+{
+  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.TriggerModel, Comindware.Platform.Contracts",
+  "ActionsHead": {
+    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.OnUserCommand, Comindware.Platform.Contracts",
+    "IsAsync": false,
+    "IsCleaningCache": false,
+    "IsSafe": false,
+    "Kind": "OnUserCommand",
+    "Name": "Button “Add inspection points” clicked for records “Inspection routes”",
+    "NextAction": {
+      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+      "IsAsync": false,
+      "IsCleaningCache": false,
+      "IsSafe": false,
+      "Kind": "PropertySetValue",
+      "Name": "In record “Inspection routes”",
+      "Scope": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "InspectionRoutes_calc",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      },
+      "SetValueProperties": {
+        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+        "$values": [
+          {
+            "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "EnableAdding_calc",
+                  "Owner": "InspectionRoutes_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Attribute"
+                }
+              ]
+            },
+            "SetValueKind": "Replace",
+            "ValueExpression": "true"
+          }
+        ]
+      }
+    },
+    "Scope": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "InspectionRoutes_calc",
+      "Solution": "CMW_FM",
+      "Type": "RecordTemplate"
+    },
+    "UserCommand": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "AddInspectionPoints",
+      "Owner": "InspectionRoutes_calc",
+      "Solution": "CMW_FM",
+      "Type": "UserCommand"
+    }
+  },
+  "BehaviourState": "Active",
+  "ExecutionContext": "ByInitiator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "ShowAddSpaceSection",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Name": "Show add space section"
+}

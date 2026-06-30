@@ -1,0 +1,27 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Expression": "FORMAT(\"<span Title='Occupancy rate: {0}%' style='font-size: 15px; align-self: center; top:0px;'> {1}, leasable area: {2} sq ft, leased: {3} sq ft </span>\", LIST($OccupancyRate_calc, $Name_calc, $LeasableArea_calc, $LeasedArea_calc))",
+  "Format": "HtmlText",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Header",
+    "Owner": "Properties",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "IsCalculated": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Header",
+  "Type": "String"
+}

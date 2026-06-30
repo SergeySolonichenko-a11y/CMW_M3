@@ -1,0 +1,33 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Expression": "IF(EMPTY($LeaseAgreement_calc), OBJECT(\"Volga\", \"SpaceStatuses_calc\", \"Code_calc\", \"Available_calc\"),\n                    IF($LeaseAgreement_calc->Status->Code==\"Effective_calc\", OBJECT(\"Volga\", \"SpaceStatuses_calc\", \"Code_calc\", \"LeaseAgreements_calc\"),\n                    IF($LeaseAgreement_calc->Status->Code==\"signed\", OBJECT(\"Volga\", \"SpaceStatuses_calc\", \"Code_calc\", \"reserved\"), OBJECT(\"Volga\", \"SpaceStatuses_calc\", \"Code_calc\", \"bevacant\"))))",
+  "Format": "Badge",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Status",
+    "Owner": "RentalLots_calc",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "InstanceGlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "SpaceStatuses_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "IsCalculated": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Status",
+  "Type": "Instance"
+}

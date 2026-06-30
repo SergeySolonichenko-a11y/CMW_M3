@@ -1,0 +1,198 @@
+{
+  "$type": "Comindware.Platform.Contracts.TaskActivityModel, Comindware.Platform.Contracts",
+  "BehaviourState": "Active",
+  "FormAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "form_userTask6",
+    "Owner": "ServiceRequestProcessingBasic",
+    "Solution": "",
+    "Type": "ProcessForm"
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "userTask6",
+    "Owner": "ServiceRequestProcessingBasic",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "IsTitleSet": false,
+  "Kind": "User",
+  "OnEnterTrigger": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TokenEnters_userTask6_WorkOrderProcessing",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "OnExitTrigger": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TokenLeaves_userTask6_WorkOrderProcessing",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Owner": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "lane1",
+    "Owner": "ServiceRequestProcessingBasic",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "Position": {
+    "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+    "X": 1300.0,
+    "Y": 705.0
+  },
+  "Size": {
+    "$type": "Comindware.Platform.Contracts.DimensionsModel, Comindware.Platform.Contracts",
+    "Height": 70.0,
+    "Width": 120.0
+  },
+  "SystemName": "userTask6",
+  "Title": "Review work on service request",
+  "Type": "Task",
+  "UserDefinition": {
+    "$type": "Comindware.Platform.Contracts.UserTaskDefinitionModel, Comindware.Platform.Contracts",
+    "Modifiers": {
+      "$type": "Comindware.Platform.Contracts.ModificationRuleModel[], Comindware.Platform.Contracts",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.ModificationRuleModel, Comindware.Platform.Contracts",
+          "Action": {
+            "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+            "PropertyAction": "Replace",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "isReassignProhibited",
+                  "Owner": "_UserTask",
+                  "Type": "Attribute"
+                }
+              ]
+            }
+          },
+          "Definition": {
+            "$type": "Comindware.Platform.Contracts.ValuesRuleDefinitionModel, Comindware.Platform.Contracts",
+            "Type": "Values",
+            "Values": {
+              "$type": "System.Object[], mscorlib",
+              "$values": [
+                false
+              ]
+            }
+          },
+          "Type": "Modification"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.MemberValuesModificationRuleModel, Comindware.Platform.Contracts",
+          "Action": {
+            "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+            "PropertyAction": "Replace",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "possibleAssignee",
+                  "Owner": "_UserTask",
+                  "Type": "Attribute"
+                }
+              ]
+            }
+          },
+          "Definition": {
+            "$type": "Comindware.Platform.Contracts.ValuesRuleDefinitionModel, Comindware.Platform.Contracts",
+            "Type": "Values",
+            "Values": {
+              "$type": "System.Object[], mscorlib",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "Dispatcher",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "EngineerOnDuty",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                }
+              ]
+            }
+          },
+          "Type": "Modification"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ModificationRuleModel, Comindware.Platform.Contracts",
+          "Action": {
+            "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+            "PropertyAction": "Replace",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "description",
+                  "Owner": "System#",
+                  "Solution": "",
+                  "Type": "Attribute"
+                }
+              ]
+            }
+          },
+          "Definition": {
+            "$type": "Comindware.Platform.Contracts.ValuesRuleDefinitionModel, Comindware.Platform.Contracts",
+            "Type": "Values"
+          },
+          "Type": "Modification"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ModificationRuleModel, Comindware.Platform.Contracts",
+          "Action": {
+            "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+            "PropertyAction": "Replace",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "dueDate",
+                  "Owner": "System#",
+                  "Solution": "",
+                  "Type": "Attribute"
+                }
+              ]
+            }
+          },
+          "Type": "Modification"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.ModificationRuleModel, Comindware.Platform.Contracts",
+          "Action": {
+            "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+            "PropertyAction": "Replace",
+            "PropertyPath": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "title",
+                  "Owner": "System#",
+                  "Solution": "",
+                  "Type": "Attribute"
+                }
+              ]
+            }
+          },
+          "Definition": {
+            "$type": "Comindware.Platform.Contracts.ExpressionRuleDefinitionModel, Comindware.Platform.Contracts",
+            "Expression": "FORMAT(\"WORK ORDER: Verify job completion for work order: {0} ({1})\",LIST($Description_calc,$Assignee_calc))",
+            "Type": "Expression"
+          },
+          "Type": "Modification"
+        }
+      ]
+    }
+  }
+}

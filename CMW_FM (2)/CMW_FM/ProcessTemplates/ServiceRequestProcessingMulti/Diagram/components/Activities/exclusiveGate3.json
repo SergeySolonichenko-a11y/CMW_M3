@@ -1,0 +1,33 @@
+{
+  "$type": "Comindware.Platform.Contracts.GateActivityModel, Comindware.Platform.Contracts",
+  "BehaviourState": "Active",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "exclusiveGate3",
+    "Owner": "ServiceRequestProcessingMulti",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "IsTitleSet": false,
+  "Kind": "Exclusive",
+  "Owner": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "lane1",
+    "Owner": "ServiceRequestProcessingMulti",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "Position": {
+    "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+    "X": 860.0,
+    "Y": 180.0
+  },
+  "Size": {
+    "$type": "Comindware.Platform.Contracts.DimensionsModel, Comindware.Platform.Contracts",
+    "Height": 40.0,
+    "Width": 40.0
+  },
+  "SystemName": "exclusiveGate3",
+  "Title": "Service request decision",
+  "Type": "Gate"
+}

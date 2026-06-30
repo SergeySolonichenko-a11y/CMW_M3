@@ -1,0 +1,156 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.ChartWidgetConfigModel, Comindware.Platform.Contracts",
+  "AllowDrillDown": false,
+  "Charts": {
+    "$type": "Comindware.Platform.Contracts.Desktop.ChartConfigurationModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.ChartConfigurationModel, Comindware.Platform.Contracts",
+        "AggregationMethod": "Count",
+        "AggregationProperty": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "op.955"
+          ]
+        },
+        "ChartType": "Donut",
+        "DataContext": {
+          "$type": "Comindware.Platform.Contracts.Desktop.DataContextModel, Comindware.Platform.Contracts",
+          "Aggregation": {
+            "$type": "Comindware.Platform.Contracts.Desktop.AggregationConfigurationModel, Comindware.Platform.Contracts",
+            "Method": "Count",
+            "QueryPredicate": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "QualityControlResult_calc",
+                  "Owner": "ServiceRequests",
+                  "Solution": "CMW_FM",
+                  "Type": "Attribute"
+                }
+              ]
+            }
+          },
+          "Groupings": {
+            "$type": "Comindware.Platform.Contracts.Desktop.GroupingConfigurationModel[], Comindware.Platform.Contracts",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.Desktop.GroupingConfigurationModel, Comindware.Platform.Contracts",
+                "QueryPredicate": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                  "$values": [
+                    {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                      "Alias": "QualityControlResult_calc",
+                      "Owner": "ServiceRequests",
+                      "Solution": "CMW_FM",
+                      "Type": "Attribute"
+                    }
+                  ]
+                }
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.Desktop.GroupingConfigurationModel, Comindware.Platform.Contracts"
+              }
+            ]
+          },
+          "Sorting": {
+            "$type": "Comindware.Platform.Contracts.Desktop.SortingConfigurationModel, Comindware.Platform.Contracts",
+            "Direction": "Asc",
+            "NullValuesOnTop": false
+          }
+        },
+        "GroupingAlgorithm": "Undefined",
+        "Id": "chart.25",
+        "IsHorizontal": false,
+        "IsStacked": false,
+        "Label": {
+          "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+          "Alignment": "Undefined",
+          "Hidden": false,
+          "Text": "Work rating"
+        },
+        "ShowLegendValue": true,
+        "ShowTotalValue": true,
+        "SortDirection": "Asc",
+        "SubgroupingAlgorithm": "Undefined"
+      }
+    ]
+  },
+  "Children": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.WidgetConfigModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": []
+  },
+  "Columns": {
+    "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Control result",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "QualityControlResult_calc",
+              "Owner": "ServiceRequests",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "DateFilter": {
+    "$type": "Comindware.Platform.Contracts.Desktop.DateFilterModel, Comindware.Platform.Contracts",
+    "DefaultType": "CurrentQuarter",
+    "FilterTypesSet": "MonthQuarterYear",
+    "QueryPredicate": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "creationDate",
+          "Owner": "System#",
+          "Solution": "",
+          "Type": "Attribute"
+        }
+      ]
+    },
+    "UseAllTimeFilterType": true
+  },
+  "FieldType": "Chart",
+  "Filters": {
+    "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WidgetConfig_58443828-fdfc-4789-8ecc-151f0c13ac75",
+    "Owner": "CMW_FM",
+    "Solution": "",
+    "Type": "DesktopWidgetConfig"
+  },
+  "Label": {
+    "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+    "Alignment": "Undefined",
+    "Hidden": false,
+    "Text": "Work rating"
+  },
+  "Name": "My quality service requests",
+  "Order": 0,
+  "PropertyPath": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "QueryRule": "from a in db->ServiceRequests where AND(a->_creator == USER(), NOT(EMPTY(a->QualityControlResult_calc))) select a->QualityControlResult_calc",
+  "Template": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "ServiceRequests",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Type": "FieldComponent"
+}

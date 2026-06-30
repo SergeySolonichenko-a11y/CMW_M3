@@ -1,0 +1,174 @@
+{
+  "$type": "Comindware.Platform.Contracts.Desktop.ChartWidgetConfigModel, Comindware.Platform.Contracts",
+  "AllowDrillDown": false,
+  "Charts": {
+    "$type": "Comindware.Platform.Contracts.Desktop.ChartConfigurationModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.ChartConfigurationModel, Comindware.Platform.Contracts",
+        "AggregationMethod": "Count",
+        "AggregationProperty": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "op.1696"
+          ]
+        },
+        "ChartType": "Line",
+        "DataContext": {
+          "$type": "Comindware.Platform.Contracts.Desktop.DataContextModel, Comindware.Platform.Contracts",
+          "Aggregation": {
+            "$type": "Comindware.Platform.Contracts.Desktop.AggregationConfigurationModel, Comindware.Platform.Contracts",
+            "Method": "Count",
+            "QueryPredicate": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "CalendarDayReports",
+                  "Owner": "ServiceRequests",
+                  "Solution": "CMW_FM",
+                  "Type": "Attribute"
+                }
+              ]
+            }
+          },
+          "Groupings": {
+            "$type": "Comindware.Platform.Contracts.Desktop.GroupingConfigurationModel[], Comindware.Platform.Contracts",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.Desktop.GroupingConfigurationModel, Comindware.Platform.Contracts",
+                "QueryPredicate": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                  "$values": [
+                    {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                      "Alias": "CalendarDayReports",
+                      "Owner": "ServiceRequests",
+                      "Solution": "CMW_FM",
+                      "Type": "Attribute"
+                    }
+                  ]
+                }
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.Desktop.GroupingConfigurationModel, Comindware.Platform.Contracts"
+              }
+            ]
+          },
+          "Sorting": {
+            "$type": "Comindware.Platform.Contracts.Desktop.SortingConfigurationModel, Comindware.Platform.Contracts",
+            "Direction": "Asc",
+            "NullValuesOnTop": false
+          }
+        },
+        "GroupingAlgorithm": "Undefined",
+        "Id": "chart.48",
+        "IsHorizontal": false,
+        "IsStacked": false,
+        "Label": {
+          "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+          "Alignment": "Undefined",
+          "Hidden": false,
+          "Text": "Incoming service requests"
+        },
+        "ShowLegendValue": false,
+        "ShowTotalValue": false,
+        "SortDirection": "Asc",
+        "SubgroupingAlgorithm": "Undefined"
+      }
+    ]
+  },
+  "Children": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.Desktop.WidgetConfigModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": []
+  },
+  "Columns": {
+    "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Calendar day",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Calendarday_calc",
+              "Owner": "EventCalendar_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.Desktop.PropertyPathInfoModel, Comindware.Platform.Contracts",
+        "Name": "Calendar day",
+        "PropertyPath": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Calendarday_calc",
+              "Owner": "EventCalendar_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "DateFilter": {
+    "$type": "Comindware.Platform.Contracts.Desktop.DateFilterModel, Comindware.Platform.Contracts",
+    "DefaultType": "AllTime",
+    "FilterTypesSet": "Months",
+    "QueryPredicate": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "CalendarDayReports",
+          "Owner": "ServiceRequests",
+          "Solution": "CMW_FM",
+          "Type": "Attribute"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "Calendarday_calc",
+          "Owner": "EventCalendar_calc",
+          "Solution": "CMW_FM",
+          "Type": "Attribute"
+        }
+      ]
+    },
+    "UseAllTimeFilterType": true
+  },
+  "FieldType": "Chart",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "WidgetConfig_37bb0ce5-7174-42cf-b542-c8d4d54061fa",
+    "Owner": "CMW_FM",
+    "Solution": "",
+    "Type": "DesktopWidgetConfig"
+  },
+  "Label": {
+    "$type": "Comindware.Platform.Contracts.Desktop.Label, Comindware.Platform.Contracts",
+    "Alignment": "Undefined",
+    "Hidden": false,
+    "Text": "Work orders received by day"
+  },
+  "Name": "Incoming service requests",
+  "Order": 0,
+  "PropertyPath": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": []
+  },
+  "Template": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "ServiceRequests",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "Type": "FieldComponent"
+}

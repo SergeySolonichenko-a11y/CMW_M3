@@ -1,0 +1,244 @@
+{
+  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.TriggerModel, Comindware.Platform.Contracts",
+  "ActionsHead": {
+    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.OnUserCommand, Comindware.Platform.Contracts",
+    "IsAsync": false,
+    "IsCleaningCache": false,
+    "IsSafe": false,
+    "Kind": "OnUserCommand",
+    "Name": "Button “Generate maintenance plan” clicked for records “Maintenance execution”",
+    "NextAction": {
+      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalOperator, Comindware.Platform.Contracts",
+      "Actions": {
+        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction[], Comindware.Platform.Contracts",
+        "$values": [
+          {
+            "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction, Comindware.Platform.Contracts",
+            "ConditionExpression": "NOT(EMPTY(from a in db->Equipment_calc where \nAND(\n    EQUALS(a->PMPlans_calc->PMType_calc->Frequency_calc, $PlannedPeriod_calc), \n    NOT(EQUALS(a->MaintenanceExecution_calc->SortOrder_calc , ADDYEARS($PlannedPeriod_calc->WorkStartDate_calc, 1)))\n    ) select a->id))",
+            "ConditionName": "If scheduled maintenance exists this month",
+            "NextAction": {
+              "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+              "IsAsync": false,
+              "IsCleaningCache": false,
+              "IsSafe": false,
+              "Kind": "PropertySetValue",
+              "Name": "In record “PM execution”",
+              "Scope": {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Alias": "MaintenanceExecution_calc",
+                "Solution": "CMW_FM",
+                "Type": "RecordTemplate"
+              },
+              "SetValueProperties": {
+                "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+                "$values": [
+                  {
+                    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                    "PropertyPath": {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                          "Alias": "Equipment_calc",
+                          "Owner": "MaintenanceExecution_calc",
+                          "Solution": "CMW_FM",
+                          "Type": "Attribute"
+                        }
+                      ]
+                    },
+                    "SetValueKind": "Replace",
+                    "ValueExpression": "from a in db->Equipment_calc where \nAND(\n    EQUALS(a->PMPlans_calc->PMType_calc->Frequency_calc, $PlannedPeriod_calc), \n    NOT(EQUALS(a->MaintenanceExecution_calc->SortOrder_calc , ADDYEARS($PlannedPeriod_calc->WorkStartDate_calc, 1)))\n    ) select a->id"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "IsAsync": false,
+      "IsCleaningCache": false,
+      "IsSafe": false,
+      "Kind": "ConditionalOperator",
+      "Name": "Execute actions if expression returns",
+      "NextAction": {
+        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ForOperator, Comindware.Platform.Contracts",
+        "ConditionExpression": "IF(GREATEREQ(COUNT(from a in db->Equipment_calc where \nAND(\n    EQUALS(a->PMPlans_calc->PMType_calc->Frequency_calc, $PlannedPeriod_calc), \n    NOT(EQUALS(a->MaintenanceExecution_calc->SortOrder_calc , ADDYEARS($PlannedPeriod_calc->WorkStartDate_calc, ($Year_calc - 2024))))\n    ) select a->id), 100), 100, COUNT(from a in db->Equipment_calc where \nAND(\n    EQUALS(a->PMPlans_calc->PMType_calc->Frequency_calc, $PlannedPeriod_calc), \n    NOT(EQUALS(a->MaintenanceExecution_calc->SortOrder_calc , ADDYEARS($PlannedPeriod_calc->WorkStartDate_calc, ($Year_calc - 2024))))\n    ) select a->id))",
+        "IsAsync": false,
+        "IsCleaningCache": false,
+        "IsSafe": false,
+        "Kind": "ForOperator",
+        "Name": "Repeat by numeric counter",
+        "Scope": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "MaintenanceExecution_calc",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "SubAction": {
+          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalOperator, Comindware.Platform.Contracts",
+          "Actions": {
+            "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction[], Comindware.Platform.Contracts",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction, Comindware.Platform.Contracts",
+                "ConditionExpression": "NOT(EMPTY(from a in db->Equipment_calc where \nAND(\n    EQUALS(a->PMPlans_calc->PMType_calc->Frequency_calc, $PlannedPeriod_calc), \n    NOT(EQUALS(a->MaintenanceExecution_calc->SortOrder_calc , ADDYEARS($PlannedPeriod_calc->WorkStartDate_calc, 1)))\n    ) select a->id))",
+                "ConditionName": "If equipment is not empty",
+                "NextAction": {
+                  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectClone, Comindware.Platform.Contracts",
+                  "IsAsync": false,
+                  "IsCleaningCache": false,
+                  "IsDeepClone": false,
+                  "IsSafe": false,
+                  "Kind": "ReferenceObjectClone",
+                  "Name": "Find records by attribute “id”",
+                  "ReferenceExpression": "$id",
+                  "Scope": {
+                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                    "Alias": "MaintenanceExecution_calc",
+                    "Solution": "CMW_FM",
+                    "Type": "RecordTemplate"
+                  },
+                  "SetValueKind": "Undefined",
+                  "SubAction": {
+                    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+                    "IsAsync": false,
+                    "IsCleaningCache": false,
+                    "IsSafe": false,
+                    "Kind": "PropertySetValue",
+                    "Name": "In record “PM execution”",
+                    "Scope": {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                      "Alias": "MaintenanceExecution_calc",
+                      "Solution": "CMW_FM",
+                      "Type": "RecordTemplate"
+                    },
+                    "SetValueProperties": {
+                      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                          "PropertyPath": {
+                            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                            "$values": [
+                              {
+                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                "Alias": "Equipment_calc",
+                                "Owner": "MaintenanceExecution_calc",
+                                "Solution": "CMW_FM",
+                                "Type": "Attribute"
+                              }
+                            ]
+                          },
+                          "SetValueKind": "Replace",
+                          "ValueExpression": "from a in db->Equipment_calc where \nAND(\n    EQUALS(a->PMPlans_calc->PMType_calc->Frequency_calc, $PlannedPeriod_calc), \n    NOT(EQUALS(a->MaintenanceExecution_calc->SortOrder_calc , ADDYEARS($PlannedPeriod_calc->WorkStartDate_calc, 1)))\n    ) select a->id"
+                        },
+                        {
+                          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                          "PropertyPath": {
+                            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                            "$values": [
+                              {
+                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                "Alias": "WorkStatus_calc",
+                                "Owner": "MaintenanceExecution_calc",
+                                "Solution": "CMW_FM",
+                                "Type": "Attribute"
+                              }
+                            ]
+                          },
+                          "SetValueKind": "Replace",
+                          "ValueExpression": "OBJECT(\"Volga\", \"JobStatuses_calc\", \"Code_calc\", \"preplanned\")"
+                        },
+                        {
+                          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                          "PropertyPath": {
+                            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                            "$values": [
+                              {
+                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                "Alias": "SortOrder_calc",
+                                "Owner": "MaintenanceExecution_calc",
+                                "Solution": "CMW_FM",
+                                "Type": "Attribute"
+                              }
+                            ]
+                          },
+                          "SetValueKind": "Replace",
+                          "ValueExpression": "ADDYEARS($PlannedPeriod_calc, ($Year_calc - 2024))"
+                        },
+                        {
+                          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                          "PropertyPath": {
+                            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                            "$values": [
+                              {
+                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                "Alias": "CurrentInstruction",
+                                "Owner": "MaintenanceExecution_calc",
+                                "Solution": "CMW_FM",
+                                "Type": "Attribute"
+                              }
+                            ]
+                          },
+                          "SetValueKind": "Replace",
+                          "ValueExpression": "$Equipment_calc->PMPlans_calc->PMType_calc->SOP_calc"
+                        }
+                      ]
+                    }
+                  },
+                  "TargetContainer": {
+                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                    "Alias": "MaintenanceExecution_calc",
+                    "Solution": "CMW_FM",
+                    "Type": "RecordTemplate"
+                  }
+                }
+              }
+            ]
+          },
+          "IsAsync": false,
+          "IsCleaningCache": false,
+          "IsSafe": false,
+          "Kind": "ConditionalOperator",
+          "Name": "Execute actions if expression returns",
+          "Scope": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "MaintenanceExecution_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          }
+        },
+        "VariableName": "Itemcounts"
+      },
+      "Scope": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "MaintenanceExecution_calc",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      }
+    },
+    "Scope": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "MaintenanceExecution_calc",
+      "Solution": "CMW_FM",
+      "Type": "RecordTemplate"
+    },
+    "UserCommand": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "MakeMaintenanceList",
+      "Owner": "MaintenanceExecution_calc",
+      "Solution": "CMW_FM",
+      "Type": "UserCommand"
+    }
+  },
+  "BehaviourState": "Active",
+  "Description": "Auto Creation TOlist",
+  "ExecutionContext": "ByInitiator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "AutoCreationTolist",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Name": "Auto creation tolist"
+}

@@ -1,0 +1,53 @@
+{
+  "$type": "Comindware.Platform.Contracts.FormModel, Comindware.Platform.Contracts",
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "InspectionPoints_calc",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "FormSize": "Common",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Save",
+    "Owner": "InspectionPoints_calc",
+    "Solution": "CMW_FM",
+    "Type": "Form"
+  },
+  "IsDefault": false,
+  "Name": "Save",
+  "Origination": "Undefined",
+  "Root": {
+    "$type": "Comindware.Platform.Contracts.VerticalLayoutModel, Comindware.Platform.Contracts",
+    "AccessType": "Undefined",
+    "GlobalAlias": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "ffa4f6a2918341428c09c5949c8bffdc",
+      "Solution": "",
+      "Type": "FormComponent"
+    },
+    "Rows": {
+      "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.StaticContentModel, Comindware.Platform.Contracts",
+          "AccessType": "Undefined",
+          "Content": "<p style=\"text-align:center\"><span style=\"font-size:16px\"><span style=\"color:#d35400\"><strong>Attention!</strong></span> Not all Metrics for Spaces are verified.</span></p> <p style=\"text-align:center\"><strong>Do you want to save the Space inspection as incomplete?</strong></p>",
+          "DisplayName": "<p style=\"text-align:center\"><span style=\"font-size:16px\"><span style=\"color:#d35400\"><strong>Attention!</strong></span> Not all Metrics for Spaces are verified.</span></p> <p style=\"text-align:center\"><strong>Do you want to save the Space inspection as incomplete?</strong></p>",
+          "GlobalAlias": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "d993fab63369478b9a4a5b88de9d359b",
+            "Solution": "",
+            "Type": "FormComponent"
+          },
+          "Type": "StaticContent",
+          "Width": 0
+        }
+      ]
+    },
+    "Type": "VerticalLayout",
+    "Width": 0
+  },
+  "Type": "ModalForm",
+  "WithSimpleToolbar": true
+}

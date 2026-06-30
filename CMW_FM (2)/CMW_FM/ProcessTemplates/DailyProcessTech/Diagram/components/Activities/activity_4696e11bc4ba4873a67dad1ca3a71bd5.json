@@ -1,0 +1,40 @@
+{
+  "$type": "Comindware.Platform.Contracts.IntermediateEventActivityModel, Comindware.Platform.Contracts",
+  "BehaviourState": "Active",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "activity_4696e11bc4ba4873a67dad1ca3a71bd5",
+    "Owner": "DailyProcessTech",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "IsInterrupting": false,
+  "IsTitleSet": false,
+  "Kind": "None",
+  "OnExitTrigger": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TokenLeaves_activity_4696e11bc4ba4873a67dad1ca3a71bd5_Process_DaylyProcessTech",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Owner": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "pool1",
+    "Owner": "DailyProcessTech",
+    "Solution": "",
+    "Type": "ClientActivity"
+  },
+  "Position": {
+    "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+    "X": 835.0,
+    "Y": 275.0
+  },
+  "Size": {
+    "$type": "Comindware.Platform.Contracts.DimensionsModel, Comindware.Platform.Contracts",
+    "Height": 50.0,
+    "Width": 50.0
+  },
+  "SystemName": "activity_4696e11bc4ba4873a67dad1ca3a71bd5",
+  "Title": "3. Update invoice statuses",
+  "Type": "IntermediateEvent"
+}

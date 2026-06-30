@@ -1,0 +1,262 @@
+{
+  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.TriggerModel, Comindware.Platform.Contracts",
+  "ActionsHead": {
+    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.OnProcessActivityExit, Comindware.Platform.Contracts",
+    "Description": "Token exit from “2. Update renewed contract terms” <activity_b25782ff6fad4bd9a492e175de111425>, process “Scheduled technical process” <DaylyProcessTech>",
+    "IsAsync": false,
+    "IsCleaningCache": false,
+    "IsSafe": false,
+    "Kind": "OnProcessActivityExit",
+    "Name": "Token exit from “2. Update renewed contract terms”",
+    "NextAction": {
+      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectChange, Comindware.Platform.Contracts",
+      "IsAsync": false,
+      "IsCleaningCache": false,
+      "IsSafe": false,
+      "Kind": "ReferenceObjectChange",
+      "ReferenceExpression": "$$BusinessObject",
+      "Scope": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "DailyProcessTech",
+        "Solution": "CMW_FM",
+        "Type": "ProcessTemplate"
+      },
+      "SubAction": {
+        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+        "IsAsync": false,
+        "IsCleaningCache": false,
+        "IsSafe": false,
+        "Kind": "PropertySetValue",
+        "Name": "In “Tech temlate deals” record",
+        "NextAction": {
+          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectChange, Comindware.Platform.Contracts",
+          "IsAsync": false,
+          "IsCleaningCache": false,
+          "IsSafe": false,
+          "Kind": "ReferenceObjectChange",
+          "Name": "On record “Contracts”, specified by attribute “UpdateConditions”",
+          "ReferenceExpression": "$UpdateConditions_calc",
+          "Scope": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "TechTemplateDeals",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "SubAction": {
+            "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalOperator, Comindware.Platform.Contracts",
+            "Actions": {
+              "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction[], Comindware.Platform.Contracts",
+              "$values": [
+                {
+                  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction, Comindware.Platform.Contracts",
+                  "ConditionExpression": "$RenewalConditions_calc->Status->Code==\"signed\"",
+                  "ConditionName": "If the lease was extended (addendum signed)",
+                  "NextAction": {
+                    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+                    "IsAsync": false,
+                    "IsCleaningCache": false,
+                    "IsSafe": false,
+                    "Kind": "PropertySetValue",
+                    "Name": "In “Contracts” record",
+                    "Scope": {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                      "Alias": "Contracts_calc",
+                      "Solution": "CMW_FM",
+                      "Type": "RecordTemplate"
+                    },
+                    "SetValueProperties": {
+                      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                          "PropertyPath": {
+                            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                            "$values": [
+                              {
+                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                "Alias": "Status",
+                                "Owner": "Contracts_calc",
+                                "Solution": "CMW_FM",
+                                "Type": "Attribute"
+                              }
+                            ]
+                          },
+                          "SetValueKind": "Replace",
+                          "ValueExpression": "OBJECT(\"CMW_FM\", \"ContractStatuses\", \"Code\", \"active\")"
+                        },
+                        {
+                          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                          "PropertyPath": {
+                            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                            "$values": [
+                              {
+                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                "Alias": "ValidUntil_calc",
+                                "Owner": "Contracts_calc",
+                                "Solution": "CMW_FM",
+                                "Type": "Attribute"
+                              }
+                            ]
+                          },
+                          "SetValueKind": "Replace",
+                          "ValueExpression": "$RenewalConditions_calc->ValidUntil_calc"
+                        },
+                        {
+                          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                          "PropertyPath": {
+                            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                            "$values": [
+                              {
+                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                "Alias": "MonthlyPayment_calc",
+                                "Owner": "Contracts_calc",
+                                "Solution": "CMW_FM",
+                                "Type": "Attribute"
+                              }
+                            ]
+                          },
+                          "SetValueKind": "Replace",
+                          "ValueExpression": "$RenewalConditions_calc->NewRate_calc"
+                        },
+                        {
+                          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                          "PropertyPath": {
+                            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                            "$values": [
+                              {
+                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                "Alias": "RenewalInProgress_calc",
+                                "Owner": "Contracts_calc",
+                                "Solution": "CMW_FM",
+                                "Type": "Attribute"
+                              }
+                            ]
+                          },
+                          "SetValueKind": "Replace",
+                          "ValueExpression": "false"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction, Comindware.Platform.Contracts",
+                  "ConditionExpression": "OR($RenewalConditions_calc->Status->Code==\"draft\", $RenewalConditions_calc->Status->Code==\"inapproval\", $RenewalConditions_calc->Status->Code==\"signing\", $RenewalConditions_calc->Status->Code==\"New\")",
+                  "ConditionName": "If the lease was not extended (addendum not signed in time)",
+                  "NextAction": {
+                    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+                    "IsAsync": false,
+                    "IsCleaningCache": false,
+                    "IsSafe": false,
+                    "Kind": "PropertySetValue",
+                    "Name": "In “Contracts” record",
+                    "Scope": {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                      "Alias": "Contracts_calc",
+                      "Solution": "CMW_FM",
+                      "Type": "RecordTemplate"
+                    },
+                    "SetValueProperties": {
+                      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                          "PropertyPath": {
+                            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                            "$values": [
+                              {
+                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                "Alias": "Status",
+                                "Owner": "Contracts_calc",
+                                "Solution": "CMW_FM",
+                                "Type": "Attribute"
+                              }
+                            ]
+                          },
+                          "SetValueKind": "Replace",
+                          "ValueExpression": "OBJECT(\"CMW_FM\", \"ContractStatuses\", \"Code\", \"out\")"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction, Comindware.Platform.Contracts",
+                  "ConditionExpression": "1==2",
+                  "ConditionName": "If the lease will not be extended (termination)"
+                }
+              ]
+            },
+            "IsAsync": false,
+            "IsCleaningCache": false,
+            "IsSafe": false,
+            "Kind": "ConditionalOperator",
+            "Name": "Perform the actions when the expression returns TRUE",
+            "Scope": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Contracts_calc",
+              "Solution": "CMW_FM",
+              "Type": "RecordTemplate"
+            }
+          },
+          "TargetContainer": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Contracts_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          }
+        },
+        "Scope": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "TechTemplateDeals",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "SetValueProperties": {
+          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+              "PropertyPath": {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                "$values": [
+                  {
+                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                    "Alias": "UpdateConditions_calc",
+                    "Owner": "TechTemplateDeals",
+                    "Solution": "CMW_FM",
+                    "Type": "Attribute"
+                  }
+                ]
+              },
+              "SetValueKind": "Replace",
+              "ValueExpression": "from a in db->Contracts_calc where AND(\n                                 a->MainDocument_calc==true,\n                                 LESSEQ(STARTOFDAY(a->ValidUntil_calc), STARTOFDAY($_creationDate)),\n                                 OR(a->Status->Code==\"Effective_calc\", a->Status->Code==\"out\")                                 \n                                ) select a->id"
+            }
+          ]
+        }
+      },
+      "TargetContainer": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "TechTemplateDeals",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      }
+    },
+    "Scope": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "DailyProcessTech",
+      "Solution": "CMW_FM",
+      "Type": "ProcessTemplate"
+    }
+  },
+  "BehaviourState": "Active",
+  "Description": "Scenario on token exit from “2. Update renewed contract terms” <activity_b25782ff6fad4bd9a492e175de111425>, process “Scheduled technical process” <DaylyProcessTech>",
+  "ExecutionContext": "ByInitiator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TokenLeaves_activity_b25782ff6fad4bd9a492e175de111425_Process_DaylyProcessTech",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Name": "Token exit from '2. Update renewed contract terms' element of 'scheduled technical process' process"
+}

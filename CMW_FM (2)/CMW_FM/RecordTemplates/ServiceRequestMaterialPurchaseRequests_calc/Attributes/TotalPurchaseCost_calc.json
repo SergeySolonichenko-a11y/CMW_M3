@@ -1,0 +1,29 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "DecimalPlaces": 2,
+  "Expression": "@prefix math: <http://www.w3.org/2000/10/swap/math#>. \n@prefix object: <http://comindware.com/ontology/object#>. \n{ \n(\"ServiceRequestMaterialPurchaseRequests_calc\" \"PurchasedMaterial_calc\") object:findProperty ?Positions. \n(\"MaterialPurchaseAuditTrail_calc\" \"Cost_calc\") object:findProperty ?Summa. \n\nfrom  { \n  ?item ?Positions ?PositionsVal. \n  ?PositionsVal ?Summa ?SummaVal. \n} select ?SummaVal -> ?SummaList. \n\n?SummaList math:sum ?value. \n}",
+  "Format": "Undefined",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TotalPurchaseCost_calc",
+    "Owner": "ServiceRequestMaterialPurchaseRequests_calc",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "IsCalculated": true,
+  "IsDigitGrouping": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Total purchase cost",
+  "Type": "Decimal"
+}

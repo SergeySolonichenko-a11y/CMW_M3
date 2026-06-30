@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<Records Alias="ServiceRequestStatuses">
+  <Records>
+    <Record IsDisabled="false">
+      <Keys>
+        <Key Alias="Code" Type="String">
+          <Key xmlns:q1="http://www.w3.org/2001/XMLSchema" d6p1:type="q1:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">checked</Key>
+        </Key>
+      </Keys>
+      <Properties>
+        <Value Alias="Name" Type="String">
+          <SimpleValue xmlns:q2="http://www.w3.org/2001/XMLSchema" d6p1:type="q2:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">Verified (not used)</SimpleValue>
+        </Value>
+        <Value Alias="SortOrder" Type="Decimal" />
+      </Properties>
+    </Record>
+    <Record IsDisabled="false">
+      <Keys>
+        <Key Alias="Code" Type="String">
+          <Key xmlns:q3="http://www.w3.org/2001/XMLSchema" d6p1:type="q3:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">cancelled</Key>
+        </Key>
+      </Keys>
+      <Properties>
+        <Value Alias="Name" Type="String">
+          <SimpleValue xmlns:q4="http://www.w3.org/2001/XMLSchema" d6p1:type="q4:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">Rejected</SimpleValue>
+        </Value>
+        <Value Alias="SortOrder" Type="Decimal" />
+      </Properties>
+    </Record>
+    <Record IsDisabled="false">
+      <Keys>
+        <Key Alias="Code" Type="String">
+          <Key xmlns:q5="http://www.w3.org/2001/XMLSchema" d6p1:type="q5:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">inprogress</Key>
+        </Key>
+      </Keys>
+      <Properties>
+        <Value Alias="Name" Type="String">
+          <SimpleValue xmlns:q6="http://www.w3.org/2001/XMLSchema" d6p1:type="q6:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">In progress</SimpleValue>
+        </Value>
+        <Value Alias="SortOrder" Type="Decimal">
+          <SimpleValue xmlns:q7="http://www.w3.org/2001/XMLSchema" d6p1:type="q7:decimal" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">2</SimpleValue>
+        </Value>
+      </Properties>
+    </Record>
+    <Record IsDisabled="false">
+      <Keys>
+        <Key Alias="Code" Type="String">
+          <Key xmlns:q8="http://www.w3.org/2001/XMLSchema" d6p1:type="q8:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">new</Key>
+        </Key>
+      </Keys>
+      <Properties>
+        <Value Alias="Name" Type="String">
+          <SimpleValue xmlns:q9="http://www.w3.org/2001/XMLSchema" d6p1:type="q9:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">New</SimpleValue>
+        </Value>
+        <Value Alias="SortOrder" Type="Decimal">
+          <SimpleValue xmlns:q10="http://www.w3.org/2001/XMLSchema" d6p1:type="q10:decimal" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">1</SimpleValue>
+        </Value>
+      </Properties>
+    </Record>
+    <Record IsDisabled="false">
+      <Keys>
+        <Key Alias="Code" Type="String">
+          <Key xmlns:q11="http://www.w3.org/2001/XMLSchema" d6p1:type="q11:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">completed</Key>
+        </Key>
+      </Keys>
+      <Properties>
+        <Value Alias="Name" Type="String">
+          <SimpleValue xmlns:q12="http://www.w3.org/2001/XMLSchema" d6p1:type="q12:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">Completed</SimpleValue>
+        </Value>
+        <Value Alias="SortOrder" Type="Decimal">
+          <SimpleValue xmlns:q13="http://www.w3.org/2001/XMLSchema" d6p1:type="q13:decimal" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">4</SimpleValue>
+        </Value>
+      </Properties>
+    </Record>
+    <Record IsDisabled="false">
+      <Keys>
+        <Key Alias="Code" Type="String">
+          <Key xmlns:q14="http://www.w3.org/2001/XMLSchema" d6p1:type="q14:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">review</Key>
+        </Key>
+      </Keys>
+      <Properties>
+        <Value Alias="Name" Type="String">
+          <SimpleValue xmlns:q15="http://www.w3.org/2001/XMLSchema" d6p1:type="q15:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">Review</SimpleValue>
+        </Value>
+        <Value Alias="SortOrder" Type="Decimal">
+          <SimpleValue xmlns:q16="http://www.w3.org/2001/XMLSchema" d6p1:type="q16:decimal" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">3</SimpleValue>
+        </Value>
+      </Properties>
+    </Record>
+    <Record IsDisabled="false">
+      <Keys>
+        <Key Alias="Code" Type="String">
+          <Key xmlns:q17="http://www.w3.org/2001/XMLSchema" d6p1:type="q17:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">SecondTime</Key>
+        </Key>
+      </Keys>
+      <Properties>
+        <Value Alias="Name" Type="String">
+          <SimpleValue xmlns:q18="http://www.w3.org/2001/XMLSchema" d6p1:type="q18:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">Repeat</SimpleValue>
+        </Value>
+        <Value Alias="SortOrder" Type="Decimal" />
+      </Properties>
+    </Record>
+    <Record IsDisabled="false">
+      <Keys>
+        <Key Alias="Code" Type="String">
+          <Key xmlns:q19="http://www.w3.org/2001/XMLSchema" d6p1:type="q19:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">confirmation</Key>
+        </Key>
+      </Keys>
+      <Properties>
+        <Value Alias="Name" Type="String">
+          <SimpleValue xmlns:q20="http://www.w3.org/2001/XMLSchema" d6p1:type="q20:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">Confirmation</SimpleValue>
+        </Value>
+        <Value Alias="SortOrder" Type="Decimal" />
+      </Properties>
+    </Record>
+  </Records>
+</Records>
