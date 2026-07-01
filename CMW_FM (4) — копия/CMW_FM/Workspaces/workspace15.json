@@ -1,0 +1,127 @@
+{
+  "$type": "Comindware.Platform.Contracts.RoleWorkspaceConfigurationModel, Comindware.Platform.Contracts",
+  "Description": "",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "workspace15",
+    "Solution": "CMW_FM",
+    "Type": "RoleWorkspace"
+  },
+  "Name": "Cleaning management",
+  "NavigationItems": {
+    "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "ChildrenItems": {
+          "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "",
+              "Description": "",
+              "IconClass": "file-image",
+              "ItemType": "SimplePage",
+              "Name": "Cleaning",
+              "Priority": 1,
+              "Severity": "None",
+              "Target": "Page_9253089f-61a9-41c1-b1fa-1b2d263f2043",
+              "TargetSolution": "CMW_FM"
+            }
+          ]
+        },
+        "Container": "",
+        "Description": "",
+        "IconClass": "desktop",
+        "ItemType": "DesktopPage",
+        "Name": "Dashboard",
+        "Priority": 7,
+        "Severity": "None",
+        "Target": ""
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Container": "",
+        "Description": "",
+        "IconClass": "soap",
+        "ItemType": "SimplePage",
+        "Name": "Cleaning dashboard",
+        "Priority": 6,
+        "Severity": "None",
+        "Target": "Page_9253089f-61a9-41c1-b1fa-1b2d263f2043",
+        "TargetSolution": "CMW_FM"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Container": "ServiceRequests",
+        "Description": "",
+        "IconClass": "book-open-cover",
+        "ItemType": "RecordTemplateList",
+        "Name": "Work orders",
+        "Priority": 5,
+        "Severity": "None",
+        "Target": "Cleaning",
+        "TargetSolution": "CMW_FM"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Container": "SpaceCleaning_calc",
+        "Description": "",
+        "IconClass": "broom",
+        "ItemType": "RecordTemplateList",
+        "Name": "Cleaning log",
+        "Priority": 4,
+        "Severity": "None",
+        "Target": "defaultList",
+        "TargetSolution": "CMW_FM"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Container": "",
+        "Description": "",
+        "IconClass": "map-location-dot",
+        "ItemType": "RecordTemplate",
+        "Name": "Cleaning routes",
+        "Priority": 3,
+        "Severity": "None",
+        "Target": "CleaningRoutes",
+        "TargetSolution": "CMW_FM"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Container": "",
+        "Description": "",
+        "IconClass": "book-open-cover",
+        "ItemType": "RecordTemplate",
+        "Name": "Technology cards",
+        "Priority": 2,
+        "Severity": "None",
+        "Target": "CleaningProcedureCard_calc",
+        "TargetSolution": "CMW_FM"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Container": "Materials_calc",
+        "Description": "",
+        "IconClass": "list-alt",
+        "ItemType": "RecordTemplateList",
+        "Name": "Consumables",
+        "Priority": 1,
+        "Severity": "None",
+        "Target": "CleaningStore",
+        "TargetSolution": "CMW_FM"
+      }
+    ]
+  },
+  "Roles": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "CleaningManager",
+        "Solution": "CMW_FM",
+        "Type": "RoleConfiguration"
+      }
+    ]
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "$type": "Comindware.Platform.Contracts.RoleWorkspaceConfigurationModel, Comindware.Platform.Contracts",
+  "Description": "",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "workspace2",
+    "Solution": "CMW_FM",
+    "Type": "RoleWorkspace"
+  },
+  "Name": "Operations",
+  "NavigationItems": {
+    "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "ChildrenItems": {
+          "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "",
+              "Description": "",
+              "IconClass": "file-image",
+              "ItemType": "SimplePage",
+              "Name": "Analytics",
+              "Priority": 1,
+              "Severity": "None",
+              "Target": "systemPage_architect",
+              "TargetSolution": "CMW_FM"
+            }
+          ]
+        },
+        "Container": "",
+        "Description": "",
+        "IconClass": "desktop",
+        "ItemType": "DesktopPage",
+        "Name": "Dashboard",
+        "Priority": 8,
+        "Severity": "None",
+        "Target": ""
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "ChildrenItems": {
+          "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "",
+              "Description": "",
+              "IconClass": "tasks",
+              "ItemType": "MyTasksList",
+              "Name": "Active",
+              "Priority": 2,
+              "Severity": "None",
+              "Target": "myActiveTasksDataset"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "",
+              "Description": "",
+              "IconClass": "tasks",
+              "ItemType": "MyTasksList",
+              "Name": "Completed",
+              "Priority": 1,
+              "Severity": "None",
+              "Target": "myCompletedTasksDataset"
+            }
+          ]
+        },
+        "Container": "",
+        "Description": "",
+        "IconClass": "tasks",
+        "ItemType": "MyTasks",
+        "Name": "My tasks",
+        "Priority": 7,
+        "Severity": "None",
+        "Target": ""
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Container": "",
+        "Description": "",
+        "IconClass": "file-image",
+        "ItemType": "SimplePage",
+        "Name": "Engineer on duty",
+        "Priority": 6,
+        "Severity": "None",
+        "Target": "Page_f572da38-aafb-4239-9a69-16506bce0f1c",
+        "TargetSolution": "CMW_FM"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Container": "ServiceRequests",
+        "Description": "",
+        "IconClass": "list-alt",
+        "ItemType": "RecordTemplateList",
+        "Name": "Service requests",
+        "Priority": 5,
+        "Severity": "None",
+        "Target": "NeedsAttention",
+        "TargetSolution": "CMW_FM"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Container": "Staff_calc",
+        "Description": "",
+        "IconClass": "list-alt",
+        "ItemType": "AccountTemplateList",
+        "Name": "Staff utilization",
+        "Priority": 4,
+        "Severity": "None",
+        "Target": "StaffUtilization",
+        "TargetSolution": "CMW_FM"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "ChildrenItems": {
+          "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "InspectionRoutes_calc",
+              "Description": "",
+              "IconClass": "map-location",
+              "ItemType": "RecordTemplateList",
+              "Name": "Inspection routes",
+              "Priority": 2,
+              "Severity": "None",
+              "Target": "defaultList",
+              "TargetSolution": "CMW_FM"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "Inspections_calc",
+              "Description": "",
+              "IconClass": "person-walking-dashed-line-arrow-right",
+              "ItemType": "RecordTemplateList",
+              "Name": "Today's inspections",
+              "Priority": 1,
+              "Severity": "None",
+              "Target": "InspectionsLog",
+              "TargetSolution": "CMW_FM"
+            }
+          ]
+        },
+        "Container": "",
+        "Description": "",
+        "IconClass": "arrows-spin",
+        "ItemType": "Group",
+        "Name": "Inspections",
+        "Priority": 3,
+        "Severity": "None",
+        "Target": ""
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "ChildrenItems": {
+          "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "PMPlans_calc",
+              "Description": "",
+              "IconClass": "list-alt",
+              "ItemType": "RecordTemplateList",
+              "Name": "PM plans",
+              "Priority": 3,
+              "Severity": "None",
+              "Target": "defaultList",
+              "TargetSolution": "CMW_FM"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "",
+              "Description": "PM jobs in progress",
+              "IconClass": "screwdriver-wrench",
+              "ItemType": "RecordTemplate",
+              "Name": "PM underway",
+              "Priority": 2,
+              "Severity": "None",
+              "Target": "MaintenanceExecution_calc",
+              "TargetSolution": "CMW_FM"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "PMTypes_calc",
+              "Description": "",
+              "IconClass": "list-alt",
+              "ItemType": "RecordTemplateList",
+              "Name": "PM types",
+              "Priority": 1,
+              "Severity": "None",
+              "Target": "PMTypesProperty",
+              "TargetSolution": "CMW_FM"
+            }
+          ]
+        },
+        "Container": "",
+        "Description": "",
+        "IconClass": "folder",
+        "ItemType": "Group",
+        "Name": "Preventive maintenance",
+        "Priority": 2,
+        "Severity": "None",
+        "Target": ""
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "ChildrenItems": {
+          "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "",
+              "Description": "",
+              "IconClass": "list-alt",
+              "ItemType": "RecordTemplate",
+              "Name": "SLA - service request types",
+              "Priority": 2,
+              "Severity": "None",
+              "Target": "ServiceRequestTypes",
+              "TargetSolution": "CMW_FM"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+              "Container": "PMSettings_calc",
+              "Description": "",
+              "IconClass": "align-justify",
+              "ItemType": "Action",
+              "Name": "My settings",
+              "Priority": 1,
+              "Severity": "None",
+              "Target": "MySettings",
+              "TargetSolution": "CMW_FM"
+            }
+          ]
+        },
+        "Container": "",
+        "Description": "",
+        "IconClass": "folder",
+        "ItemType": "Group",
+        "Name": "Reference data",
+        "Priority": 1,
+        "Severity": "None",
+        "Target": ""
+      }
+    ]
+  },
+  "Roles": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "EngineerOnDuty",
+        "Solution": "CMW_FM",
+        "Type": "RoleConfiguration"
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.TriggerModel, Comindware.Platform.Contracts",
+  "ActionsHead": {
+    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.OnRecordCreate, Comindware.Platform.Contracts",
+    "IsAsync": false,
+    "IsCleaningCache": false,
+    "IsSafe": false,
+    "Kind": "OnRecordCreate",
+    "Name": "Created Record “Jobs for requests”",
+    "NextAction": {
+      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalOperator, Comindware.Platform.Contracts",
+      "Actions": {
+        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction[], Comindware.Platform.Contracts",
+        "$values": [
+          {
+            "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction, Comindware.Platform.Contracts",
+            "ConditionExpression": "$Secondary_calc==true",
+            "ConditionName": "If additional work is needed during completion",
+            "NextAction": {
+              "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.StartProcess, Comindware.Platform.Contracts",
+              "IsAsync": false,
+              "IsCleaningCache": false,
+              "IsSafe": false,
+              "Kind": "StartProcess",
+              "Name": "Start process “Completed jobs per work order”",
+              "ProcessTemplate": {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Alias": "WorkOrderExecution",
+                "Solution": "CMW_FM",
+                "Type": "ProcessTemplate"
+              },
+              "Scope": {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Alias": "WorkOrders",
+                "Solution": "CMW_FM",
+                "Type": "RecordTemplate"
+              }
+            }
+          }
+        ]
+      },
+      "IsAsync": false,
+      "IsCleaningCache": false,
+      "IsSafe": false,
+      "Kind": "ConditionalOperator",
+      "Name": "Execute actions if expression returns",
+      "Scope": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "WorkOrders",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      }
+    },
+    "Scope": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "WorkOrders",
+      "Solution": "CMW_FM",
+      "Type": "RecordTemplate"
+    }
+  },
+  "BehaviourState": "Active",
+  "ExecutionContext": "ByInitiator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "ServiceRequestStartWorkRequest",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Name": "Start work on request"
+}

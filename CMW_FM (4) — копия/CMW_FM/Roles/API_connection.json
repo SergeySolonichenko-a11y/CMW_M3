@@ -1,0 +1,39 @@
+{
+  "$type": "Comindware.Platform.Contracts.RoleConfigurationModel, Comindware.Platform.Contracts",
+  "Description": "For API connections",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "API_connection",
+    "Solution": "CMW_FM",
+    "Type": "RoleConfiguration"
+  },
+  "IsActive": true,
+  "Members": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "beaver",
+        "Solution": "",
+        "Type": "Account"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "admin",
+        "Solution": "",
+        "Type": "Account"
+      }
+    ]
+  },
+  "Name": "API connection",
+  "Workspace": {
+    "$type": "Comindware.Platform.Contracts.RoleWorkspaceModel, Comindware.Platform.Contracts",
+    "GlobalAlias": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "workspace0",
+      "Solution": "CMW_FM",
+      "Type": "RoleWorkspace"
+    },
+    "Name": "Configuration"
+  }
+}

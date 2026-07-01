@@ -1,0 +1,29 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "DecimalPlaces": 0,
+  "Expression": "SUM(from a in $InvoicesPayments_calc where AND(a->DocType_calc==\"Issued_calc\", GREATER(a->NotPaidDays_calc, 0)) select a->NotPaidDays_calc)/COUNT(from a in $InvoicesPayments_calc where AND(a->DocType_calc==\"Issued_calc\", GREATER(a->NotPaidDays_calc, 0)) select a->id)",
+  "Format": "Undefined",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "AveragePaymentDays",
+    "Owner": "Tenants_calc",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "IsCalculated": true,
+  "IsDigitGrouping": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Average payment days",
+  "Type": "Decimal"
+}

@@ -1,0 +1,34 @@
+{
+  "$type": "Comindware.Platform.Contracts.CommunicationRouteModel, Comindware.Platform.Contracts",
+  "DataSet": "MailSet",
+  "IsDisabled": true,
+  "IsInternal": false,
+  "IsUsePersonalCommunicationChannel": false,
+  "Map": {
+    "$type": "Comindware.Platform.Contracts.ResultHandlingMapModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ResultHandlingMapModel, Comindware.Platform.Contracts",
+        "MessageTypeAlias": "Attention: you have a new message.",
+        "ResponseKey": "NotificationBody"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ResultHandlingMapModel, Comindware.Platform.Contracts",
+        "MessageTypeAlias": "New task: {header}",
+        "ResponseKey": "NotificationTitle"
+      }
+    ]
+  },
+  "MessageName": "PushOnRequest",
+  "MessageType": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "PushNotificationByScenario0c37",
+    "Solution": "",
+    "Type": "MessageTemplate"
+  },
+  "Name": "Scenario push notification",
+  "ResponseFormat": "AsIs",
+  "RouteTarget": "Undefined",
+  "Severity": "Undefined",
+  "Type": "TaskNotification"
+}

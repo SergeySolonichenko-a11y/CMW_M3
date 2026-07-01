@@ -1,0 +1,161 @@
+{
+  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.TriggerModel, Comindware.Platform.Contracts",
+  "ActionsHead": {
+    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.OnProcessActivityExit, Comindware.Platform.Contracts",
+    "Description": "Token exit from “Set process variables” <activity_c0864c2678264cd8a261d46b02e5e869>, process “Scheduled technical process” <DaylyProcessTech>",
+    "IsAsync": false,
+    "IsCleaningCache": false,
+    "IsSafe": false,
+    "Kind": "OnProcessActivityExit",
+    "Name": "Token exit from “Set process variables”",
+    "NextAction": {
+      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectChange, Comindware.Platform.Contracts",
+      "IsAsync": false,
+      "IsCleaningCache": false,
+      "IsSafe": false,
+      "Kind": "ReferenceObjectChange",
+      "ReferenceExpression": "$$BusinessObject",
+      "Scope": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "DailyProcessTech",
+        "Solution": "CMW_FM",
+        "Type": "ProcessTemplate"
+      },
+      "SubAction": {
+        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalOperator, Comindware.Platform.Contracts",
+        "Actions": {
+          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction, Comindware.Platform.Contracts",
+              "ConditionExpression": "EMPTY($Date_calc)",
+              "ConditionName": "If date and time are empty",
+              "NextAction": {
+                "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+                "IsAsync": false,
+                "IsCleaningCache": false,
+                "IsSafe": false,
+                "Kind": "PropertySetValue",
+                "Name": "In “Tech temlate deals” record",
+                "Scope": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "TechTemplateDeals",
+                  "Solution": "CMW_FM",
+                  "Type": "RecordTemplate"
+                },
+                "SetValueProperties": {
+                  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+                  "$values": [
+                    {
+                      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                      "PropertyPath": {
+                        "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                        "$values": [
+                          {
+                            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                            "Alias": "Year_calc",
+                            "Owner": "TechTemplateDeals",
+                            "Solution": "CMW_FM",
+                            "Type": "Attribute"
+                          }
+                        ]
+                      },
+                      "SetValueKind": "Replace",
+                      "ValueExpression": "OBJECT(\"CMW_FM\", \"Years\", \"Year\", YEAR(NOW()))"
+                    },
+                    {
+                      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                      "PropertyPath": {
+                        "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                        "$values": [
+                          {
+                            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                            "Alias": "Date_calc",
+                            "Owner": "TechTemplateDeals",
+                            "Solution": "CMW_FM",
+                            "Type": "Attribute"
+                          }
+                        ]
+                      },
+                      "SetValueKind": "Replace",
+                      "ValueExpression": "NOW()"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction, Comindware.Platform.Contracts",
+              "ConditionExpression": "1==2",
+              "ConditionName": "Other"
+            }
+          ]
+        },
+        "IsAsync": false,
+        "IsCleaningCache": false,
+        "IsSafe": false,
+        "Kind": "ConditionalOperator",
+        "Name": "Execute actions if expression returns",
+        "NextAction": {
+          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.LocalVariableAction, Comindware.Platform.Contracts",
+          "IsAsync": false,
+          "IsCleaningCache": false,
+          "IsSafe": false,
+          "Kind": "LocalVariableAction",
+          "LocalVariableAttributes": {
+            "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.LocalVariableAttribute[], Comindware.Platform.Contracts",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.LocalVariableAttribute, Comindware.Platform.Contracts",
+                "Name": "Date",
+                "Rule": "IF(EMPTY($Date_calc), NOW(), $Date_calc)"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.LocalVariableAttribute, Comindware.Platform.Contracts",
+                "Name": "Year",
+                "Rule": "IF(EMPTY($Year_calc),from a in db->Years where a->Year==YEAR(NOW()) select a->id, $Year_calc)"
+              }
+            ]
+          },
+          "LocalVariableName": "vardataset",
+          "Name": "In “Tech temlate deals” record",
+          "Scope": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "TechTemplateDeals",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "SetValueKind": "Replace"
+        },
+        "Scope": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "TechTemplateDeals",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        }
+      },
+      "TargetContainer": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "TechTemplateDeals",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      }
+    },
+    "Scope": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "DailyProcessTech",
+      "Solution": "CMW_FM",
+      "Type": "ProcessTemplate"
+    }
+  },
+  "BehaviourState": "Active",
+  "Description": "Scenario on token exit from “Set variables for the process” <activity_c0864c2678264cd8a261d46b02e5e869>, process “Scheduled technical process” <DaylyProcessTech>",
+  "ExecutionContext": "ByInitiator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TokenLeaves_activity_c0864c2678264cd8a261d46b02e5e869_Process_DailyProcessTech",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Name": "Token exit from 'set process variables' element of 'scheduled technical process' process"
+}

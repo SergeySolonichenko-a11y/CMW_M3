@@ -1,0 +1,30 @@
+{
+  "$type": "Comindware.Platform.Contracts.CommunicationRouteModel, Comindware.Platform.Contracts",
+  "DataSet": "UnrestrictedSet",
+  "IsDisabled": true,
+  "IsInternal": false,
+  "IsUsePersonalCommunicationChannel": false,
+  "Map": {
+    "$type": "Comindware.Platform.Contracts.ResultHandlingMapModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ResultHandlingMapModel, Comindware.Platform.Contracts",
+        "MessageTypeAlias": "Value",
+        "MessageTypeName": "Value",
+        "ResponseKey": "True"
+      }
+    ]
+  },
+  "MessageName": "New work order - Beg.",
+  "MessageType": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "ImapEc62",
+    "Solution": "",
+    "Type": "MessageTemplate"
+  },
+  "Name": "IMAP_b",
+  "ResponseFormat": "AsIs",
+  "RouteTarget": "NewProcessInstance",
+  "Severity": "Undefined",
+  "Type": "Inbound"
+}

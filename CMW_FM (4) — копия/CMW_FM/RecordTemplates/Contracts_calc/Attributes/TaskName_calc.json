@@ -1,0 +1,27 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Expression": "@prefix cmw: <http://comindware.com/logics#>.\n@prefix task: <http://comindware.com/ontology/task#>.\n@prefix taskStatus: <http://comindware.com/ontology/taskStatus#>.\n@prefix cmwui: <http://comindware.com/ontology/ui#>.\n@prefix account: <http://comindware.com/ontology/account#>.\n@prefix role: <http://comindware.com/ontology/role#>.\n\n############### Old triple\n#{\n#  ?task task:objectId ?item.\n#  ?task cmw:taskStatus taskStatus:inProgress.\n#  cmw:securityContext cmw:currentUser ?currentUser.  \n#  ?task cmw:possibleAssignee ?currentUser.\n#  #or {?task cmw:assignee ?currentUser.}\n#  #or {?task cmw:possibleAssignee ?currentUser.}.\n#  ?task -> ?value.\n#}\n\n############### New triple\n{\n  cmw:securityContext cmw:currentUser ?currentUser.\n    ?role role:roleMembers ?currentUser. \n    ?task task:objectId ?item.\n    ?task cmw:taskStatus taskStatus:inProgress.\n    \n    or {?task cmw:assignee ?currentUser.}\n    or {?task cmw:possibleAssignee ?currentUser.}\n    or {?task cmw:assignee ?role.}\n  or {?task cmw:possibleAssignee ?role.}.\n    \n    ?task cmw:title ?value.\n  \n}",
+  "Format": "PlainText",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TaskName_calc",
+    "Owner": "Contracts_calc",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "IsCalculated": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Task name",
+  "Type": "String"
+}

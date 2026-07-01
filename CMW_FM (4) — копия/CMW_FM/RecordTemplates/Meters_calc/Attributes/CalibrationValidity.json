@@ -1,0 +1,27 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Expression": "IF($NextCalibrationDate_calc > ADDDAYS(NOW(),IF(EMPTY($RemindBeforeCalibration_calc),30, $RemindBeforeCalibration_calc)),\n\t\t\t\"<span Title='Current' style='color: green;  font-size: 200%; font-style: normal; display: flex; align-self: center; align-items: center; top:0px;'> ● </span>\",\n\t\t\tIF($NextCalibrationDate_calc < NOW(),\n\t\t\t\t\"<span  Title='Calibration expired!' style='color: red;  font-size: 200%; display: flex; align-self: center; align-items: center; top:0px;'> ● </span>\",\n\t\t\t\t\"<span Title='Calibration expiring or not specified' style='color: yellow;  font-size: 200%; font-style: normal; display: flex; align-self: center; align-items: center; top:0px;'> ● </span>\"\n\t\t\t)\n)",
+  "Format": "HtmlText",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "CalibrationValidity",
+    "Owner": "Meters_calc",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "IsCalculated": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Calibration validity",
+  "Type": "String"
+}

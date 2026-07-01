@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Records Alias="SpaceStates">
+  <Records>
+    <Record IsDisabled="false">
+      <Keys>
+        <Key Alias="Code" Type="String">
+          <Key xmlns:q1="http://www.w3.org/2001/XMLSchema" d6p1:type="q1:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">sat</Key>
+        </Key>
+      </Keys>
+      <Properties>
+        <Value Alias="StateName" Type="String">
+          <SimpleValue xmlns:q2="http://www.w3.org/2001/XMLSchema" d6p1:type="q2:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">Satisfactory</SimpleValue>
+        </Value>
+      </Properties>
+    </Record>
+    <Record IsDisabled="false">
+      <Keys>
+        <Key Alias="Code" Type="String">
+          <Key xmlns:q3="http://www.w3.org/2001/XMLSchema" d6p1:type="q3:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">poor</Key>
+        </Key>
+      </Keys>
+      <Properties>
+        <Value Alias="StateName" Type="String">
+          <SimpleValue xmlns:q4="http://www.w3.org/2001/XMLSchema" d6p1:type="q4:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">Bad</SimpleValue>
+        </Value>
+      </Properties>
+    </Record>
+    <Record IsDisabled="false">
+      <Keys>
+        <Key Alias="Code" Type="String">
+          <Key xmlns:q5="http://www.w3.org/2001/XMLSchema" d6p1:type="q5:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">good</Key>
+        </Key>
+      </Keys>
+      <Properties>
+        <Value Alias="StateName" Type="String">
+          <SimpleValue xmlns:q6="http://www.w3.org/2001/XMLSchema" d6p1:type="q6:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">Good</SimpleValue>
+        </Value>
+      </Properties>
+    </Record>
+  </Records>
+</Records>

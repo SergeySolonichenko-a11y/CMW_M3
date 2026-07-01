@@ -1,0 +1,33 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Expression": "IF(\n    EQUALS(\n        LAST(from a in $ServiceRequestWorkOrders_calc where EQUALS(a->Status->Code,\"Open_calc\") select a->Status->Code),\"Open_calc\"),\n    LAST(from a in $ServiceRequestWorkOrders_calc where EQUALS(a->Status->Code,\"Open_calc\") select a->Status->Name), \nIF(EQUALS(LAST(from a in $ServiceRequestWorkOrders_calc where EQUALS(a->Status->Code,\"Complete_calc\") select a->Status->Code),\"Complete_calc\"),\n   LAST(from a in $ServiceRequestWorkOrders_calc where EQUALS(a->Status->Code,\"Complete_calc\") select a->Status->Name), \nLAST(from a in $ServiceRequestWorkOrders_calc where NOTEQUALS(a->Status->Code,\"Complete\") select a->Status->Name)))",
+  "Format": "Text",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "ServiceRequestWorkOrderStatus",
+    "Owner": "Workstation",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "InstanceGlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "ServiceRequests",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "IsCalculated": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Work order status",
+  "Type": "Instance"
+}

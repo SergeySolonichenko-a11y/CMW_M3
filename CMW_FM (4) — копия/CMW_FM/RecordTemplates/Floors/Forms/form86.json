@@ -1,0 +1,474 @@
+{
+  "$type": "Comindware.Platform.Contracts.FormModel, Comindware.Platform.Contracts",
+  "Container": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Floors",
+    "Solution": "CMW_FM",
+    "Type": "RecordTemplate"
+  },
+  "FormSize": "Undefined",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "form86",
+    "Owner": "Floors",
+    "Solution": "CMW_FM",
+    "Type": "Form"
+  },
+  "IsDefault": false,
+  "Name": "Floor planogram",
+  "Origination": "Undefined",
+  "Root": {
+    "$type": "Comindware.Platform.Contracts.VerticalLayoutModel, Comindware.Platform.Contracts",
+    "AccessType": "Undefined",
+    "GlobalAlias": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "12ee301c72374060b163c6399404b1c0",
+      "Solution": "",
+      "Type": "FormComponent"
+    },
+    "Rows": {
+      "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.PanelModel, Comindware.Platform.Contracts",
+          "AccessType": "Editable",
+          "DisplayName": "Floor plan",
+          "GlobalAlias": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "1a5755a479d748f1af312016f54e8102",
+            "Solution": "",
+            "Type": "FormComponent"
+          },
+          "OriginalType": "GroupPanel",
+          "Rows": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.VerticalLayoutModel, Comindware.Platform.Contracts",
+                "AccessType": "Editable",
+                "GlobalAlias": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "06351c6c12304c29bd32676a2b65c239",
+                  "Solution": "",
+                  "Type": "FormComponent"
+                },
+                "Rows": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": [
+                    {
+                      "$type": "Comindware.Platform.Contracts.FieldComponentModel, Comindware.Platform.Contracts",
+                      "AccessType": "Editable",
+                      "Connections": {
+                        "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.DrawingLayerSettingsModel, Comindware.Platform.Contracts]], mscorlib",
+                        "$values": [
+                          {
+                            "$type": "Comindware.Platform.Contracts.DrawingLayerSettingsModel, Comindware.Platform.Contracts",
+                            "KeyProperty": {
+                              "$type": "Comindware.Platform.Contracts.AttributeInfoModel, Comindware.Platform.Contracts",
+                              "GlobalAlias": {
+                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                "Alias": "SectorID",
+                                "Owner": "Sectors_calc",
+                                "Solution": "CMW_FM",
+                                "Type": "Attribute"
+                              },
+                              "Name": "Sector ID"
+                            },
+                            "MainForm": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "defaultForm",
+                              "Owner": "Sectors_calc",
+                              "Solution": "CMW_FM",
+                              "Type": "Form"
+                            },
+                            "MetadataEnums": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": [
+                                {
+                                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                  "Alias": "Condition",
+                                  "Owner": "Sectors_calc",
+                                  "Solution": "CMW_FM",
+                                  "Type": "Attribute"
+                                }
+                              ]
+                            },
+                            "Order": 0,
+                            "RecordTemplate": {
+                              "$type": "Comindware.Platform.Contracts.RecordTemplateInfoModel, Comindware.Platform.Contracts",
+                              "GlobalAlias": {
+                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                "Alias": "Sectors_calc",
+                                "Solution": "CMW_FM",
+                                "Type": "RecordTemplate"
+                              },
+                              "Name": "Sectors"
+                            },
+                            "ReferenceToConnections": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ReferenceToConnectionModel, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": []
+                            },
+                            "RightPanelForm": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "form3462",
+                              "Owner": "Sectors_calc",
+                              "Solution": "CMW_FM",
+                              "Type": "Form"
+                            },
+                            "Type": "Geometry"
+                          },
+                          {
+                            "$type": "Comindware.Platform.Contracts.DrawingLayerSettingsModel, Comindware.Platform.Contracts",
+                            "KeyProperty": {
+                              "$type": "Comindware.Platform.Contracts.AttributeInfoModel, Comindware.Platform.Contracts",
+                              "GlobalAlias": {
+                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                "Alias": "Number_calc",
+                                "Owner": "Spaces_calc",
+                                "Solution": "CMW_FM",
+                                "Type": "Attribute"
+                              },
+                              "Name": "Number"
+                            },
+                            "MainForm": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "SpaceForm",
+                              "Owner": "Spaces_calc",
+                              "Solution": "CMW_FM",
+                              "Type": "Form"
+                            },
+                            "MetadataEnums": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": [
+                                {
+                                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                  "Alias": "ServiceRequestStatusColor",
+                                  "Owner": "Spaces_calc",
+                                  "Solution": "CMW_FM",
+                                  "Type": "Attribute"
+                                },
+                                {
+                                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                  "Alias": "ServiceRequestStatusColor1_calc",
+                                  "Owner": "Spaces_calc",
+                                  "Solution": "CMW_FM",
+                                  "Type": "Attribute"
+                                },
+                                {
+                                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                  "Alias": "RentalStatusColored",
+                                  "Owner": "Spaces_calc",
+                                  "Solution": "CMW_FM",
+                                  "Type": "Attribute"
+                                }
+                              ]
+                            },
+                            "Order": 1,
+                            "RecordTemplate": {
+                              "$type": "Comindware.Platform.Contracts.RecordTemplateInfoModel, Comindware.Platform.Contracts",
+                              "GlobalAlias": {
+                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                "Alias": "Spaces_calc",
+                                "Solution": "CMW_FM",
+                                "Type": "RecordTemplate"
+                              },
+                              "Name": "Spaces"
+                            },
+                            "ReferenceToConnections": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ReferenceToConnectionModel, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": []
+                            },
+                            "RightPanelForm": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "form239",
+                              "Owner": "Spaces_calc",
+                              "Solution": "CMW_FM",
+                              "Type": "Form"
+                            },
+                            "Type": "Geometry"
+                          },
+                          {
+                            "$type": "Comindware.Platform.Contracts.DrawingLayerSettingsModel, Comindware.Platform.Contracts",
+                            "KeyProperty": {
+                              "$type": "Comindware.Platform.Contracts.AttributeInfoModel, Comindware.Platform.Contracts",
+                              "GlobalAlias": {
+                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                "Alias": "Number",
+                                "Owner": "Workstation",
+                                "Solution": "CMW_FM",
+                                "Type": "Attribute"
+                              },
+                              "Name": "Workstation Number"
+                            },
+                            "MainForm": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "defaultForm",
+                              "Owner": "Workstation",
+                              "Solution": "CMW_FM",
+                              "Type": "Form"
+                            },
+                            "MetadataEnums": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": [
+                                {
+                                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                  "Alias": "Condition",
+                                  "Owner": "Workstation",
+                                  "Solution": "CMW_FM",
+                                  "Type": "Attribute"
+                                },
+                                {
+                                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                  "Alias": "RoomServiceRequestStatusColor",
+                                  "Owner": "Workstation",
+                                  "Solution": "CMW_FM",
+                                  "Type": "Attribute"
+                                },
+                                {
+                                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                  "Alias": "BookingStatusColor",
+                                  "Owner": "Workstation",
+                                  "Solution": "CMW_FM",
+                                  "Type": "Attribute"
+                                }
+                              ]
+                            },
+                            "Order": 2,
+                            "RecordTemplate": {
+                              "$type": "Comindware.Platform.Contracts.RecordTemplateInfoModel, Comindware.Platform.Contracts",
+                              "GlobalAlias": {
+                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                "Alias": "Workstation",
+                                "Solution": "CMW_FM",
+                                "Type": "RecordTemplate"
+                              },
+                              "Name": "Workstations"
+                            },
+                            "ReferenceToConnections": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ReferenceToConnectionModel, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": []
+                            },
+                            "RightPanelForm": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "form3087",
+                              "Owner": "Workstation",
+                              "Solution": "CMW_FM",
+                              "Type": "Form"
+                            },
+                            "Type": "Geometry"
+                          },
+                          {
+                            "$type": "Comindware.Platform.Contracts.DrawingLayerSettingsModel, Comindware.Platform.Contracts",
+                            "Dataset": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "NeedsAttention",
+                              "Owner": "ServiceRequests",
+                              "Solution": "CMW_FM",
+                              "Type": "Dataset"
+                            },
+                            "MainForm": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "defaultForm",
+                              "Owner": "ServiceRequests",
+                              "Solution": "CMW_FM",
+                              "Type": "Form"
+                            },
+                            "MetadataEnums": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": [
+                                {
+                                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                  "Alias": "QualityControlResult_calc",
+                                  "Owner": "ServiceRequests",
+                                  "Solution": "CMW_FM",
+                                  "Type": "Attribute"
+                                }
+                              ]
+                            },
+                            "Order": 3,
+                            "RecordTemplate": {
+                              "$type": "Comindware.Platform.Contracts.RecordTemplateInfoModel, Comindware.Platform.Contracts",
+                              "GlobalAlias": {
+                                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                "Alias": "ServiceRequests",
+                                "Solution": "CMW_FM",
+                                "Type": "RecordTemplate"
+                              },
+                              "Name": "Service Requests"
+                            },
+                            "ReferenceToConnections": {
+                              "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ReferenceToConnectionModel, Comindware.Platform.Contracts]], mscorlib",
+                              "$values": [
+                                {
+                                  "$type": "Comindware.Platform.Contracts.ReferenceToConnectionModel, Comindware.Platform.Contracts",
+                                  "Attribute": {
+                                    "$type": "Comindware.Platform.Contracts.AttributeInfoModel, Comindware.Platform.Contracts",
+                                    "GlobalAlias": {
+                                      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                      "Alias": "Workstations",
+                                      "Owner": "ServiceRequests",
+                                      "Solution": "CMW_FM",
+                                      "Type": "Attribute"
+                                    },
+                                    "Name": "Workstations"
+                                  },
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "ReferenceToConnection_946d55a5-6acd-476d-bb8d-eed7d18675ab",
+                                    "Solution": "",
+                                    "Type": "ReferenceToConnection"
+                                  },
+                                  "RecordTemplate": {
+                                    "$type": "Comindware.Platform.Contracts.RecordTemplateInfoModel, Comindware.Platform.Contracts",
+                                    "GlobalAlias": {
+                                      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                      "Alias": "Sectors_calc",
+                                      "Solution": "CMW_FM",
+                                      "Type": "RecordTemplate"
+                                    },
+                                    "Name": "Sectors"
+                                  }
+                                },
+                                {
+                                  "$type": "Comindware.Platform.Contracts.ReferenceToConnectionModel, Comindware.Platform.Contracts",
+                                  "Attribute": {
+                                    "$type": "Comindware.Platform.Contracts.AttributeInfoModel, Comindware.Platform.Contracts",
+                                    "GlobalAlias": {
+                                      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                      "Alias": "Space_calc",
+                                      "Owner": "ServiceRequests",
+                                      "Solution": "CMW_FM",
+                                      "Type": "Attribute"
+                                    },
+                                    "Name": "Space"
+                                  },
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "ReferenceToConnection_f22c503a-24b0-440b-b856-54162c9f1924",
+                                    "Solution": "",
+                                    "Type": "ReferenceToConnection"
+                                  },
+                                  "RecordTemplate": {
+                                    "$type": "Comindware.Platform.Contracts.RecordTemplateInfoModel, Comindware.Platform.Contracts",
+                                    "GlobalAlias": {
+                                      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                      "Alias": "Spaces_calc",
+                                      "Solution": "CMW_FM",
+                                      "Type": "RecordTemplate"
+                                    },
+                                    "Name": "Spaces"
+                                  }
+                                },
+                                {
+                                  "$type": "Comindware.Platform.Contracts.ReferenceToConnectionModel, Comindware.Platform.Contracts",
+                                  "Attribute": {
+                                    "$type": "Comindware.Platform.Contracts.AttributeInfoModel, Comindware.Platform.Contracts",
+                                    "GlobalAlias": {
+                                      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                      "Alias": "Sectors_calc",
+                                      "Owner": "ServiceRequests",
+                                      "Solution": "CMW_FM",
+                                      "Type": "Attribute"
+                                    },
+                                    "Name": "Sector"
+                                  },
+                                  "GlobalAlias": {
+                                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                    "Alias": "ReferenceToConnection_30e2724d-8faf-43f6-ab69-ff13cf8a4f02",
+                                    "Solution": "",
+                                    "Type": "ReferenceToConnection"
+                                  },
+                                  "RecordTemplate": {
+                                    "$type": "Comindware.Platform.Contracts.RecordTemplateInfoModel, Comindware.Platform.Contracts",
+                                    "GlobalAlias": {
+                                      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                                      "Alias": "Workstation",
+                                      "Solution": "CMW_FM",
+                                      "Type": "RecordTemplate"
+                                    },
+                                    "Name": "Workstations"
+                                  }
+                                }
+                              ]
+                            },
+                            "RightPanelForm": {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "form481",
+                              "Owner": "ServiceRequests",
+                              "Solution": "CMW_FM",
+                              "Type": "Form"
+                            },
+                            "Type": "Marker"
+                          }
+                        ]
+                      },
+                      "CreationType": "None",
+                      "DevicePhotoOnly": false,
+                      "DisableSidePanelConversations": false,
+                      "DisableWidgetConversations": false,
+                      "DisplayFormat": "ShowAsPicture",
+                      "EditorType": "Radio",
+                      "EditType": "None",
+                      "FieldType": "Drawing",
+                      "GlobalAlias": {
+                        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                        "Alias": "6830b66d00af407eb0f0723ab468316f",
+                        "Solution": "",
+                        "Type": "FormComponent"
+                      },
+                      "HideArchivedMessages": false,
+                      "Label": {
+                        "$type": "Comindware.Platform.Contracts.LabelModel, Comindware.Platform.Contracts",
+                        "Alignment": "Top",
+                        "Hidden": false,
+                        "Text": "Plan"
+                      },
+                      "PropertyPath": {
+                        "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                        "$values": [
+                          {
+                            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                            "Alias": "Plan",
+                            "Owner": "Floors",
+                            "Solution": "CMW_FM",
+                            "Type": "Attribute"
+                          }
+                        ]
+                      },
+                      "RemovalType": "None",
+                      "SortingDirection": "Asc",
+                      "Type": "FieldComponent",
+                      "Width": 0
+                    }
+                  ]
+                },
+                "Type": "VerticalLayout",
+                "Width": 0
+              }
+            ]
+          },
+          "Toolbar": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "toolbarca52478932f04872b7677983bf9e1b51",
+            "Owner": "Floors",
+            "Solution": "CMW_FM",
+            "Type": "Toolbar"
+          },
+          "Type": "PanelModel",
+          "Width": 100
+        }
+      ]
+    },
+    "Type": "VerticalLayout",
+    "Width": 0
+  },
+  "Toolbar": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "toolbarea9624477be94797a45a58182ef7713a",
+    "Owner": "Floors",
+    "Solution": "CMW_FM",
+    "Type": "Toolbar"
+  },
+  "Type": "PublicForm",
+  "WithSimpleToolbar": false
+}

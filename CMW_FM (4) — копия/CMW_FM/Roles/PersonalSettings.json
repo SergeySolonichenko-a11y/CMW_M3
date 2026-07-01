@@ -1,0 +1,160 @@
+{
+  "$type": "Comindware.Platform.Contracts.RoleConfigurationModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "PersonalSettings",
+    "Solution": "CMW_FM",
+    "Type": "RoleConfiguration"
+  },
+  "IsActive": true,
+  "Members": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "beaver",
+        "Solution": "",
+        "Type": "Account"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "sergeysolonichenko-a11y",
+        "Solution": "",
+        "Type": "Account"
+      }
+    ]
+  },
+  "Name": "Personal settings",
+  "RootResource": {
+    "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+    "AvailablePrivileges": "Read, Create, Update, Delete, FullAccess",
+    "Children": {
+      "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+          "AvailablePrivileges": "ContextUserExpression, ContextObjectCondition, Read, Create, Update, Delete, FullAccess",
+          "Children": {
+            "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Read",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "PM settings - default form",
+                "Privileges": "Read",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PersonalSettings",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "defaultForm",
+                  "Owner": "PMSettings_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "Form"
+                },
+                "TargetType": "Form"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "Save",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PersonalSettings",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "edit",
+                  "Owner": "PMSettings_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts",
+                "AvailablePrivileges": "Execute",
+                "Children": {
+                  "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ResourcePrivilegeDescriptorModel, Comindware.Platform.Contracts]], mscorlib",
+                  "$values": []
+                },
+                "Name": "My settings",
+                "Privileges": "Execute",
+                "Role": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "PersonalSettings",
+                  "Solution": "CMW_FM",
+                  "Type": "RoleConfiguration"
+                },
+                "Target": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                  "Alias": "MySettings",
+                  "Owner": "PMSettings_calc",
+                  "Solution": "CMW_FM",
+                  "Type": "UserCommand"
+                },
+                "TargetType": "Operation"
+              }
+            ]
+          },
+          "Description": "PM settings",
+          "Name": "PM settings",
+          "Privileges": "Read, Update",
+          "Role": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PersonalSettings",
+            "Solution": "CMW_FM",
+            "Type": "RoleConfiguration"
+          },
+          "Target": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "PMSettings_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "TargetType": "RecordTemplate"
+        }
+      ]
+    },
+    "Description": "Riverbend branch business apps",
+    "Name": "CMW Facility Management",
+    "Privileges": "Read",
+    "Role": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "PersonalSettings",
+      "Solution": "CMW_FM",
+      "Type": "RoleConfiguration"
+    },
+    "Target": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "CMW_FM",
+      "Solution": "",
+      "Type": "Solution"
+    },
+    "TargetType": "BusinessApp"
+  },
+  "Workspace": {
+    "$type": "Comindware.Platform.Contracts.RoleWorkspaceModel, Comindware.Platform.Contracts",
+    "GlobalAlias": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "workspace22",
+      "Solution": "CMW_FM",
+      "Type": "RoleWorkspace"
+    },
+    "Name": "Settings"
+  }
+}

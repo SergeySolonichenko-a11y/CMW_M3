@@ -1,0 +1,325 @@
+{
+  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.TriggerModel, Comindware.Platform.Contracts",
+  "ActionsHead": {
+    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.OnProcessActivityExit, Comindware.Platform.Contracts",
+    "Description": "Token exit from “5. Issue rent invoices” <activity_c854d50ac45147cfb9e164242a1bf08a>, process “Scheduled technical process” <DaylyProcessTech>",
+    "IsAsync": false,
+    "IsCleaningCache": false,
+    "IsSafe": false,
+    "Kind": "OnProcessActivityExit",
+    "Name": "Token exit from “5. Issue rent invoices”",
+    "NextAction": {
+      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectChange, Comindware.Platform.Contracts",
+      "IsAsync": false,
+      "IsCleaningCache": false,
+      "IsSafe": false,
+      "Kind": "ReferenceObjectChange",
+      "Name": "On record “Technical template for contract work”, returned by expression",
+      "ReferenceExpression": "$$BusinessObject",
+      "Scope": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "DailyProcessTech",
+        "Solution": "CMW_FM",
+        "Type": "ProcessTemplate"
+      },
+      "SubAction": {
+        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+        "Description": "Check active lease contracts (status: \"Valid\"). If the monthly rent invoice has not been issued for the contract, the system automatically generates a rent invoice for the current month. By default, rent invoicing occurs at the beginning of each month (on the first day or first business day of the month).",
+        "IsAsync": false,
+        "IsCleaningCache": false,
+        "IsSafe": false,
+        "Kind": "PropertySetValue",
+        "Name": "In “Tech temlate deals” record",
+        "NextAction": {
+          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectChange, Comindware.Platform.Contracts",
+          "Description": "Switch to contract list",
+          "IsAsync": false,
+          "IsCleaningCache": false,
+          "IsSafe": false,
+          "Kind": "ReferenceObjectChange",
+          "Name": "On record “Contracts”, specified by attribute “DealsToMakeRentInvoices”",
+          "ReferenceExpression": "$DealsMakeRentInvoices_calc",
+          "Scope": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "TechTemplateDeals",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          },
+          "SubAction": {
+            "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectCreate, Comindware.Platform.Contracts",
+            "IsAsync": false,
+            "IsCleaningCache": false,
+            "IsSafe": false,
+            "Kind": "ReferenceObjectCreate",
+            "Name": "In template “Invoices and payments” and add a reference to a new record in attribute “Invoices and payments”",
+            "Property": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "InvoicesPayments_calc",
+              "Owner": "Contracts_calc",
+              "Solution": "CMW_FM",
+              "Type": "Attribute"
+            },
+            "Scope": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "Contracts_calc",
+              "Solution": "CMW_FM",
+              "Type": "RecordTemplate"
+            },
+            "SetValueKind": "Add",
+            "SubAction": {
+              "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+              "IsAsync": false,
+              "IsCleaningCache": false,
+              "IsSafe": false,
+              "Kind": "PropertySetValue",
+              "Name": "In “Invoices payments” record",
+              "Scope": {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Alias": "InvoicesPayments_calc",
+                "Solution": "CMW_FM",
+                "Type": "RecordTemplate"
+              },
+              "SetValueProperties": {
+                "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+                "$values": [
+                  {
+                    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                    "PropertyPath": {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                          "Alias": "LotPaymentAmount_calc",
+                          "Owner": "InvoicesPayments_calc",
+                          "Solution": "CMW_FM",
+                          "Type": "Attribute"
+                        }
+                      ]
+                    },
+                    "SetValueKind": "Replace",
+                    "ValueExpression": "$ContractBasis_calc->MonthlyPayment_calc"
+                  },
+                  {
+                    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                    "PropertyPath": {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                          "Alias": "Year_calc",
+                          "Owner": "InvoicesPayments_calc",
+                          "Solution": "CMW_FM",
+                          "Type": "Attribute"
+                        }
+                      ]
+                    },
+                    "SetValueKind": "Replace",
+                    "ValueExpression": "from a in db->Years where a->Year==YEAR(NOW()) select a->id"
+                  },
+                  {
+                    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                    "PropertyPath": {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                          "Alias": "SortOrder_calc",
+                          "Owner": "InvoicesPayments_calc",
+                          "Solution": "CMW_FM",
+                          "Type": "Attribute"
+                        }
+                      ]
+                    },
+                    "SetValueKind": "Replace",
+                    "ValueExpression": "STARTOFMONTH(NOW())"
+                  },
+                  {
+                    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                    "PropertyPath": {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                          "Alias": "PaymentPeriod_calc",
+                          "Owner": "InvoicesPayments_calc",
+                          "Solution": "CMW_FM",
+                          "Type": "Attribute"
+                        }
+                      ]
+                    },
+                    "SetValueKind": "Replace",
+                    "ValueExpression": "OBJECT(\"CMW_FM\", \"MaintenancePeriods_calc\", \"SortOrder_calc\", MONTH(NOW()))"
+                  },
+                  {
+                    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                    "PropertyPath": {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                          "Alias": "DocType_calc",
+                          "Owner": "InvoicesPayments_calc",
+                          "Solution": "CMW_FM",
+                          "Type": "Attribute"
+                        }
+                      ]
+                    },
+                    "SetValueKind": "Replace",
+                    "ValueExpression": "ENUMVALUE(\"DocType_calc\", \"Issued_calc\")"
+                  },
+                  {
+                    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                    "PropertyPath": {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                          "Alias": "InvoiceType_calc",
+                          "Owner": "InvoicesPayments_calc",
+                          "Solution": "CMW_FM",
+                          "Type": "Attribute"
+                        }
+                      ]
+                    },
+                    "SetValueKind": "Replace",
+                    "ValueExpression": "OBJECT(\"CMW_FM\", \"InvoiceTypes_calc\", \"Code_calc\", \"arenda_month\")"
+                  },
+                  {
+                    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                    "PropertyPath": {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                          "Alias": "Tenants_calc",
+                          "Owner": "InvoicesPayments_calc",
+                          "Solution": "CMW_FM",
+                          "Type": "Attribute"
+                        }
+                      ]
+                    },
+                    "SetValueKind": "Replace",
+                    "ValueExpression": "$ContractBasis_calc->Tenant_calc"
+                  },
+                  {
+                    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                    "PropertyPath": {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                          "Alias": "DueDate_calc",
+                          "Owner": "InvoicesPayments_calc",
+                          "Solution": "CMW_FM",
+                          "Type": "Attribute"
+                        }
+                      ]
+                    },
+                    "SetValueKind": "Replace",
+                    "ValueExpression": "ENDOFDAY(ADDDAYS(NOW(), $ContractBasis_calc->PaymentDays_calc))"
+                  },
+                  {
+                    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                    "PropertyPath": {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                          "Alias": "PaymentStatus_calc",
+                          "Owner": "InvoicesPayments_calc",
+                          "Solution": "CMW_FM",
+                          "Type": "Attribute"
+                        }
+                      ]
+                    },
+                    "SetValueKind": "Replace",
+                    "ValueExpression": "OBJECT(\"CMW_FM\", \"InvoicePaymentStatuses_calc\", \"Code_calc\", \"Open_calc\")"
+                  },
+                  {
+                    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                    "PropertyPath": {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                          "Alias": "IssueDate_calc",
+                          "Owner": "InvoicesPayments_calc",
+                          "Solution": "CMW_FM",
+                          "Type": "Attribute"
+                        }
+                      ]
+                    },
+                    "SetValueKind": "Replace",
+                    "ValueExpression": "NOW()"
+                  }
+                ]
+              }
+            },
+            "TargetContainer": {
+              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+              "Alias": "InvoicesPayments_calc",
+              "Solution": "CMW_FM",
+              "Type": "RecordTemplate"
+            }
+          },
+          "TargetContainer": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Contracts_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          }
+        },
+        "Scope": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "TechTemplateDeals",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "SetValueProperties": {
+          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+              "PropertyPath": {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                "$values": [
+                  {
+                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                    "Alias": "DealsMakeRentInvoices_calc",
+                    "Owner": "TechTemplateDeals",
+                    "Solution": "CMW_FM",
+                    "Type": "Attribute"
+                  }
+                ]
+              },
+              "SetValueKind": "Replace",
+              "ValueExpression": "from a in db->Contracts_calc where AND(\n    a->Status->Code==\"active\",\n    a->MainDocument_calc==true,\n    EMPTY(from b in a->InvoicesPayments_calc where AND(STARTOFMONTH(b->SortOrder_calc)==STARTOFMONTH(NOW()), b->InvoiceType_calc->Code_calc==\"arenda_month\") select b->id)\n#    , EQUALS(DAY(a->Date_calc), DAY(NOW()) #Uncomment this line to issue invoices on the contract date; contracts dated December 31 and February require adjusted conditions\n    ) select a->id"
+            }
+          ]
+        }
+      },
+      "TargetContainer": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "TechTemplateDeals",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      }
+    },
+    "Scope": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "DailyProcessTech",
+      "Solution": "CMW_FM",
+      "Type": "ProcessTemplate"
+    }
+  },
+  "BehaviourState": "Active",
+  "Description": "Scenario on token exit from “5. Issue rent invoices” <activity_c854d50ac45147cfb9e164242a1bf08a>, process “Scheduled technical process” <DaylyProcessTech>",
+  "ExecutionContext": "ByInitiator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TokenLeaves_activity_c854d50ac45147cfb9e164242a1bf08a_Process_DaylyProcessTech",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Name": "Token exit from '5. Issue lease invoices' element of 'scheduled technical process' process"
+}

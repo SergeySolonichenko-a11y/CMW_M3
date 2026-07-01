@@ -1,0 +1,180 @@
+{
+  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.TriggerModel, Comindware.Platform.Contracts",
+  "ActionsHead": {
+    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.OnProcessActivityExit, Comindware.Platform.Contracts",
+    "Description": "Token exit from “Commenced inspections” <timerIntermediateEvent1>, process “Daily scheduled technical process” <Tekhnicheskiyprotsesspotaymeru>",
+    "IsAsync": false,
+    "IsCleaningCache": false,
+    "IsSafe": false,
+    "Kind": "OnProcessActivityExit",
+    "Name": "Token exit from “Commenced inspections”",
+    "NextAction": {
+      "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectChange, Comindware.Platform.Contracts",
+      "IsAsync": false,
+      "IsCleaningCache": false,
+      "IsSafe": false,
+      "Kind": "ReferenceObjectChange",
+      "ReferenceExpression": "$$BusinessObject",
+      "Scope": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "DailyScheduledTechnicalProcess",
+        "Solution": "CMW_FM",
+        "Type": "ProcessTemplate"
+      },
+      "SubAction": {
+        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ReferenceObjectChange, Comindware.Platform.Contracts",
+        "IsAsync": false,
+        "IsCleaningCache": false,
+        "IsSafe": false,
+        "Kind": "ReferenceObjectChange",
+        "Name": "On “Inspections” records returned by expression",
+        "ReferenceExpression": "from a in db->Inspections_calc where EQUALS(a->Status_calc->Code_calc,\"started\") select a->id",
+        "Scope": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "ScheduledProcessLaunches",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        },
+        "SubAction": {
+          "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalOperator, Comindware.Platform.Contracts",
+          "Actions": {
+            "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction[], Comindware.Platform.Contracts",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.ConditionalAction, Comindware.Platform.Contracts",
+                "ConditionExpression": "EQUALS(COUNT(from a in db->KPIRecords_calc where AND(AND(NOT(EMPTY(a->SpaceInspection_calc)),EQUALS(a->SpaceInspection_calc->Inspection_calc,$id)),(EMPTY(a->Status_calc))) select a->id),0)",
+                "ConditionName": "clean",
+                "NextAction": {
+                  "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValueAction, Comindware.Platform.Contracts",
+                  "IsAsync": false,
+                  "IsCleaningCache": false,
+                  "IsSafe": false,
+                  "Kind": "PropertySetValue",
+                  "Name": "In record \\u201cInspections\\u201d",
+                  "Scope": {
+                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                    "Alias": "Inspections_calc",
+                    "Solution": "CMW_FM",
+                    "Type": "RecordTemplate"
+                  },
+                  "SetValueProperties": {
+                    "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue[], Comindware.Platform.Contracts",
+                    "$values": [
+                      {
+                        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                        "PropertyPath": {
+                          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                          "$values": [
+                            {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "Status_calc",
+                              "Owner": "Inspections_calc",
+                              "Solution": "CMW_FM",
+                              "Type": "Attribute"
+                            }
+                          ]
+                        },
+                        "SetValueKind": "Replace",
+                        "ValueExpression": "OBJECT(\"Volga\",\"InspectionStatuses_calc\",\"Code_calc\",\"finished\")"
+                      },
+                      {
+                        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                        "PropertyPath": {
+                          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                          "$values": [
+                            {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "ActualEndDateTime_calc",
+                              "Owner": "Inspections_calc",
+                              "Solution": "CMW_FM",
+                              "Type": "Attribute"
+                            }
+                          ]
+                        },
+                        "SetValueKind": "Replace",
+                        "ValueExpression": "$InspectionPoints_calc->KPIRecords_calc->RecordDateTime_calc"
+                      },
+                      {
+                        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                        "PropertyPath": {
+                          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                          "$values": [
+                            {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "ActualDuration",
+                              "Owner": "Inspections_calc",
+                              "Solution": "CMW_FM",
+                              "Type": "Attribute"
+                            }
+                          ]
+                        },
+                        "SetValueKind": "Replace",
+                        "ValueExpression": "SUBTRACT($ActualEndDateTime_calc,$ActualStartDateTime_calc)"
+                      },
+                      {
+                        "$type": "Comindware.Platform.Contracts.Models.Triggers.EventTrigger.PropertySetValue, Comindware.Platform.Contracts",
+                        "PropertyPath": {
+                          "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                          "$values": [
+                            {
+                              "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                              "Alias": "ActualAssignee",
+                              "Owner": "Inspections_calc",
+                              "Solution": "CMW_FM",
+                              "Type": "Attribute"
+                            }
+                          ]
+                        },
+                        "SetValueKind": "Replace",
+                        "ValueExpression": "$InspectionPoints_calc->KPIRecords_calc->Recorded_calc"
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "IsAsync": false,
+          "IsCleaningCache": false,
+          "IsSafe": false,
+          "Kind": "ConditionalOperator",
+          "Name": "Execute actions if expression returns",
+          "Scope": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Alias": "Inspections_calc",
+            "Solution": "CMW_FM",
+            "Type": "RecordTemplate"
+          }
+        },
+        "TargetContainer": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "Inspections_calc",
+          "Solution": "CMW_FM",
+          "Type": "RecordTemplate"
+        }
+      },
+      "TargetContainer": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Alias": "ScheduledProcessLaunches",
+        "Solution": "CMW_FM",
+        "Type": "RecordTemplate"
+      }
+    },
+    "Scope": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Alias": "DailyScheduledTechnicalProcess",
+      "Solution": "CMW_FM",
+      "Type": "ProcessTemplate"
+    }
+  },
+  "BehaviourState": "Active",
+  "Description": "Scenario on token exit from “Commenced inspections” <timerIntermediateEvent1>, process “Daily scheduled technical process” <Tekhnicheskiyprotsesspotaymeru>",
+  "ExecutionContext": "ByInitiator",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TokenLeaves_timerIntermediateEvent1_DailyScheduledTechnicalProcess",
+    "Solution": "",
+    "Type": "Trigger"
+  },
+  "Name": "Token exit from 'started inspections' element of 'daily scheduled technical process' process"
+}

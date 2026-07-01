@@ -1,0 +1,76 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "Format": "Undefined",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "Status_calc",
+    "Owner": "ServiceRequestAccessBadgeRequest_calc",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "IsCalculated": false,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": false,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Status",
+  "Type": "Enum",
+  "Variants": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.ObjectPropertyVariantValueModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ObjectPropertyVariantValueModel, Comindware.Platform.Contracts",
+        "Alias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "ServiceRequestNewWorkOrder",
+          "Owner": "Status_calc",
+          "Solution": "",
+          "Type": "Variant"
+        },
+        "Name": {
+          "$type": "Comindware.Platform.Contracts.LocalizedTextModel, Comindware.Platform.Contracts",
+          "En": "newz",
+          "Ru": "New Work Order"
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ObjectPropertyVariantValueModel, Comindware.Platform.Contracts",
+        "Alias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "Approved",
+          "Owner": "Status_calc",
+          "Solution": "",
+          "Type": "Variant"
+        },
+        "Name": {
+          "$type": "Comindware.Platform.Contracts.LocalizedTextModel, Comindware.Platform.Contracts",
+          "En": "okz",
+          "Ru": "Approved"
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ObjectPropertyVariantValueModel, Comindware.Platform.Contracts",
+        "Alias": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Alias": "NotApproved",
+          "Owner": "Status_calc",
+          "Solution": "",
+          "Type": "Variant"
+        },
+        "Name": {
+          "$type": "Comindware.Platform.Contracts.LocalizedTextModel, Comindware.Platform.Contracts",
+          "En": "Not approved",
+          "Ru": "Not approved"
+        }
+      }
+    ]
+  }
+}

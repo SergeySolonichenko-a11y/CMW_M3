@@ -1,0 +1,29 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "DecimalPlaces": 1,
+  "Expression": "IF(EMPTY($Space_calc), 0, SUM(from a in $Space_calc where NOT(EMPTY(a->LeasableArea_calc)) select a->LeasableArea_calc)) + IF(EMPTY($RentalLots_calc), 0, SUM(from b in $RentalLots_calc select b->LeasableArea_calc))",
+  "Format": "Undefined",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Alias": "TotalSpaceArea_calc",
+    "Owner": "Contracts_calc",
+    "Solution": "CMW_FM",
+    "Type": "Attribute"
+  },
+  "ImageColorType": "Original",
+  "ImagePreserveAspectRatio": false,
+  "IsCalculated": true,
+  "IsDigitGrouping": true,
+  "IsDisabled": false,
+  "IsIndexed": false,
+  "IsMandatory": false,
+  "IsMultiValue": false,
+  "IsOwnership": false,
+  "IsReadonly": true,
+  "IsSystem": false,
+  "IsTitle": false,
+  "IsTracked": false,
+  "IsUnique": false,
+  "Name": "Area all spaces",
+  "Type": "Decimal"
+}
